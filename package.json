@@ -6,7 +6,8 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "deploy": "surge src sideout.club"
+    "deploy": "surge src sideout.club",
+    "addfelo": "surge --add sideout.uk.@outlook.com"
   },
   "dependencies": {},
   "devDependencies": {

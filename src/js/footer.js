@@ -1,6 +1,6 @@
 
 function columnDDescriptionAndSocial(level){
-  var output =  '<div class="col-12 col-md-6 col-lg-3">\
+  return '<div class="col-12 col-md-6 col-lg-3">\
   <div class="foot-about">\
     <h2><a class="foot-logo" href="#"><img src="'+level+'images/footer.png" alt=""></a></h2>\
     <p>Established in April 2015, SideOut Beach Volleyball Club is the UK\'s largest, most innovative, dynamic and member-focused beach volleyball club. We are based in Leyton, East London and in Worthing, West Sussex.</p>\
@@ -12,15 +12,13 @@ function columnDDescriptionAndSocial(level){
     </ul>\
   </div>\
 </div>';
-return output;
 } 
 
 function columnLinks(level){
-  var output = 
-  '<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">\
+  return '<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">\
     <h2>Useful Links</h2>\
     <ul>\
-      <li><a href="membership.html">Membership</a></li>\
+      <li><a href="membership-leyton.html">Membership</a></li>\
       <li><a href="book-a-court-leyton.html">Book a court</a></li>\
       <li><a href="calendar-leyton.html">Events Calendar</a></li>\
       <li><a href="tournaments.html">Tournaments</a></li>\
@@ -28,15 +26,14 @@ function columnLinks(level){
       <li><a href="meet-the-team.html">Meet the Team</a></li>\
     </ul>\
     <ul>\
+      <li><a href="club-history.html">Club History</a></li>\
       <li><a href="https://sideout.co.uk">Sideout ltd</a></li>\
     </ul>\
   </div>';
-  return output;
 }
 
 function columnUpdates(level){
-  var output = 
-  '<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">\
+  return '<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">\
     <div class="foot-latest-news">\
       <h2>Important Updates</h2>\
         <ul>\
@@ -55,7 +52,6 @@ function columnUpdates(level){
       </ul>\
     </div>\
   </div>';
-  return output;
 }
 
 const COLUMN_CONTACT = 
