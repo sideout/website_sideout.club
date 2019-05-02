@@ -1297,7 +1297,7 @@ ul.tabs-nav .tab-nav.active {
 # Causes
 --------------------------------------------------------------*/
 .causes-page .page-header {
-    background: url(images/causes-bg.jpg) no-repeat center;
+    background: url(images/banner/2.png) no-repeat center;
 }
 
 .causes-page .featured-cause {
@@ -1376,7 +1376,7 @@ ul.tabs-nav .tab-nav.active {
 # Single Cause
 --------------------------------------------------------------*/
 .single-cause .page-header {
-    background: url(images/single-cause-bg.jpg) no-repeat center;
+    background: url(images/banner/6.png) no-repeat center;
 }
 
 .single-cause .highlighted-cause {
@@ -1533,7 +1533,7 @@ ul.tabs-nav .tab-nav.active {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .page-header {
-    background: url(images/portfolio-bg.jpg) no-repeat center;
+    background: url(images/banner/5.png) no-repeat center;
 }
 
 .portfolio-wrap {
@@ -1586,7 +1586,7 @@ ul.tabs-nav .tab-nav.active {
 # News
 --------------------------------------------------------------*/
 .news-page .page-header {
-    background: url(images/news-bg.jpg) no-repeat center;
+    background: url(images/banner/4.png) no-repeat center;
 }
 
 .news-wrap {
@@ -1891,7 +1891,7 @@ ul.tabs-nav .tab-nav.active {
 # Contact Page
 --------------------------------------------------------------*/
 .contact-page .page-header {
-    background: url(images/contact-bg.jpg) no-repeat center;
+    background: url(images/banner/3.png) no-repeat center;
 }
 
 .contact-page-wrap {
@@ -2002,7 +2002,7 @@ ul.tabs-nav .tab-nav.active {
 # Contact Page
 --------------------------------------------------------------*/
 .elements-page .page-header {
-    background: url(images/elements-bg.jpg) no-repeat center;
+    background: url(images/banner/1.png) no-repeat center;
 }
 
 /*--------------------------------------------------------------

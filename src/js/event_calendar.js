@@ -429,7 +429,7 @@ const TABLE_HEADER =
 	</thead>\
 </table>';
 
-function renderMonthTable(eventList, elementId, filter, dateCheck) {
+function renderMonthTable(eventList, elementId, filter, dateCheck, monthName) {
 	//console.log(eventList);
 	var i;
 	var text = "";
@@ -437,7 +437,7 @@ function renderMonthTable(eventList, elementId, filter, dateCheck) {
 	for (i = 0; i < eventList.length; i++) {
 		//console.log('i:' + i);
 		var eventType = eventList[i].type;
-
+		var hasThisMonthEvents = false;
 		if (filter == 'display-all' || filter == eventType) {
 
 			var eventName = eventList[i].name;
@@ -454,7 +454,7 @@ function renderMonthTable(eventList, elementId, filter, dateCheck) {
 			}
 
 			if (appendEvent) {
-
+				hasThisMonthEvents = true;
 				var dayOfWeekInt = eventDate.getDay();
 				var dayInt = eventDate.getDate();
 				var monthInt = eventDate.getMonth();
@@ -500,8 +500,20 @@ function renderMonthTable(eventList, elementId, filter, dateCheck) {
 			}
 		}
 	}
-	var aprilTable = document.getElementById(elementId);
-	aprilTable.innerHTML = "<table><tbody>" + text + "</tbody></table>";
+	console.log("has events?"+hasThisMonthEvents);
+
+	var tableContent = "";
+	if(hasThisMonthEvents){
+		tableContent = "<h2 class=\"entry-title\">" + monthName + " in Leyton Beach</h2>\
+		<div class=\"table100 ver2 m-b-20\">\
+			<div class=\"table100-head\">" + TABLE_HEADER +"</div>\
+			<div class=\"table100-body\">" + "<table><tbody>" + text + "</tbody></table>\
+			</div>\
+		</div>"
+
+
+	}
+	return tableContent;
 }
 
 function filterButtons(filter) {
@@ -540,28 +552,26 @@ function eventController(filter,dateFilter) {
 	var url = window.location.href;
 	var isleyton = url.includes("calendar-leyton");
 
-
-	document.getElementById('table-header-april').innerHTML = TABLE_HEADER;
-	document.getElementById('table-header-may').innerHTML = TABLE_HEADER;
-	document.getElementById('table-header-june').innerHTML = TABLE_HEADER;
-	document.getElementById('table-header-july').innerHTML = TABLE_HEADER;
-	document.getElementById('table-header-august').innerHTML = TABLE_HEADER;
-	document.getElementById('table-header-september').innerHTML = TABLE_HEADER;
-
 	if (isleyton) {
-		renderMonthTable(april_events_leyton, 'april-table', filter, dateFilter);
-		renderMonthTable(may_events_leyton, 'may-table', filter, dateFilter);
-		renderMonthTable(june_events_leyton, 'june-table', filter, dateFilter);
-		renderMonthTable(july_events_leyton, 'july-table', filter, dateFilter);
-		renderMonthTable(august_events_leyton, 'august-table', filter, dateFilter);
-		renderMonthTable(september_events_leyton, 'september-table', filter, dateFilter);
+		var tables = "";
+		tables+= renderMonthTable(april_events_leyton, 'april-table', filter, dateFilter,"April");
+		tables+= renderMonthTable(may_events_leyton, 'may-table', filter, dateFilter,"May");
+		tables+= renderMonthTable(june_events_leyton, 'june-table', filter, dateFilter,"June");
+		tables+= renderMonthTable(july_events_leyton, 'july-table', filter, dateFilter,"July");
+		tables+= renderMonthTable(august_events_leyton, 'august-table', filter, dateFilter,"August");
+		tables+= renderMonthTable(september_events_leyton, 'september-table', filter, dateFilter,"September");
+
+		document.getElementById('calendar-tables').innerHTML = tables;
 	} else {
-		renderMonthTable(april_events_worthing, 'april-table', filter, dateFilter);
-		renderMonthTable(may_events_worthing, 'may-table', filter, dateFilter);
-		renderMonthTable(june_events_worthing, 'june-table', filter, dateFilter);
-		renderMonthTable(july_events_worthing, 'july-table', filter, dateFilter);
-		renderMonthTable(august_events_worthing, 'august-table', filter, dateFilter);
-		renderMonthTable(september_events_worthing, 'september-table', filter, dateFilter);
+		var tables = "";
+		tables+= renderMonthTable(april_events_worthing, 'april-table', filter, dateFilter,"April");
+		tables+= renderMonthTable(may_events_worthing, 'may-table', filter, dateFilter,"May");
+		tables+= renderMonthTable(june_events_worthing, 'june-table', filter, dateFilter,"June");
+		tables+= renderMonthTable(july_events_worthing, 'july-table', filter, dateFilter,"July");
+		tables+= renderMonthTable(august_events_worthing, 'august-table', filter, dateFilter,"August");
+		tables+= renderMonthTable(september_events_worthing, 'september-table', filter, dateFilter,"September");
+
+		document.getElementById('calendar-tables').innerHTML = tables;
 	}
 }
 
