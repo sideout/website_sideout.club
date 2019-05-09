@@ -1,0 +1,6 @@
+{
+  "video": true,
+  "fixturesFolder": false,
+  "fileServerFolder": "src",
+  "integrationFolder": "cypress/e2e"
+}
