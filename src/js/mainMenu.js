@@ -28,7 +28,7 @@ function renderMenu(filter, level) {
 
   console.log(navigator.userAgent);
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    console.log("yes");
+    console.log("mobile_view:ON");
    }
 
   var index = '<li><a href="' + level + 'index.html">Home</a></li>';
@@ -66,7 +66,7 @@ function renderMenu(filter, level) {
   }
   var links = index + membership + bookCourt + calendar + tournaments + camps + team;
 
-console.log(partOne(level));
+  //console.log(partOne(level));
   var menu = document.getElementById('mainMenu');
   menu.innerHTML = partOne(level) + links + PART2;
 

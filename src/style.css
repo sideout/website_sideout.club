@@ -407,9 +407,9 @@ a:hover, a:active {
     color: #262626;
 }
 
-.elements-page .elements-container {
+/* .elements-page .elements-container {
     margin-top: 54px;
-}
+} */
 
 .elements-page .btn {
     margin-right: 20px;
@@ -1892,6 +1892,15 @@ ul.tabs-nav .tab-nav.active {
 --------------------------------------------------------------*/
 .contact-page .page-header {
     background: url(images/banner/3.png) no-repeat center;
+}
+
+/* .contact-page .elements-container {
+    margin-top: 54px;
+} */
+
+.contact-page .btn {
+    margin-top: 10px;
+    margin-right: 20px;
 }
 
 .contact-page-wrap {
