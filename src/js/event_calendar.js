@@ -586,21 +586,24 @@ function renderNextEvents(eventList, beach, counter) {
 	if (counter == 3) {
 		return 3;
 	}
-	console.log("mpike");
+	console.log("renderNextEvents");
 
 	var i;
 	var text = "";
 	var eventDiv;
 	if (beach == 'Leyton') {
 		eventDiv = document.getElementById('upcomingEventLeyton');
+		console.log("Venue: Leyton");
 	} else {
 		eventDiv = document.getElementById('upcomingEventWorthing');
+		console.log("Venue: Worthing");
 	}
 
+	if(counter == 0){
 	eventDiv.innerHTML = '<div class="section-heading">\
                             <h2 class="entry-title">Upcoming Events '+ beach + '</h2>\
                         </div>';
-
+	}
 
 	for (i = 0; i < eventList.length; i++) {
 
@@ -652,6 +655,7 @@ function renderNextEvents(eventList, beach, counter) {
                                 </div>\
                             </div>\
 						</div>';
+				console.log("Event: " + eventName + " Month: " + months[monthInt] + " DIV: "+htmlEvent);
 				counter++;
 				eventDiv.innerHTML += htmlEvent;
 			}

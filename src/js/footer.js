@@ -1,8 +1,7 @@
-
-function columnDDescriptionAndSocial(level){
+function columnDDescriptionAndSocial(level) {
   return '<div class="col-12 col-md-6 col-lg-3">\
   <div class="foot-about">\
-    <h2><a class="foot-logo" href="#"><img src="'+level+'images/footer.png" alt=""></a></h2>\
+    <h2><a class="foot-logo" href="#"><img src="' + level + 'images/footer.png" alt=""></a></h2>\
     <p>Established in April 2015, SideOut Beach Volleyball Club is the UK\'s largest, most innovative, dynamic and member-focused beach volleyball club. We are based in Leyton, East London and in Worthing, West Sussex.</p>\
     <ul class="d-flex flex-wrap align-items-center">\
         <li><a href="https://www.facebook.com/SideOutLtd"><i class="fa fa-facebook"></i></a></li>\
@@ -12,18 +11,18 @@ function columnDDescriptionAndSocial(level){
     </ul>\
   </div>\
 </div>';
-} 
+}
 
-function columnLinks(level){
+function columnLinks(level) {
   return '<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">\
     <h2>Useful Links</h2>\
     <ul>\
-      <li><a href="membership-leyton.html">Membership</a></li>\
-      <li><a href="book-a-court-leyton.html">Book a court</a></li>\
-      <li><a href="calendar-leyton.html">Events Calendar</a></li>\
-      <li><a href="tournaments.html">Tournaments</a></li>\
-      <li><a href="camps-and-clinics.html">Camps & Clinics</a></li>\
-      <li><a href="meet-the-team.html">Meet the Team</a></li>\
+      <li><a href="' + level + 'membership-leyton.html">Membership</a></li>\
+      <li><a href="' + level + 'book-a-court-leyton.html">Book a court</a></li>\
+      <li><a href="' + level + 'calendar-leyton.html">Events Calendar</a></li>\
+      <li><a href="' + level + 'tournaments.html">Tournaments</a></li>\
+      <li><a href="' + level + 'camps-and-clinics.html">Camps & Clinics</a></li>\
+      <li><a href="' + level + 'meet-the-team.html">Meet the Team</a></li>\
     </ul>\
     <ul>\
       <li><a href="club-history.html">Club History</a></li>\
@@ -32,21 +31,21 @@ function columnLinks(level){
   </div>';
 }
 
-function columnUpdates(level){
+function columnUpdates(level) {
   return '<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">\
     <div class="foot-latest-news">\
       <h2>Important Updates</h2>\
         <ul>\
           <li>\
-              <h3><a href="'+level+'leyton-beach.html">New Leyton Beach</a></h3>\
+              <h3><a href="' + level + 'leyton-beach.html">New Leyton Beach</a></h3>\
               <div class="posted-date">April 1, 2019</div>\
           </li>\
           <li>\
-              <h3><a href="'+level+'worthing-beach.html">New Worthing Beach</a></h3>\
+              <h3><a href="' + level + 'worthing-beach.html">New Worthing Beach</a></h3>\
               <div class="posted-date">April 1, 2019</div>\
           </li>\
           <li>\
-              <h3><a href="'+level+'cev-continental-cup.html">London to host CEV Continental Cup</a></h3>\
+              <h3><a href="' + level + 'cev-continental-cup.html">London to host CEV Continental Cup</a></h3>\
               <div class="posted-date">May 25, 2019</div>\
           </li>\
       </ul>\
@@ -54,8 +53,8 @@ function columnUpdates(level){
   </div>';
 }
 
-const COLUMN_CONTACT = 
-'<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">\
+const COLUMN_CONTACT =
+  '<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">\
   <div class="foot-contact">\
     <h2>Contact</h2>\
     <ul>\
@@ -66,8 +65,8 @@ const COLUMN_CONTACT =
   </div>\
 </div>';
 
-const RIGHTS = 
-'<div class="container">\
+const RIGHTS =
+  '<div class="container">\
   <div class="row">\
     <div class="col-12">\
         <p class="m-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  |  SideOut Beach Volleyball Club Ltd  |  Template by <a href="https://colorlib.com" target="_blank">Colorlib</a>\
@@ -75,15 +74,15 @@ const RIGHTS =
   </div>\
 </div>'
 
-function renderFooter(level){
+function renderFooter(level) {
   var footerRow = document.getElementById('footer-widget');
-	footerRow.innerHTML = 
-  '<div class="container">\
-    <div class="row">'
-      +columnDDescriptionAndSocial(level) + columnLinks(level) + columnUpdates(level) + COLUMN_CONTACT+
-  '</div>\
+  footerRow.innerHTML =
+    '<div class="container">\
+    <div class="row">' +
+    columnDDescriptionAndSocial(level) + columnLinks(level) + columnUpdates(level) + COLUMN_CONTACT +
+    '</div>\
   </div>';
 
   var footerRow = document.getElementById('footer-bar');
-	footerRow.innerHTML = RIGHTS;
+  footerRow.innerHTML = RIGHTS;
 }
