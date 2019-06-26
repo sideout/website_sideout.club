@@ -868,7 +868,7 @@ ul.tabs-nav .tab-nav.active {
 .home-page-welcome {
   position: relative;
   padding: 96px 0;
-  background: url("images/Tournaments-Spring series 2.jpg") no-repeat center;
+  background: url("images/background1.jpg") no-repeat center;
   background-size: cover;
   z-index: 99;
 }
@@ -1107,7 +1107,7 @@ ul.tabs-nav .tab-nav.active {
 .our-causes {
   position: relative;
   padding: 96px 0;
-  background: url("images/Tournaments-Spring series 2.jpg") no-repeat center;
+  background: url("images/background1.jpg") no-repeat center;
   background-size: cover;
   z-index: 99;
 }
