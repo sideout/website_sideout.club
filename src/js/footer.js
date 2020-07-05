@@ -17,9 +17,9 @@ function columnLinks(level) {
   return '<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">\
     <h2>Useful Links</h2>\
     <ul>\
-      <li><a href="' + level + 'membership-leyton.html">Membership</a></li>\
+      <li><a href="' + level + 'membership.html">Membership</a></li>\
       <li><a href="' + level + 'book-a-court-leyton.html">Book a court</a></li>\
-      <li><a href="' + level + 'calendar-leyton.html">Events Calendar</a></li>\
+      <li><a href="' + level + 'events-calendar.html">Events Calendar</a></li>\
       <li><a href="' + level + 'tournaments.html">Tournaments</a></li>\
       <li><a href="' + level + 'camps-and-clinics.html">Camps & Clinics</a></li>\
       <li><a href="' + level + 'meet-the-team.html">Meet the Team</a></li>\
@@ -37,11 +37,11 @@ function columnUpdates(level) {
       <h2>Important Updates</h2>\
         <ul>\
           <li>\
-              <h3><a href="' + level + 'leyton-beach.html">New Leyton Beach</a></h3>\
+              <h3><a href="' + level + 'book-a-court-leyton.html">New Leyton Beach</a></h3>\
               <div class="posted-date">April 1, 2019</div>\
           </li>\
           <li>\
-              <h3><a href="' + level + 'worthing-beach.html">New Worthing Beach</a></h3>\
+              <h3><a href="' + level + 'book-a-court-worthing.html">New Worthing Beach</a></h3>\
               <div class="posted-date">April 1, 2019</div>\
           </li>\
       </ul>\
