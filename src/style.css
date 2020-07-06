@@ -1539,7 +1539,7 @@ ul.tabs-nav .tab-nav.active {
 # Short Content
 --------------------------------*/
 .short-content-wrap {
-  padding-bottom: 20px;
+  /*padding-bottom: 20px;*/
 }
 
 .short-content .entry-title {
