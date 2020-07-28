@@ -34,7 +34,7 @@ function renderMenu(filter, level) {
   var index = '<li><a href="' + level + 'index.html">Home</a></li>';
   var membership = '<li><a href="' + level + 'membership.html">Membership</a></li>';
   var bookCourt = '<li><a href="' + level + 'book-a-court-leyton.html">Book a court</a></li>';
-  var calendar = '<li><a href="' + level + 'events-calendar.html">Events Calendar</a></li>';
+  var calendar = '<li><a href="' + level + 'calendar-leyton.html">Events Calendar</a></li>';
   var tournaments = '<li><a href="' + level + 'tournaments.html">Tournaments</a></li>';
   var camps = '<li><a href="' + level + 'camps-and-clinics.html">Camps & Clinics</a></li>';
   var team = '<li><a href="' + level + 'meet-the-team.html">Meet the Team</a></li>';

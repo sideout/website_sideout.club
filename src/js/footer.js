@@ -19,7 +19,7 @@ function columnLinks(level) {
     <ul>\
       <li><a href="' + level + 'membership.html">Membership</a></li>\
       <li><a href="' + level + 'book-a-court-leyton.html">Book a court</a></li>\
-      <li><a href="' + level + 'events-calendar.html">Events Calendar</a></li>\
+      <li><a href="' + level + 'calendar-leyton.html">Events Calendar</a></li>\
       <li><a href="' + level + 'tournaments.html">Tournaments</a></li>\
       <li><a href="' + level + 'camps-and-clinics.html">Camps & Clinics</a></li>\
       <li><a href="' + level + 'meet-the-team.html">Meet the Team</a></li>\
