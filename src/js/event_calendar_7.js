@@ -8,7 +8,7 @@ final edition should be a framework that will read the list of the event objects
 // document.getElementById("leytonButton").onclick = function() {mylog()};
 
 //INFO
-var MEN_N_WOMEN = "Men & Women";
+var MEN_N_WOMEN = "M&W";
 var MEN = "Men";
 var WOMEN = "Women";
 var MIXED = "Mixed";
@@ -23,7 +23,7 @@ var NAME_ALL_NATIONS = "All Nations";
 var NAME_CEV = "CEV Continental Cup Tournament";
 var NAME_CHALLENGER = "SideOut Challenger Series";
 var NAME_GRAND_PRIX = "SideOut London Grand Prix";
-var NAME_WILSON = "SideOut London Wilson";
+var NAME_WILSON = "UKBT Wilson Championships";
 var NAME_LONDON_FINALS = "SideOut London Finals";
 var NAME_TRAINING = "Training";
 var NAME_END_OF_SEASON_PARTY = "End of Season Party!"
@@ -37,7 +37,7 @@ var TYPE_TRAINING = "Training";
 var URL_MIX_N_MATCH = "tournaments/mixnmatch.html";
 var URL_KING_QUEEN = "tournaments/king-queen-court.html";
 var URL_AYCP = "all-you-can-play.html";
-var URL_WILSON = "all-you-can-play.html";
+var URL_WILSON = "tournaments/ukbt-wilson-championships.html";
 var URL_HIRE_LEYTON = "book-a-court-leyton.html";
 var URL_HIRE_WORTHING = "book-a-court-worthing.html";
 var URL_SPRING = "tournaments/spring-tourney.html";
@@ -68,7 +68,7 @@ var COLOR_LONDON_FINALS = "#ea450e";
 var COLOR_DEFAULT = "#3a1d13";
 
 var gsDayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
 var april_events_leyton = [
 	// { date: new Date("04/06/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "10.30am - 7:30pm, all levels are welcome!", url: URL_AYCP },
@@ -204,21 +204,17 @@ var july_events_leyton = [
 var august_events_leyton = [
 	{ date: new Date("08/01/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("08/02/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	//{ date: new Date("08/08/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: WOMEN, url: URL_WILSON },
-	{ date: new Date("08/08/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	//{ date: new Date("08/09/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: MEN, url: URL_WILSON },
-	{ date: new Date("08/09/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	//{ date: new Date("08/15/2020"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: "", url: URL_CHALLENGER },
+	{ date: new Date("08/08/2020"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SUMMER },
+	{ date: new Date("08/09/2020"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_CHALLENGER },
+	{ date: new Date("08/15/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: WOMEN, url: URL_WILSON },
 	{ date: new Date("08/15/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	//{ date: new Date("08/16/2020"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SUMMER },
+	{ date: new Date("08/16/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: MEN, url: URL_WILSON },
 	{ date: new Date("08/16/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	//{ date: new Date("08/22/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: WOMEN, url: URL_WILSON },
+	{ date: new Date("08/22/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: WOMEN, url: URL_WILSON },
 	{ date: new Date("08/22/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	//{ date: new Date("08/23/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: MEN, url: URL_WILSON },
+	{ date: new Date("08/23/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: MEN, url: URL_WILSON },
 	{ date: new Date("08/23/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	//{ date: new Date("08/29/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: WOMEN, url: URL_WILSON },
-	{ date: new Date("08/29/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	//{ date: new Date("08/30/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: MEN, url: URL_WILSON },
+	{ date: new Date("08/29/2020"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SUMMER },
 	{ date: new Date("08/30/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("08/31/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP }
 	// { date: new Date("08/07/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
@@ -249,16 +245,17 @@ var august_events_leyton = [
 ];
 
 var september_events_leyton = [
-	//{ date: new Date("09/05/2020"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SUMMER },
+	{ date: new Date("09/05/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: WOMEN, url: URL_WILSON },
 	{ date: new Date("09/05/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	{ date: new Date("09/06/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: MEN, url: URL_WILSON },
 	{ date: new Date("09/06/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	//{ date: new Date("09/12/2020"), name: "Wilson Finals", type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_WILSON },
+	{ date: new Date("09/12/2020"), name: "UKBT Wilson Championships Finals", type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_WILSON },
 	{ date: new Date("09/12/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("09/13/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	//{ date: new Date("09/19/2020"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: "", url: URL_CHALLENGER },
+	{ date: new Date("09/19/2020"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_CHALLENGER },
 	{ date: new Date("09/19/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("09/20/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	//{ date: new Date("09/26/2020"), name: NAME_END_OF_SEASON_PARTY, type: "", info: "", url: "" },
+	{ date: new Date("09/26/2020"), name: NAME_END_OF_SEASON_PARTY, type: "", info: "", url: "" },
 	{ date: new Date("09/27/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP }
 	// { date: new Date("09/01/2019"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_GRAND_PRIX },
 	// { date: new Date("09/01/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
@@ -413,11 +410,11 @@ var august_events_worthing = [
 	{ date: new Date("08/09/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("08/15/2020"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
 	{ date: new Date("08/16/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	//{ date: new Date("08/22/2020"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_CHALLENGER },
+	{ date: new Date("08/22/2020"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_CHALLENGER },
 	{ date: new Date("08/23/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("08/29/2020"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
-	{ date: new Date("08/30/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP }
-	//{ date: new Date("08/31/2020"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SUMMER }
+	{ date: new Date("08/30/2020"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SUMMER },
+	{ date: new Date("08/31/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP }
 	// { date: new Date("08/03/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	// { date: new Date("08/04/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	// { date: new Date("08/05/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
@@ -453,7 +450,7 @@ var september_events_worthing = [
 	{ date: new Date("09/05/2020"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
 	{ date: new Date("09/06/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("09/12/2020"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
-	//{ date: new Date("08/13/2020"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_CHALLENGER },
+	{ date: new Date("09/13/2020"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_CHALLENGER },
 	{ date: new Date("09/19/2020"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
 	{ date: new Date("09/20/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("09/26/2020"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
@@ -718,7 +715,7 @@ function renderNextEvents(eventList, beach, counter) {
 //console.log("Page location is " + window.location.href);
 
 //tourname pages display event dates
-function renderFutureTournamentDays(eventList, tournamentName) {
+function renderFutureTournamentDays(eventList, tournamentName, finalsTournamentName) {
 	console.log("renderNextEvents");
 	var i;
 	var eventDiv = '';
@@ -727,7 +724,7 @@ function renderFutureTournamentDays(eventList, tournamentName) {
 
 		var eventName = eventList[i].name;
 
-		if (eventName == tournamentName) {
+		if (eventName == tournamentName || eventName == finalsTournamentName) {
 
 			var eventName = eventList[i].name;
 			var eventDate = eventList[i].date;
@@ -755,13 +752,13 @@ function renderFutureTournamentDays(eventList, tournamentName) {
 	return eventDiv;
 }
 
-function renderFutureTournamentsForLeyton(tournamentName) {
-	var april = renderFutureTournamentDays(april_events_leyton, tournamentName);
-	var may = renderFutureTournamentDays(may_events_leyton, tournamentName);
-	var june = renderFutureTournamentDays(june_events_leyton, tournamentName);
-	var july = renderFutureTournamentDays(july_events_leyton, tournamentName);
-	var august = renderFutureTournamentDays(august_events_leyton, tournamentName);
-	var september = renderFutureTournamentDays(september_events_leyton, tournamentName);
+function renderFutureTournamentsForLeyton(tournamentName, finalsTournamentName) {
+	var april = renderFutureTournamentDays(april_events_leyton, tournamentName, finalsTournamentName);
+	var may = renderFutureTournamentDays(may_events_leyton, tournamentName, finalsTournamentName);
+	var june = renderFutureTournamentDays(june_events_leyton, tournamentName, finalsTournamentName);
+	var july = renderFutureTournamentDays(july_events_leyton, tournamentName, finalsTournamentName);
+	var august = renderFutureTournamentDays(august_events_leyton, tournamentName, finalsTournamentName);
+	var september = renderFutureTournamentDays(september_events_leyton, tournamentName, finalsTournamentName);
 
 	var leyton = april + may + june + july + august + september;
 	if(leyton) { //leyton === ""
@@ -776,13 +773,13 @@ function renderFutureTournamentsForLeyton(tournamentName) {
 	}
 }
 
-function renderFutureTournamentsForWorthing(tournamentName) {
-	var april = renderFutureTournamentDays(april_events_worthing, tournamentName);
-	var may = renderFutureTournamentDays(may_events_worthing, tournamentName);
-	var june = renderFutureTournamentDays(june_events_worthing, tournamentName);
-	var july = renderFutureTournamentDays(july_events_worthing, tournamentName);
-	var august = renderFutureTournamentDays(august_events_worthing, tournamentName);
-	var september = renderFutureTournamentDays(september_events_worthing, tournamentName);
+function renderFutureTournamentsForWorthing(tournamentName, finalsTournamentName) {
+	var april = renderFutureTournamentDays(april_events_worthing, tournamentName, finalsTournamentName);
+	var may = renderFutureTournamentDays(may_events_worthing, tournamentName, finalsTournamentName);
+	var june = renderFutureTournamentDays(june_events_worthing, tournamentName, finalsTournamentName);
+	var july = renderFutureTournamentDays(july_events_worthing, tournamentName, finalsTournamentName);
+	var august = renderFutureTournamentDays(august_events_worthing, tournamentName, finalsTournamentName);
+	var september = renderFutureTournamentDays(september_events_worthing, tournamentName, finalsTournamentName);
 
 	var worthing = april + may + june + july + august + september;
 	if(worthing) { //worthing === ""
@@ -797,9 +794,9 @@ function renderFutureTournamentsForWorthing(tournamentName) {
 	}
 }
 
-function renderFutureTournamentsBothVenues(tournamentName) {
-	var leyton = renderFutureTournamentsForLeyton(tournamentName);
-	var worthing = renderFutureTournamentsForWorthing(tournamentName);
+function renderFutureTournamentsBothVenues(tournamentName, finalsTournamentName) {
+	var leyton = renderFutureTournamentsForLeyton(tournamentName, finalsTournamentName);
+	var worthing = renderFutureTournamentsForWorthing(tournamentName, finalsTournamentName);
 	var both = leyton + worthing;
 	if(both){
 		return '<ul class="font_6" style="font-family:open sans,sans-serif; font-size:14px; text-align:left;">'
@@ -840,12 +837,10 @@ if (page == 'calendar-leyton.html' || page == 'calendar-worthing.html'){
 //tournament dates
 if (page == 'summer-series.html'){
 	var eventsDiv = document.getElementById('upcomingTournaments');
-	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_SUMMER);
+	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_SUMMER, "NOTHING_FOR_NOW");
 }
 
 if (page == 'challenger-series.html'){
 	var eventsDiv = document.getElementById('upcomingTournaments');
-	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_CHALLENGER);
+	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_CHALLENGER, "NOTHING_FOR_NOW");
 }
-
-
