@@ -205,7 +205,9 @@ var august_events_leyton = [
 	{ date: new Date("08/01/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("08/02/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("08/08/2020"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SUMMER },
+	{ date: new Date("08/08/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("08/09/2020"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_CHALLENGER },
+	{ date: new Date("08/09/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("08/15/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: WOMEN, url: URL_WILSON },
 	{ date: new Date("08/15/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("08/16/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: MEN, url: URL_WILSON },
@@ -215,6 +217,7 @@ var august_events_leyton = [
 	{ date: new Date("08/23/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: MEN, url: URL_WILSON },
 	{ date: new Date("08/23/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("08/29/2020"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SUMMER },
+	{ date: new Date("08/29/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("08/30/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("08/31/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP }
 	// { date: new Date("08/07/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
@@ -682,7 +685,7 @@ function renderNextEvents(eventList, beach, counter) {
 							\
                             <div class="event-content-wrap">\
                                 <header class="entry-header d-flex flex-wrap align-items-center">\
-                                    <h3 class="entry-title w-100 m-0"><a href='+ eventUrl + '>' + eventName + '</a></h3>\
+                                    <h3 class="entry-title w-100 m-0"><a style="color:red;" href='+ eventUrl + '>' + eventName + '</a></h3>\
 									\
 									<div class="posted-date">\
 									<p>'+ gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year + '</p>\
