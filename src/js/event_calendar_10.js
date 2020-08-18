@@ -214,10 +214,10 @@ var august_events_leyton = [
 	{ date: new Date("08/15/2020"), name: NAME_WILSON_QUALIFIERS, type: TYPE_TOURNAMENT, info: "WOMEN 3*", url: URL_WILSON_QUALIFIERS },
 	{ date: new Date("08/16/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: "MEN 4*", url: URL_WILSON },
 	{ date: new Date("08/16/2020"), name: NAME_WILSON_QUALIFIERS, type: TYPE_TOURNAMENT, info: "MEN 3*", url: URL_WILSON_QUALIFIERS },
+	{ date: new Date("08/22/2020"), name: NAME_WILSON_QUALIFIERS, type: TYPE_TOURNAMENT, info: "WOMEN 3*", url: URL_WILSON_QUALIFIERS },
 	{ date: new Date("08/22/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: "WOMEN 4*", url: URL_WILSON },
-	{ date: new Date("08/22/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	{ date: new Date("08/23/2020"), name: NAME_WILSON_QUALIFIERS, type: TYPE_TOURNAMENT, info: "MEN 3*", url: URL_WILSON_QUALIFIERS },
 	{ date: new Date("08/23/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: "MEN 4*", url: URL_WILSON },
-	{ date: new Date("08/23/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("08/29/2020"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: "M&W 3*", url: URL_SUMMER },
 	{ date: new Date("08/29/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("08/30/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
@@ -250,10 +250,10 @@ var august_events_leyton = [
 ];
 
 var september_events_leyton = [
-	{ date: new Date("09/05/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: "WOMEN 3*", url: URL_WILSON },
-	{ date: new Date("09/05/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("09/06/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: "MEN 3*", url: URL_WILSON },
-	{ date: new Date("09/06/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	{ date: new Date("09/05/2020"), name: NAME_WILSON_QUALIFIERS, type: TYPE_TOURNAMENT, info: "WOMEN 3*", url: URL_WILSON_QUALIFIERS },
+	{ date: new Date("09/05/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: "WOMEN 4*", url: URL_WILSON },
+	{ date: new Date("09/06/2020"), name: NAME_WILSON_QUALIFIERS, type: TYPE_TOURNAMENT, info: "MEN 3*", url: URL_WILSON_QUALIFIERS },
+	{ date: new Date("09/06/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: "MEN 4*", url: URL_WILSON },
 	{ date: new Date("09/12/2020"), name: "UKBT Wilson Championships Finals", type: TYPE_TOURNAMENT, info: "M&W 4*", url: URL_WILSON },
 	{ date: new Date("09/12/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("09/13/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
