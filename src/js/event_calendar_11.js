@@ -39,6 +39,7 @@ var URL_MIX_N_MATCH = "tournaments/mixnmatch.html";
 var URL_KING_QUEEN = "tournaments/king-queen-court.html";
 var URL_AYCP = "all-you-can-play.html";
 var URL_WILSON = "tournaments/ukbt-wilson-championships.html";
+var URL_WILSON_FINALS = "tournaments/ukbt-wilson-championships-finals.html";
 var URL_WILSON_QUALIFIERS = "tournaments/ukbt-wilson-qualifiers.html";
 var URL_HIRE_LEYTON = "book-a-court-leyton.html";
 var URL_HIRE_WORTHING = "book-a-court-worthing.html";
@@ -219,7 +220,6 @@ var august_events_leyton = [
 	{ date: new Date("08/23/2020"), name: NAME_WILSON_QUALIFIERS, type: TYPE_TOURNAMENT, info: "MEN 3*", url: URL_WILSON_QUALIFIERS },
 	{ date: new Date("08/23/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: "MEN 4*", url: URL_WILSON },
 	{ date: new Date("08/29/2020"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: "M&W 3*", url: URL_SUMMER },
-	{ date: new Date("08/29/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("08/30/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	{ date: new Date("08/31/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP }
 	// { date: new Date("08/07/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
@@ -250,18 +250,17 @@ var august_events_leyton = [
 ];
 
 var september_events_leyton = [
-	{ date: new Date("09/05/2020"), name: NAME_WILSON_QUALIFIERS, type: TYPE_TOURNAMENT, info: "WOMEN 3*", url: URL_WILSON_QUALIFIERS },
-	{ date: new Date("09/05/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: "WOMEN 4*", url: URL_WILSON },
-	{ date: new Date("09/06/2020"), name: NAME_WILSON_QUALIFIERS, type: TYPE_TOURNAMENT, info: "MEN 3*", url: URL_WILSON_QUALIFIERS },
-	{ date: new Date("09/06/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: "MEN 4*", url: URL_WILSON },
-	{ date: new Date("09/12/2020"), name: "UKBT Wilson Championships Finals", type: TYPE_TOURNAMENT, info: "M&W 4*", url: URL_WILSON },
-	{ date: new Date("09/12/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("09/13/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("09/19/2020"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: "M&W 2*", url: URL_CHALLENGER },
-	{ date: new Date("09/19/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("09/20/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("09/26/2020"), name: NAME_END_OF_SEASON_PARTY, type: "", info: "", url: "" },
-	{ date: new Date("09/27/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP }
+	{ date: new Date("09/05/2020"), name: NAME_WILSON_QUALIFIERS, 		type: TYPE_TOURNAMENT,		 info: "WOMEN 3*", 		url: URL_WILSON_QUALIFIERS },
+	{ date: new Date("09/05/2020"), name: NAME_WILSON, 					type: TYPE_TOURNAMENT,		 info: "WOMEN 4*", 		url: URL_WILSON },
+	{ date: new Date("09/06/2020"), name: NAME_WILSON_QUALIFIERS, 		type: TYPE_TOURNAMENT,		 info: "MEN 3*", 		url: URL_WILSON_QUALIFIERS },
+	{ date: new Date("09/06/2020"), name: NAME_WILSON, 					type: TYPE_TOURNAMENT,		 info: "MEN 4*", 		url: URL_WILSON },
+	{ date: new Date("09/12/2020"), name: "UKBT Wilson Championships Finals (QT)", type: TYPE_TOURNAMENT, info: "M&W 3*", 	url: URL_WILSON_FINALS },
+	{ date: new Date("09/13/2020"), name: "UKBT Wilson Championships Finals (MD)", type: TYPE_TOURNAMENT, info: "M&W 4*", 	url: URL_WILSON_FINALS },
+	{ date: new Date("09/19/2020"), name: NAME_CHALLENGER,				type: TYPE_TOURNAMENT,		 info: "M&W 2*", 		url: URL_CHALLENGER },
+	{ date: new Date("09/19/2020"), name: NAME_AYCP, 					type: TYPE_PLAY,			 info: "", 				url: URL_AYCP },
+	{ date: new Date("09/20/2020"), name: NAME_AYCP, 					type: TYPE_PLAY,			 info: "", 				url: URL_AYCP },
+	{ date: new Date("09/26/2020"), name: NAME_END_OF_SEASON_PARTY, 	type: "",					 info: "", 				url: "" },
+	{ date: new Date("09/27/2020"), name: NAME_AYCP, 					type: TYPE_PLAY,			 info: "", 				url: URL_AYCP }
 	// { date: new Date("09/01/2019"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_GRAND_PRIX },
 	// { date: new Date("09/01/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	// { date: new Date("09/07/2019"), name: NAME_LONDON_FINALS, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_LONDON_FINALS },
