@@ -259,7 +259,7 @@ var september_events_leyton = [
 	{ date: new Date("09/13/2020"), name: "UKBT Wilson Championships Finals (MD)", type: TYPE_TOURNAMENT, info: "M&W 4*", 	url: URL_WILSON_FINALS },
 	{ date: new Date("09/19/2020"), name: NAME_CHALLENGER,				type: TYPE_TOURNAMENT,		 info: "M&W 2*", 		url: URL_CHALLENGER },
 	{ date: new Date("09/20/2020"), name: NAME_AYCP, 					type: TYPE_PLAY,			 info: "", 				url: URL_AYCP },
-	{ date: new Date("09/26/2020"), name: "Polonia’s One More Beach Tournie", 	type: TYPE_TOURNAMENT,	info: "men, women & mixed", 			url: URL_POLONIA },
+	{ date: new Date("09/26/2020"), name: NAME_AYCP, 					type: TYPE_PLAY,			 info: "", 				url: URL_AYCP },
 	{ date: new Date("09/27/2020"), name: NAME_AYCP, 					type: TYPE_PLAY,			 info: "", 				url: URL_AYCP }
 	// { date: new Date("09/01/2019"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_GRAND_PRIX },
 	// { date: new Date("09/01/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
