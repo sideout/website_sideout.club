@@ -208,24 +208,125 @@ var july_events_leyton = [
 	// { date: new Date("07/31/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON }
 ];
 
-var august_events_leyton = [
-	{ date: new Date("08/01/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("08/02/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("08/08/2020"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SUMMER },
-	{ date: new Date("08/08/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("08/09/2020"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_CHALLENGER },
-	{ date: new Date("08/09/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("08/15/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: "WOMEN 4*", url: URL_WILSON },
-	{ date: new Date("08/15/2020"), name: NAME_WILSON_QUALIFIERS, type: TYPE_TOURNAMENT, info: "WOMEN 3*", url: URL_WILSON_QUALIFIERS },
-	{ date: new Date("08/16/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: "MEN 4*", url: URL_WILSON },
-	{ date: new Date("08/16/2020"), name: NAME_WILSON_QUALIFIERS, type: TYPE_TOURNAMENT, info: "MEN 3*", url: URL_WILSON_QUALIFIERS },
-	{ date: new Date("08/22/2020"), name: NAME_WILSON_QUALIFIERS, type: TYPE_TOURNAMENT, info: "WOMEN 3*", url: URL_WILSON_QUALIFIERS },
-	{ date: new Date("08/22/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: "WOMEN 4*", url: URL_WILSON },
-	{ date: new Date("08/23/2020"), name: NAME_WILSON_QUALIFIERS, type: TYPE_TOURNAMENT, info: "MEN 3*", url: URL_WILSON_QUALIFIERS },
-	{ date: new Date("08/23/2020"), name: NAME_WILSON, type: TYPE_TOURNAMENT, info: "MEN 4*", url: URL_WILSON },
-	{ date: new Date("08/29/2020"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: "M&W 3*", url: URL_SUMMER },
-	{ date: new Date("08/30/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("08/31/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP }
+var august_events_leyton = [{
+		date: new Date("08/01/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("08/02/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("08/08/2020"),
+		name: NAME_SUMMER,
+		type: TYPE_TOURNAMENT,
+		info: MEN_N_WOMEN,
+		url: URL_SUMMER
+	},
+	{
+		date: new Date("08/08/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("08/09/2020"),
+		name: NAME_CHALLENGER,
+		type: TYPE_TOURNAMENT,
+		info: MEN_N_WOMEN,
+		url: URL_CHALLENGER
+	},
+	{
+		date: new Date("08/09/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("08/15/2020"),
+		name: NAME_WILSON,
+		type: TYPE_TOURNAMENT,
+		info: "WOMEN 4*",
+		url: URL_WILSON
+	},
+	{
+		date: new Date("08/15/2020"),
+		name: NAME_WILSON_QUALIFIERS,
+		type: TYPE_TOURNAMENT,
+		info: "WOMEN 3*",
+		url: URL_WILSON_QUALIFIERS
+	},
+	{
+		date: new Date("08/16/2020"),
+		name: NAME_WILSON,
+		type: TYPE_TOURNAMENT,
+		info: "MEN 4*",
+		url: URL_WILSON
+	},
+	{
+		date: new Date("08/16/2020"),
+		name: NAME_WILSON_QUALIFIERS,
+		type: TYPE_TOURNAMENT,
+		info: "MEN 3*",
+		url: URL_WILSON_QUALIFIERS
+	},
+	{
+		date: new Date("08/22/2020"),
+		name: NAME_WILSON_QUALIFIERS,
+		type: TYPE_TOURNAMENT,
+		info: "WOMEN 3*",
+		url: URL_WILSON_QUALIFIERS
+	},
+	{
+		date: new Date("08/22/2020"),
+		name: NAME_WILSON,
+		type: TYPE_TOURNAMENT,
+		info: "WOMEN 4*",
+		url: URL_WILSON
+	},
+	{
+		date: new Date("08/23/2020"),
+		name: NAME_WILSON_QUALIFIERS,
+		type: TYPE_TOURNAMENT,
+		info: "MEN 3*",
+		url: URL_WILSON_QUALIFIERS
+	},
+	{
+		date: new Date("08/23/2020"),
+		name: NAME_WILSON,
+		type: TYPE_TOURNAMENT,
+		info: "MEN 4*",
+		url: URL_WILSON
+	},
+	{
+		date: new Date("08/29/2020"),
+		name: NAME_SUMMER,
+		type: TYPE_TOURNAMENT,
+		info: "M&W 3*",
+		url: URL_SUMMER
+	},
+	{
+		date: new Date("08/30/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("08/31/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	}
 	// { date: new Date("08/07/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
 	// { date: new Date("08/08/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
 	// { date: new Date("08/09/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
@@ -253,17 +354,76 @@ var august_events_leyton = [
 	// { date: new Date("08/31/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP }
 ];
 
-var september_events_leyton = [
-	{ date: new Date("09/05/2020"), name: NAME_WILSON_QUALIFIERS, 		type: TYPE_TOURNAMENT,		 info: "WOMEN 3*", 		url: URL_WILSON_QUALIFIERS },
-	{ date: new Date("09/05/2020"), name: NAME_WILSON, 					type: TYPE_TOURNAMENT,		 info: "WOMEN 4*", 		url: URL_WILSON },
-	{ date: new Date("09/06/2020"), name: NAME_WILSON_QUALIFIERS, 		type: TYPE_TOURNAMENT,		 info: "MEN 3*", 		url: URL_WILSON_QUALIFIERS },
-	{ date: new Date("09/06/2020"), name: NAME_WILSON, 					type: TYPE_TOURNAMENT,		 info: "MEN 4*", 		url: URL_WILSON },
-	{ date: new Date("09/12/2020"), name: "UKBT Wilson Championships Finals (QT)", type: TYPE_TOURNAMENT, info: "M&W 3*", 	url: URL_WILSON_FINALS },
-	{ date: new Date("09/13/2020"), name: "UKBT Wilson Championships Finals (MD)", type: TYPE_TOURNAMENT, info: "M&W 4*", 	url: URL_WILSON_FINALS },
-	{ date: new Date("09/19/2020"), name: NAME_CHALLENGER,				type: TYPE_TOURNAMENT,		 info: "M&W 2*", 		url: URL_CHALLENGER },
-	{ date: new Date("09/20/2020"), name: NAME_AYCP, 					type: TYPE_PLAY,			 info: "", 				url: URL_AYCP },
-	{ date: new Date("09/26/2020"), name: NAME_AYCP, 					type: TYPE_PLAY,			 info: "", 				url: URL_AYCP },
-	{ date: new Date("09/27/2020"), name: NAME_AYCP, 					type: TYPE_PLAY,			 info: "", 				url: URL_AYCP }
+var september_events_leyton = [{
+		date: new Date("09/05/2020"),
+		name: NAME_WILSON_QUALIFIERS,
+		type: TYPE_TOURNAMENT,
+		info: "WOMEN 3*",
+		url: URL_WILSON_QUALIFIERS
+	},
+	{
+		date: new Date("09/05/2020"),
+		name: NAME_WILSON,
+		type: TYPE_TOURNAMENT,
+		info: "WOMEN 4*",
+		url: URL_WILSON
+	},
+	{
+		date: new Date("09/06/2020"),
+		name: NAME_WILSON_QUALIFIERS,
+		type: TYPE_TOURNAMENT,
+		info: "MEN 3*",
+		url: URL_WILSON_QUALIFIERS
+	},
+	{
+		date: new Date("09/06/2020"),
+		name: NAME_WILSON,
+		type: TYPE_TOURNAMENT,
+		info: "MEN 4*",
+		url: URL_WILSON
+	},
+	{
+		date: new Date("09/12/2020"),
+		name: "UKBT Wilson Championships Finals (QT)",
+		type: TYPE_TOURNAMENT,
+		info: "M&W 3*",
+		url: URL_WILSON_FINALS
+	},
+	{
+		date: new Date("09/13/2020"),
+		name: "UKBT Wilson Championships Finals (MD)",
+		type: TYPE_TOURNAMENT,
+		info: "M&W 4*",
+		url: URL_WILSON_FINALS
+	},
+	{
+		date: new Date("09/19/2020"),
+		name: NAME_CHALLENGER,
+		type: TYPE_TOURNAMENT,
+		info: "M&W 2*",
+		url: URL_CHALLENGER
+	},
+	{
+		date: new Date("09/20/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("09/26/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("09/27/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	}
 	// { date: new Date("09/01/2019"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_GRAND_PRIX },
 	// { date: new Date("09/01/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	// { date: new Date("09/07/2019"), name: NAME_LONDON_FINALS, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_LONDON_FINALS },
@@ -280,16 +440,63 @@ var september_events_leyton = [
 	// { date: new Date("09/28/2019"), name: NAME_END_OF_SEASON_PARTY, type: "", info: "", url: "" }
 ];
 
-var october_events_leyton = [
-	{ date: new Date("10/06/2020"), name: NAME_SIDE_IT_OUT, 	type: TYPE_PLAY,		info: "6:30-8:30pm", 	url: URL_SIDE_IT_OUT },
-	{ date: new Date("10/10/2020"), name: NAME_AYCP, 			type: TYPE_PLAY,		 	info: "", 				url: URL_AYCP },
-	{ date: new Date("10/13/2020"), name: NAME_SIDE_IT_OUT, 	type: TYPE_PLAY,		info: "6:30-8:30pm", 	url: URL_SIDE_IT_OUT },
-	{ date: new Date("10/17/2020"), name: NAME_AYCP, 			type: TYPE_PLAY,		 	info: "", 				url: URL_AYCP },
-	{ date: new Date("10/20/2020"), name: NAME_SIDE_IT_OUT, 	type: TYPE_PLAY,		info: "6:30-8:30pm", 	url: URL_SIDE_IT_OUT },
-	{ date: new Date("10/24/2020"), name: NAME_AYCP, 			type: TYPE_PLAY,		 	info: "", 				url: URL_AYCP },
-	{ date: new Date("10/27/2020"), name: NAME_SIDE_IT_OUT, 	type: TYPE_PLAY,		info: "6:30-8:30pm", 	url: URL_SIDE_IT_OUT },
-	{ date: new Date("10/31/2020"), name: NAME_AYCP, 			type: TYPE_PLAY,		 	info: "", 				url: URL_AYCP }
-	
+var october_events_leyton = [{
+		date: new Date("10/06/2020"),
+		name: NAME_SIDE_IT_OUT,
+		type: TYPE_PLAY,
+		info: "6:30-8:30pm",
+		url: URL_SIDE_IT_OUT
+	},
+	{
+		date: new Date("10/10/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("10/13/2020"),
+		name: NAME_SIDE_IT_OUT,
+		type: TYPE_PLAY,
+		info: "6:30-8:30pm",
+		url: URL_SIDE_IT_OUT
+	},
+	{
+		date: new Date("10/17/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("10/20/2020"),
+		name: NAME_SIDE_IT_OUT,
+		type: TYPE_PLAY,
+		info: "6:30-8:30pm",
+		url: URL_SIDE_IT_OUT
+	},
+	{
+		date: new Date("10/24/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("10/27/2020"),
+		name: NAME_SIDE_IT_OUT,
+		type: TYPE_PLAY,
+		info: "6:30-8:30pm",
+		url: URL_SIDE_IT_OUT
+	},
+	{
+		date: new Date("10/31/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	}
+
 ];
 
 //WOTHRING
@@ -422,18 +629,83 @@ var july_events_worthing = [
 	// { date: new Date("07/31/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING }
 ];
 
-var august_events_worthing = [
-	{ date: new Date("08/01/2020"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: "M&W 3*", url: URL_SUMMER },
-	{ date: new Date("08/02/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("08/08/2020"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
-	{ date: new Date("08/09/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("08/15/2020"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
-	{ date: new Date("08/16/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("08/22/2020"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: "M&W 2*", url: URL_CHALLENGER },
-	{ date: new Date("08/23/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("08/29/2020"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
-	{ date: new Date("08/30/2020"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: "M&W 3*", url: URL_SUMMER },
-	{ date: new Date("08/31/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP }
+var august_events_worthing = [{
+		date: new Date("08/01/2020"),
+		name: NAME_SUMMER,
+		type: TYPE_TOURNAMENT,
+		info: "M&W 3*",
+		url: URL_SUMMER
+	},
+	{
+		date: new Date("08/02/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("08/08/2020"),
+		name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_HIRE_WORTHING
+	},
+	{
+		date: new Date("08/09/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("08/15/2020"),
+		name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_HIRE_WORTHING
+	},
+	{
+		date: new Date("08/16/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("08/22/2020"),
+		name: NAME_CHALLENGER,
+		type: TYPE_TOURNAMENT,
+		info: "M&W 2*",
+		url: URL_CHALLENGER
+	},
+	{
+		date: new Date("08/23/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("08/29/2020"),
+		name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_HIRE_WORTHING
+	},
+	{
+		date: new Date("08/30/2020"),
+		name: NAME_SUMMER,
+		type: TYPE_TOURNAMENT,
+		info: "M&W 3*",
+		url: URL_SUMMER
+	},
+	{
+		date: new Date("08/31/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	}
 	// { date: new Date("08/03/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	// { date: new Date("08/04/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	// { date: new Date("08/05/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
@@ -465,15 +737,62 @@ var august_events_worthing = [
 	// { date: new Date("08/31/2019"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: "Women", url: "" }
 ];
 
-var september_events_worthing = [
-	{ date: new Date("09/05/2020"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
-	{ date: new Date("09/06/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("09/12/2020"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
-	{ date: new Date("09/13/2020"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: "M&W 2*", url: URL_CHALLENGER },
-	{ date: new Date("09/19/2020"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
-	{ date: new Date("09/20/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("09/26/2020"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
-	{ date: new Date("09/27/2020"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP }
+var september_events_worthing = [{
+		date: new Date("09/05/2020"),
+		name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_HIRE_WORTHING
+	},
+	{
+		date: new Date("09/06/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("09/12/2020"),
+		name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_HIRE_WORTHING
+	},
+	{
+		date: new Date("09/13/2020"),
+		name: NAME_CHALLENGER,
+		type: TYPE_TOURNAMENT,
+		info: "M&W 2*",
+		url: URL_CHALLENGER
+	},
+	{
+		date: new Date("09/19/2020"),
+		name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_HIRE_WORTHING
+	},
+	{
+		date: new Date("09/20/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("09/26/2020"),
+		name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_HIRE_WORTHING
+	},
+	{
+		date: new Date("09/27/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	}
 	// { date: new Date("09/01/2019"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: "Men", url: "" },
 	// { date: new Date("09/07/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	// { date: new Date("09/08/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
@@ -485,12 +804,35 @@ var september_events_worthing = [
 	// { date: new Date("09/29/2019"), name: NAME_END_OF_SEASON_PARTY, type: "", info: "", url: "" }
 ];
 
-var october_events_worthing = [
-	{ date: new Date("10/04/2020"), name: NAME_AYCP, 	type: TYPE_PLAY,	 info: "",	url: URL_AYCP },
-	{ date: new Date("10/11/2020"), name: NAME_AYCP, 	type: TYPE_PLAY,	 info: "",	url: URL_AYCP },
-	{ date: new Date("10/18/2020"), name: NAME_AYCP, 	type: TYPE_PLAY,	 info: "",	url: URL_AYCP },
-	{ date: new Date("10/25/2020"), name: NAME_AYCP, 	type: TYPE_PLAY,	 info: "",	url: URL_AYCP }
-	
+var october_events_worthing = [{
+		date: new Date("10/04/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("10/11/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("10/18/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("10/25/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	}
+
 ];
 
 
@@ -515,7 +857,7 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 	for (i = 0; i < eventList.length; i++) {
 		//console.log('i:' + i);
 		var eventType = eventList[i].type;
-		
+
 		//console.log("eventType:"+eventType);
 		if (filter == 'display-all' || filter == eventType) {
 
@@ -523,12 +865,19 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 			var eventInfo = eventList[i].info;
 			var eventDate = eventList[i].date;
 			var eventUrl = eventList[i].url;
-			
+
 			//dateCheck here if is in the future
 			var today = new Date();
 			var thisDate = new Date(eventDate);
 			var appendEvent = true;
-			if ( dateCheck && (thisDate < today) ) {
+
+			var isAPastTournament = false;
+			if (thisDate.setHours(0, 0, 0, 0) < today.setHours(0, 0, 0, 0)) {
+				isAPastTournament = true;
+				//console.log(element.name + ":" + "oncoming");
+			}
+
+			if (dateCheck && isAPastTournament) {
 				appendEvent = false;
 			}
 
@@ -574,21 +923,21 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 				}
 
 				text += "<tr class=\"row100 body\">\
-      			<td class=\"cell100 column1X\">"+ gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year + "</td>\
-      			<td class=\"cell100 columnX\"><a style=\"color:"+ color + "\" href=" + eventUrl + ">" + eventName + "</a></td>\
-      			<td class=\"cell100 columnX\">"+ eventType + "</td>\
-      			<td class=\"cell100 columnX\">"+ eventInfo + "</td></tr>";
+      			<td class=\"cell100 column1X\">" + gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year + "</td>\
+      			<td class=\"cell100 columnX\"><a style=\"color:" + color + "\" href=" + eventUrl + ">" + eventName + "</a></td>\
+      			<td class=\"cell100 columnX\">" + eventType + "</td>\
+      			<td class=\"cell100 columnX\">" + eventInfo + "</td></tr>";
 				//console.log(text);
 			}
 		}
 	}
-	console.log("has events?"+hasThisMonthEvents);
+	console.log("has events?" + hasThisMonthEvents);
 
 	var tableContent = "";
-	if(hasThisMonthEvents){
-		tableContent = "<h2 class=\"entry-title\">" + monthName + " in "+beachName+" Beach</h2>\
+	if (hasThisMonthEvents) {
+		tableContent = "<h2 class=\"entry-title\">" + monthName + " in " + beachName + " Beach</h2>\
 		<div class=\"table100 ver2 m-b-20\">\
-			<div class=\"table100-head\">" + TABLE_HEADER +"</div>\
+			<div class=\"table100-head\">" + TABLE_HEADER + "</div>\
 			<div class=\"table100-body\">" + "<table><tbody>" + text + "</tbody></table>\
 			</div>\
 		</div>"
@@ -623,37 +972,37 @@ function filterButtons(filter) {
 
 	document.getElementById('filter-buttons').innerHTML =
 		"<a onclick=\"eventController('display-all',true)\" href=\"#\" style='width: 250px' class=\" " + buttonAll + " \">All Events</a>\
-    <a onclick=\"eventController('Tournament',true)\" href=\"#\" style='width: 250px' class=\" "+ buttonTournament + " \">Tournaments</a>\
-    <a onclick=\"eventController('Play',true)\" href=\"#\" style='width: 250px' class=\" "+ buttonPlay + " \">Play</a>\
-    <a onclick=\"eventController('Training',true)\" href=\"#\" style='width: 250px' class=\" "+ buttonTraining + " \">Training</a>";
+    <a onclick=\"eventController('Tournament',true)\" href=\"#\" style='width: 250px' class=\" " + buttonTournament + " \">Tournaments</a>\
+    <a onclick=\"eventController('Play',true)\" href=\"#\" style='width: 250px' class=\" " + buttonPlay + " \">Play</a>\
+    <a onclick=\"eventController('Training',true)\" href=\"#\" style='width: 250px' class=\" " + buttonTraining + " \">Training</a>";
 }
 
-function eventController(filter,dateFilter) {
-	
+function eventController(filter, dateFilter) {
+
 	filterButtons(filter);
 	var url = window.location.href;
 	var isleyton = url.includes("calendar-leyton");
 
 	if (isleyton) {
 		var tables = "";
-		tables+= renderMonthTable("Leyton", april_events_leyton, 'april-table', filter, dateFilter,"April");
-		tables+= renderMonthTable("Leyton", may_events_leyton, 'may-table', filter, dateFilter,"May");
-		tables+= renderMonthTable("Leyton", june_events_leyton, 'june-table', filter, dateFilter,"June");
-		tables+= renderMonthTable("Leyton", july_events_leyton, 'july-table', filter, dateFilter,"July");
-		tables+= renderMonthTable("Leyton", august_events_leyton, 'august-table', filter, dateFilter,"August");
-		tables+= renderMonthTable("Leyton", september_events_leyton, 'september-table', filter, dateFilter,"September");
-		tables+= renderMonthTable("Leyton", october_events_leyton, 'october-table', filter, dateFilter,"October");
+		tables += renderMonthTable("Leyton", april_events_leyton, 'april-table', filter, dateFilter, "April");
+		tables += renderMonthTable("Leyton", may_events_leyton, 'may-table', filter, dateFilter, "May");
+		tables += renderMonthTable("Leyton", june_events_leyton, 'june-table', filter, dateFilter, "June");
+		tables += renderMonthTable("Leyton", july_events_leyton, 'july-table', filter, dateFilter, "July");
+		tables += renderMonthTable("Leyton", august_events_leyton, 'august-table', filter, dateFilter, "August");
+		tables += renderMonthTable("Leyton", september_events_leyton, 'september-table', filter, dateFilter, "September");
+		tables += renderMonthTable("Leyton", october_events_leyton, 'october-table', filter, dateFilter, "October");
 
 		document.getElementById('calendar-tables').innerHTML = tables;
 	} else {
 		var tables = "";
-		tables+= renderMonthTable("Worthing", april_events_worthing, 'april-table', filter, dateFilter,"April");
-		tables+= renderMonthTable("Worthing", may_events_worthing, 'may-table', filter, dateFilter,"May");
-		tables+= renderMonthTable("Worthing", june_events_worthing, 'june-table', filter, dateFilter,"June");
-		tables+= renderMonthTable("Worthing", july_events_worthing, 'july-table', filter, dateFilter,"July");
-		tables+= renderMonthTable("Worthing", august_events_worthing, 'august-table', filter, dateFilter,"August");
-		tables+= renderMonthTable("Worthing", september_events_worthing, 'september-table', filter, dateFilter,"September");
-		tables+= renderMonthTable("Worthing", october_events_worthing, 'october-table', filter, dateFilter,"October");
+		tables += renderMonthTable("Worthing", april_events_worthing, 'april-table', filter, dateFilter, "April");
+		tables += renderMonthTable("Worthing", may_events_worthing, 'may-table', filter, dateFilter, "May");
+		tables += renderMonthTable("Worthing", june_events_worthing, 'june-table', filter, dateFilter, "June");
+		tables += renderMonthTable("Worthing", july_events_worthing, 'july-table', filter, dateFilter, "July");
+		tables += renderMonthTable("Worthing", august_events_worthing, 'august-table', filter, dateFilter, "August");
+		tables += renderMonthTable("Worthing", september_events_worthing, 'september-table', filter, dateFilter, "September");
+		tables += renderMonthTable("Worthing", october_events_worthing, 'october-table', filter, dateFilter, "October");
 
 		document.getElementById('calendar-tables').innerHTML = tables;
 	}
@@ -678,9 +1027,9 @@ function renderNextEvents(eventList, beach, counter) {
 		console.log("Venue: Worthing");
 	}
 
-	if(counter == 0){
-	eventDiv.innerHTML = '<div class="section-heading">\
-                            <h2 class="entry-title">Upcoming Events '+ beach + '</h2>\
+	if (counter == 0) {
+		eventDiv.innerHTML = '<div class="section-heading">\
+                            <h2 class="entry-title">Upcoming Events ' + beach + '</h2>\
                         </div>';
 	}
 
@@ -698,7 +1047,7 @@ function renderNextEvents(eventList, beach, counter) {
 			var thisDate = new Date(eventDate);
 
 			if (thisDate > today) {
-				
+
 
 				var dayOfWeekInt = eventDate.getDay();
 				var dayInt = eventDate.getDate();
@@ -713,10 +1062,10 @@ function renderNextEvents(eventList, beach, counter) {
 							\
                             <div class="event-content-wrap">\
                                 <header class="entry-header d-flex flex-wrap align-items-center">\
-                                    <h3 class="entry-title w-100 m-0"><a style="color:red;" href='+ eventUrl + '>' + eventName + '</a></h3>\
+                                    <h3 class="entry-title w-100 m-0"><a style="color:red;" href=' + eventUrl + '>' + eventName + '</a></h3>\
 									\
 									<div class="posted-date">\
-									<p>'+ gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year + '</p>\
+									<p>' + gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year + '</p>\
 									<!--<a href="#">Aug 25, 2018 </a> -->\
                                     </div>\
 									\
@@ -730,11 +1079,11 @@ function renderNextEvents(eventList, beach, counter) {
                                 </div>-->\
 								\
                                 <!-- <div class="entry-footer">\
-                                    <a href='+ eventUrl + '>Read More</a>\
+                                    <a href=' + eventUrl + '>Read More</a>\
                                 </div>-->\
                             </div>\
 						</div>';
-				console.log("Event: " + eventName + " Month: " + months[monthInt] + " DIV: "+htmlEvent);
+				console.log("Event: " + eventName + " Month: " + months[monthInt] + " DIV: " + htmlEvent);
 				counter++;
 				eventDiv.innerHTML += htmlEvent;
 			}
@@ -750,7 +1099,7 @@ function renderFutureTournamentDays(eventList, tournamentName, finalsTournamentN
 	console.log("renderNextEvents");
 	var i;
 	var eventDiv = '';
-	
+
 	for (i = 0; i < eventList.length; i++) {
 
 		var eventName = eventList[i].name;
@@ -763,7 +1112,7 @@ function renderFutureTournamentDays(eventList, tournamentName, finalsTournamentN
 			var thisDate = new Date(eventDate);
 
 			if (thisDate > today) {
-				
+
 				var dayOfWeekInt = eventDate.getDay();
 				var dayInt = eventDate.getDate();
 				var monthInt = eventDate.getMonth();
@@ -771,11 +1120,11 @@ function renderFutureTournamentDays(eventList, tournamentName, finalsTournamentN
 
 				var htmlEvent = '\
 				<li>\
-					<h6 class="font_6" style="font-size:14px; line-height:1.3em; text-align:justify; font-family:open sans,sans-serif;">'
-						+ gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year + 
+					<h6 class="font_6" style="font-size:14px; line-height:1.3em; text-align:justify; font-family:open sans,sans-serif;">' +
+					gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year +
 					'</h6>\
 				</li>';
-				console.log("Event: " + eventName + " Month: " + months[monthInt] + " DIV: "+htmlEvent);
+				console.log("Event: " + eventName + " Month: " + months[monthInt] + " DIV: " + htmlEvent);
 				eventDiv += htmlEvent;
 			}
 		}
@@ -792,8 +1141,8 @@ function renderFutureTournamentsForLeyton(tournamentName, finalsTournamentName) 
 	var september = renderFutureTournamentDays(september_events_leyton, tournamentName, finalsTournamentName);
 
 	var leyton = april + may + june + july + august + september;
-	if(leyton) { //leyton === ""
-	return '\
+	if (leyton) { //leyton === ""
+		return '\
 	<li>\
 		<h6 class="font_6" style="font-size:14px; line-height:1.3em; font-weight:bold;">\
 						SideOut Beach, Leyton\
@@ -813,7 +1162,7 @@ function renderFutureTournamentsForWorthing(tournamentName, finalsTournamentName
 	var september = renderFutureTournamentDays(september_events_worthing, tournamentName, finalsTournamentName);
 
 	var worthing = april + may + june + july + august + september;
-	if(worthing) { //worthing === ""
+	if (worthing) { //worthing === ""
 		return '\
 		<li>\
 			<h6 class="font_6" style="font-size:14px; line-height:1.3em; font-weight:bold;">\
@@ -829,9 +1178,9 @@ function renderFutureTournamentsBothVenues(tournamentName, finalsTournamentName)
 	var leyton = renderFutureTournamentsForLeyton(tournamentName, finalsTournamentName);
 	var worthing = renderFutureTournamentsForWorthing(tournamentName, finalsTournamentName);
 	var both = leyton + worthing;
-	if(both){
-		return '<ul class="font_6" style="font-family:open sans,sans-serif; font-size:14px; text-align:left;">'
-		+ both + '</ul>';
+	if (both) {
+		return '<ul class="font_6" style="font-family:open sans,sans-serif; font-size:14px; text-align:left;">' +
+			both + '</ul>';
 	} else {
 		return '<ul class="font_6" style="font-family:open sans,sans-serif; font-size:14px; text-align:left;"><li><h6 class="font_6" style="font-size:14px; line-height:1.3em;">TBC</h6></li></ul>';
 	}
@@ -840,9 +1189,9 @@ function renderFutureTournamentsBothVenues(tournamentName, finalsTournamentName)
 //run
 var path = window.location.pathname;
 var page = path.split("/").pop();
-console.log( page );
+console.log(page);
 if (page == 'index.html' || page == 'indexc.html') {
-	console.log( "rendering" );
+	console.log("rendering");
 	var counterLeyton = renderNextEvents(april_events_leyton, "Leyton", 0);
 	counterLeyton = renderNextEvents(may_events_leyton, "Leyton", counterLeyton);
 	counterLeyton = renderNextEvents(june_events_leyton, "Leyton", counterLeyton);
@@ -851,7 +1200,7 @@ if (page == 'index.html' || page == 'indexc.html') {
 	counterLeyton = renderNextEvents(september_events_leyton, "Leyton", counterLeyton);
 	counterLeyton = renderNextEvents(october_events_leyton, "Leyton", counterLeyton);
 
-	var counterWorthing = renderNextEvents(april_events_worthing, "Worthing", 0);	
+	var counterWorthing = renderNextEvents(april_events_worthing, "Worthing", 0);
 	counterWorthing = renderNextEvents(may_events_worthing, "Worthing", counterWorthing);
 	counterWorthing = renderNextEvents(june_events_worthing, "Worthing", counterWorthing);
 	counterWorthing = renderNextEvents(july_events_worthing, "Worthing", counterWorthing);
@@ -860,18 +1209,18 @@ if (page == 'index.html' || page == 'indexc.html') {
 	counterWorthing = renderNextEvents(october_events_worthing, "Worthing", counterWorthing);
 }
 //event pages with dateFilter
-if (page == 'calendar-leyton.html' || page == 'calendar-worthing.html'){
-	eventController('display-all',true);
+if (page == 'calendar-leyton.html' || page == 'calendar-worthing.html') {
+	eventController('display-all', true);
 }
 
 
 //tournament dates
-if (page == 'summer-series.html'){
+if (page == 'summer-series.html') {
 	var eventsDiv = document.getElementById('upcomingTournaments');
 	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_SUMMER, "NOTHING_FOR_NOW");
 }
 
-if (page == 'challenger-series.html'){
+if (page == 'challenger-series.html') {
 	var eventsDiv = document.getElementById('upcomingTournaments');
 	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_CHALLENGER, "NOTHING_FOR_NOW");
 }
