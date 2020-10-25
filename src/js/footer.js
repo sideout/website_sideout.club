@@ -37,12 +37,8 @@ function columnUpdates(level) {
       <h2>Important Updates</h2>\
         <ul>\
           <li>\
-              <h3><a href="' + level + 'book-a-court-leyton.html">New Leyton Beach</a></h3>\
-              <div class="posted-date">April 1, 2019</div>\
-          </li>\
-          <li>\
-              <h3><a href="' + level + 'book-a-court-worthing.html">New Worthing Beach</a></h3>\
-              <div class="posted-date">April 1, 2019</div>\
+              <h3><a href="' + level + 'winter.html">Winter at SideOut</a></h3>\
+              <div class="posted-date">October 2020</div>\
           </li>\
       </ul>\
     </div>\
