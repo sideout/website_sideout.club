@@ -16,8 +16,8 @@ var MIXED = "Mixed";
 //TOURNAMENT NAMEs
 var NAME_AYCP = "Winter AYCP";
 var NAME_SIDE_IT_OUT = "SIDE-it-OUT";
-var NAME_AVAILABLE_FOR_HIRE_WORTHING = "Available for court hire"
-var NAME_OPEN_PLAY = "Open Play"
+var NAME_AVAILABLE_FOR_HIRE_WORTHING = "Available for court hire";
+var NAME_OPEN_PLAY = "Open Play";
 var NAME_SPRING = "SideOut Spring Tourney";
 var NAME_SUMMER = "SideOut Summer Series";
 var NAME_ALL_NATIONS = "All Nations";
@@ -28,7 +28,8 @@ var NAME_WILSON = "UKBT Wilson Championships";
 var NAME_WILSON_QUALIFIERS = "UKBT Wilson Qualifiers";
 var NAME_LONDON_FINALS = "SideOut London Finals";
 var NAME_TRAINING = "Training";
-var NAME_END_OF_SEASON_PARTY = "End of Season Party!"
+var NAME_END_OF_SEASON_PARTY = "End of Season Party!";
+var NAME_INDOOR_ON_THE_BEACH = "Indoor on the Beach";
 
 //TOURNAMENT TYPES
 var TYPE_TOURNAMENT = "Tournament";
@@ -39,6 +40,7 @@ var TYPE_TRAINING = "Training";
 var URL_MIX_N_MATCH = "tournaments/mixnmatch.html";
 var URL_KING_QUEEN = "tournaments/king-queen-court.html";
 var URL_AYCP = "all-you-can-play.html";
+var URL_INDOOR_ON_THE_BEACH = "indoor-on-the-beach.html";
 var URL_SIDE_IT_OUT = "tournaments/side-it-out.html";
 var URL_WILSON = "tournaments/ukbt-wilson-championships.html";
 var URL_WILSON_FINALS = "tournaments/ukbt-wilson-championships-finals.html";
@@ -52,13 +54,13 @@ var URL_CEV = "cev-continental-cup.html";
 var URL_CHALLENGER = "tournaments/challenger-series.html";
 var URL_GRAND_PRIX = "tournaments/grand-prix.html";
 var URL_LONDON_FINALS = "london-finals.html";
-var URL_TRAINING_LEYTON = "membership-leyton.html"
-var URL_TRAINING_WORTHING = "membership-worthing.html"
-var URL_POLONIA = "tournaments/poloniasOneMoreBeachTournie.html"
+var URL_TRAINING_LEYTON = "membership-leyton.html";
+var URL_TRAINING_WORTHING = "membership-worthing.html";
+var URL_POLONIA = "tournaments/poloniasOneMoreBeachTournie.html";
 
 //INFO
 // var INFO_OPEN_PLAY = "18:00-22:00, £10 per person (£5 for Club members, FREE with Social, Open Group or Private Group add-on), No need to register"
-var INFO_OPEN_PLAY = "18:00-22:00"
+var INFO_OPEN_PLAY = "18:00-22:00";
 
 //TOURNAMENT COLORS
 var COLOR_AYCP = "#1d29e4";
@@ -499,6 +501,71 @@ var october_events_leyton = [{
 
 ];
 
+var november_events_leyton = [{
+	date: new Date("11/01/2020"),
+	name: NAME_INDOOR_ON_THE_BEACH,
+	type: TYPE_PLAY,
+	info: "free taster session",
+	url: URL_INDOOR_ON_THE_BEACH
+},
+{
+	date: new Date("11/3/2020"),
+	name: NAME_SIDE_IT_OUT,
+	type: TYPE_PLAY,
+	info: "6:30-8:30pm",
+	url: URL_SIDE_IT_OUT
+},
+{
+	date: new Date("11/7/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("11/10/2020"),
+	name: NAME_SIDE_IT_OUT,
+	type: TYPE_PLAY,
+	info: "6:30-8:30pm",
+	url: URL_SIDE_IT_OUT
+},
+{
+	date: new Date("11/14/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("11/17/2020"),
+	name: NAME_SIDE_IT_OUT,
+	type: TYPE_PLAY,
+	info: "6:30-8:30pm",
+	url: URL_SIDE_IT_OUT
+},
+{
+	date: new Date("11/21/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("11/24/2020"),
+	name: NAME_SIDE_IT_OUT,
+	type: TYPE_PLAY,
+	info: "6:30-8:30pm",
+	url: URL_SIDE_IT_OUT
+},
+{
+	date: new Date("11/28/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+}
+];
+
 //WOTHRING
 var april_events_worthing = [
 	// { date: new Date("04/06/2019"), name: "Official Opening. Free play, all day!", type: TYPE_PLAY, info: "", url: "" },
@@ -835,6 +902,37 @@ var october_events_worthing = [{
 
 ];
 
+var november_events_worthing = [
+{
+	date: new Date("11/8/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("11/15/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("11/22/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("11/29/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+}
+];
+
 
 var TABLE_HEADER =
 	'<table>\
@@ -992,6 +1090,7 @@ function eventController(filter, dateFilter) {
 		tables += renderMonthTable("Leyton", august_events_leyton, 'august-table', filter, dateFilter, "August");
 		tables += renderMonthTable("Leyton", september_events_leyton, 'september-table', filter, dateFilter, "September");
 		tables += renderMonthTable("Leyton", october_events_leyton, 'october-table', filter, dateFilter, "October");
+		tables += renderMonthTable("Leyton", november_events_leyton, 'november-table', filter, dateFilter, "November");
 
 		document.getElementById('calendar-tables').innerHTML = tables;
 	} else {
@@ -1003,6 +1102,7 @@ function eventController(filter, dateFilter) {
 		tables += renderMonthTable("Worthing", august_events_worthing, 'august-table', filter, dateFilter, "August");
 		tables += renderMonthTable("Worthing", september_events_worthing, 'september-table', filter, dateFilter, "September");
 		tables += renderMonthTable("Worthing", october_events_worthing, 'october-table', filter, dateFilter, "October");
+		tables += renderMonthTable("Worthing", november_events_worthing, 'november-table', filter, dateFilter, "November");
 
 		document.getElementById('calendar-tables').innerHTML = tables;
 	}
@@ -1199,6 +1299,7 @@ if (page == 'index.html' || page == 'indexc.html') {
 	counterLeyton = renderNextEvents(august_events_leyton, "Leyton", counterLeyton);
 	counterLeyton = renderNextEvents(september_events_leyton, "Leyton", counterLeyton);
 	counterLeyton = renderNextEvents(october_events_leyton, "Leyton", counterLeyton);
+	counterLeyton = renderNextEvents(november_events_leyton, "Leyton", counterLeyton);
 
 	var counterWorthing = renderNextEvents(april_events_worthing, "Worthing", 0);
 	counterWorthing = renderNextEvents(may_events_worthing, "Worthing", counterWorthing);
@@ -1207,6 +1308,7 @@ if (page == 'index.html' || page == 'indexc.html') {
 	counterWorthing = renderNextEvents(august_events_worthing, "Worthing", counterWorthing);
 	counterWorthing = renderNextEvents(september_events_worthing, "Worthing", counterWorthing);
 	counterWorthing = renderNextEvents(october_events_worthing, "Worthing", counterWorthing);
+	counterWorthing = renderNextEvents(november_events_worthing, "Worthing", counterWorthing);
 }
 //event pages with dateFilter
 if (page == 'calendar-leyton.html' || page == 'calendar-worthing.html') {
