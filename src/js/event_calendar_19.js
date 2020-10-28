@@ -211,124 +211,124 @@ var july_events_leyton = [
 ];
 
 var august_events_leyton = [{
-		date: new Date("08/01/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("08/02/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("08/08/2020"),
-		name: NAME_SUMMER,
-		type: TYPE_TOURNAMENT,
-		info: MEN_N_WOMEN,
-		url: URL_SUMMER
-	},
-	{
-		date: new Date("08/08/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("08/09/2020"),
-		name: NAME_CHALLENGER,
-		type: TYPE_TOURNAMENT,
-		info: MEN_N_WOMEN,
-		url: URL_CHALLENGER
-	},
-	{
-		date: new Date("08/09/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("08/15/2020"),
-		name: NAME_WILSON,
-		type: TYPE_TOURNAMENT,
-		info: "WOMEN 4*",
-		url: URL_WILSON
-	},
-	{
-		date: new Date("08/15/2020"),
-		name: NAME_WILSON_QUALIFIERS,
-		type: TYPE_TOURNAMENT,
-		info: "WOMEN 3*",
-		url: URL_WILSON_QUALIFIERS
-	},
-	{
-		date: new Date("08/16/2020"),
-		name: NAME_WILSON,
-		type: TYPE_TOURNAMENT,
-		info: "MEN 4*",
-		url: URL_WILSON
-	},
-	{
-		date: new Date("08/16/2020"),
-		name: NAME_WILSON_QUALIFIERS,
-		type: TYPE_TOURNAMENT,
-		info: "MEN 3*",
-		url: URL_WILSON_QUALIFIERS
-	},
-	{
-		date: new Date("08/22/2020"),
-		name: NAME_WILSON_QUALIFIERS,
-		type: TYPE_TOURNAMENT,
-		info: "WOMEN 3*",
-		url: URL_WILSON_QUALIFIERS
-	},
-	{
-		date: new Date("08/22/2020"),
-		name: NAME_WILSON,
-		type: TYPE_TOURNAMENT,
-		info: "WOMEN 4*",
-		url: URL_WILSON
-	},
-	{
-		date: new Date("08/23/2020"),
-		name: NAME_WILSON_QUALIFIERS,
-		type: TYPE_TOURNAMENT,
-		info: "MEN 3*",
-		url: URL_WILSON_QUALIFIERS
-	},
-	{
-		date: new Date("08/23/2020"),
-		name: NAME_WILSON,
-		type: TYPE_TOURNAMENT,
-		info: "MEN 4*",
-		url: URL_WILSON
-	},
-	{
-		date: new Date("08/29/2020"),
-		name: NAME_SUMMER,
-		type: TYPE_TOURNAMENT,
-		info: "M&W 3*",
-		url: URL_SUMMER
-	},
-	{
-		date: new Date("08/30/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("08/31/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	}
+	date: new Date("08/01/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("08/02/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("08/08/2020"),
+	name: NAME_SUMMER,
+	type: TYPE_TOURNAMENT,
+	info: MEN_N_WOMEN,
+	url: URL_SUMMER
+},
+{
+	date: new Date("08/08/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("08/09/2020"),
+	name: NAME_CHALLENGER,
+	type: TYPE_TOURNAMENT,
+	info: MEN_N_WOMEN,
+	url: URL_CHALLENGER
+},
+{
+	date: new Date("08/09/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("08/15/2020"),
+	name: NAME_WILSON,
+	type: TYPE_TOURNAMENT,
+	info: "WOMEN 4*",
+	url: URL_WILSON
+},
+{
+	date: new Date("08/15/2020"),
+	name: NAME_WILSON_QUALIFIERS,
+	type: TYPE_TOURNAMENT,
+	info: "WOMEN 3*",
+	url: URL_WILSON_QUALIFIERS
+},
+{
+	date: new Date("08/16/2020"),
+	name: NAME_WILSON,
+	type: TYPE_TOURNAMENT,
+	info: "MEN 4*",
+	url: URL_WILSON
+},
+{
+	date: new Date("08/16/2020"),
+	name: NAME_WILSON_QUALIFIERS,
+	type: TYPE_TOURNAMENT,
+	info: "MEN 3*",
+	url: URL_WILSON_QUALIFIERS
+},
+{
+	date: new Date("08/22/2020"),
+	name: NAME_WILSON_QUALIFIERS,
+	type: TYPE_TOURNAMENT,
+	info: "WOMEN 3*",
+	url: URL_WILSON_QUALIFIERS
+},
+{
+	date: new Date("08/22/2020"),
+	name: NAME_WILSON,
+	type: TYPE_TOURNAMENT,
+	info: "WOMEN 4*",
+	url: URL_WILSON
+},
+{
+	date: new Date("08/23/2020"),
+	name: NAME_WILSON_QUALIFIERS,
+	type: TYPE_TOURNAMENT,
+	info: "MEN 3*",
+	url: URL_WILSON_QUALIFIERS
+},
+{
+	date: new Date("08/23/2020"),
+	name: NAME_WILSON,
+	type: TYPE_TOURNAMENT,
+	info: "MEN 4*",
+	url: URL_WILSON
+},
+{
+	date: new Date("08/29/2020"),
+	name: NAME_SUMMER,
+	type: TYPE_TOURNAMENT,
+	info: "M&W 3*",
+	url: URL_SUMMER
+},
+{
+	date: new Date("08/30/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("08/31/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+}
 	// { date: new Date("08/07/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
 	// { date: new Date("08/08/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
 	// { date: new Date("08/09/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
@@ -357,75 +357,75 @@ var august_events_leyton = [{
 ];
 
 var september_events_leyton = [{
-		date: new Date("09/05/2020"),
-		name: NAME_WILSON_QUALIFIERS,
-		type: TYPE_TOURNAMENT,
-		info: "WOMEN 3*",
-		url: URL_WILSON_QUALIFIERS
-	},
-	{
-		date: new Date("09/05/2020"),
-		name: NAME_WILSON,
-		type: TYPE_TOURNAMENT,
-		info: "WOMEN 4*",
-		url: URL_WILSON
-	},
-	{
-		date: new Date("09/06/2020"),
-		name: NAME_WILSON_QUALIFIERS,
-		type: TYPE_TOURNAMENT,
-		info: "MEN 3*",
-		url: URL_WILSON_QUALIFIERS
-	},
-	{
-		date: new Date("09/06/2020"),
-		name: NAME_WILSON,
-		type: TYPE_TOURNAMENT,
-		info: "MEN 4*",
-		url: URL_WILSON
-	},
-	{
-		date: new Date("09/12/2020"),
-		name: "UKBT Wilson Championships Finals (QT)",
-		type: TYPE_TOURNAMENT,
-		info: "M&W 3*",
-		url: URL_WILSON_FINALS
-	},
-	{
-		date: new Date("09/13/2020"),
-		name: "UKBT Wilson Championships Finals (MD)",
-		type: TYPE_TOURNAMENT,
-		info: "M&W 4*",
-		url: URL_WILSON_FINALS
-	},
-	{
-		date: new Date("09/19/2020"),
-		name: NAME_CHALLENGER,
-		type: TYPE_TOURNAMENT,
-		info: "M&W 2*",
-		url: URL_CHALLENGER
-	},
-	{
-		date: new Date("09/20/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("09/26/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("09/27/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	}
+	date: new Date("09/05/2020"),
+	name: NAME_WILSON_QUALIFIERS,
+	type: TYPE_TOURNAMENT,
+	info: "WOMEN 3*",
+	url: URL_WILSON_QUALIFIERS
+},
+{
+	date: new Date("09/05/2020"),
+	name: NAME_WILSON,
+	type: TYPE_TOURNAMENT,
+	info: "WOMEN 4*",
+	url: URL_WILSON
+},
+{
+	date: new Date("09/06/2020"),
+	name: NAME_WILSON_QUALIFIERS,
+	type: TYPE_TOURNAMENT,
+	info: "MEN 3*",
+	url: URL_WILSON_QUALIFIERS
+},
+{
+	date: new Date("09/06/2020"),
+	name: NAME_WILSON,
+	type: TYPE_TOURNAMENT,
+	info: "MEN 4*",
+	url: URL_WILSON
+},
+{
+	date: new Date("09/12/2020"),
+	name: "UKBT Wilson Championships Finals (QT)",
+	type: TYPE_TOURNAMENT,
+	info: "M&W 3*",
+	url: URL_WILSON_FINALS
+},
+{
+	date: new Date("09/13/2020"),
+	name: "UKBT Wilson Championships Finals (MD)",
+	type: TYPE_TOURNAMENT,
+	info: "M&W 4*",
+	url: URL_WILSON_FINALS
+},
+{
+	date: new Date("09/19/2020"),
+	name: NAME_CHALLENGER,
+	type: TYPE_TOURNAMENT,
+	info: "M&W 2*",
+	url: URL_CHALLENGER
+},
+{
+	date: new Date("09/20/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("09/26/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("09/27/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+}
 	// { date: new Date("09/01/2019"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_GRAND_PRIX },
 	// { date: new Date("09/01/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	// { date: new Date("09/07/2019"), name: NAME_LONDON_FINALS, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_LONDON_FINALS },
@@ -443,61 +443,61 @@ var september_events_leyton = [{
 ];
 
 var october_events_leyton = [{
-		date: new Date("10/06/2020"),
-		name: NAME_SIDE_IT_OUT,
-		type: TYPE_PLAY,
-		info: "6:30-8:30pm",
-		url: URL_SIDE_IT_OUT
-	},
-	{
-		date: new Date("10/10/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("10/13/2020"),
-		name: NAME_SIDE_IT_OUT,
-		type: TYPE_PLAY,
-		info: "6:30-8:30pm",
-		url: URL_SIDE_IT_OUT
-	},
-	{
-		date: new Date("10/17/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("10/20/2020"),
-		name: NAME_SIDE_IT_OUT,
-		type: TYPE_PLAY,
-		info: "6:30-8:30pm",
-		url: URL_SIDE_IT_OUT
-	},
-	{
-		date: new Date("10/24/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("10/27/2020"),
-		name: NAME_SIDE_IT_OUT,
-		type: TYPE_PLAY,
-		info: "6:30-8:30pm",
-		url: URL_SIDE_IT_OUT
-	},
-	{
-		date: new Date("10/31/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	}
+	date: new Date("10/06/2020"),
+	name: NAME_SIDE_IT_OUT,
+	type: TYPE_PLAY,
+	info: "6:30-8:30pm",
+	url: URL_SIDE_IT_OUT
+},
+{
+	date: new Date("10/10/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("10/13/2020"),
+	name: NAME_SIDE_IT_OUT,
+	type: TYPE_PLAY,
+	info: "6:30-8:30pm",
+	url: URL_SIDE_IT_OUT
+},
+{
+	date: new Date("10/17/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("10/20/2020"),
+	name: NAME_SIDE_IT_OUT,
+	type: TYPE_PLAY,
+	info: "6:30-8:30pm",
+	url: URL_SIDE_IT_OUT
+},
+{
+	date: new Date("10/24/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("10/27/2020"),
+	name: NAME_SIDE_IT_OUT,
+	type: TYPE_PLAY,
+	info: "6:30-8:30pm",
+	url: URL_SIDE_IT_OUT
+},
+{
+	date: new Date("10/31/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+}
 
 ];
 
@@ -697,82 +697,82 @@ var july_events_worthing = [
 ];
 
 var august_events_worthing = [{
-		date: new Date("08/01/2020"),
-		name: NAME_SUMMER,
-		type: TYPE_TOURNAMENT,
-		info: "M&W 3*",
-		url: URL_SUMMER
-	},
-	{
-		date: new Date("08/02/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("08/08/2020"),
-		name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_HIRE_WORTHING
-	},
-	{
-		date: new Date("08/09/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("08/15/2020"),
-		name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_HIRE_WORTHING
-	},
-	{
-		date: new Date("08/16/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("08/22/2020"),
-		name: NAME_CHALLENGER,
-		type: TYPE_TOURNAMENT,
-		info: "M&W 2*",
-		url: URL_CHALLENGER
-	},
-	{
-		date: new Date("08/23/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("08/29/2020"),
-		name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_HIRE_WORTHING
-	},
-	{
-		date: new Date("08/30/2020"),
-		name: NAME_SUMMER,
-		type: TYPE_TOURNAMENT,
-		info: "M&W 3*",
-		url: URL_SUMMER
-	},
-	{
-		date: new Date("08/31/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	}
+	date: new Date("08/01/2020"),
+	name: NAME_SUMMER,
+	type: TYPE_TOURNAMENT,
+	info: "M&W 3*",
+	url: URL_SUMMER
+},
+{
+	date: new Date("08/02/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("08/08/2020"),
+	name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_HIRE_WORTHING
+},
+{
+	date: new Date("08/09/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("08/15/2020"),
+	name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_HIRE_WORTHING
+},
+{
+	date: new Date("08/16/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("08/22/2020"),
+	name: NAME_CHALLENGER,
+	type: TYPE_TOURNAMENT,
+	info: "M&W 2*",
+	url: URL_CHALLENGER
+},
+{
+	date: new Date("08/23/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("08/29/2020"),
+	name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_HIRE_WORTHING
+},
+{
+	date: new Date("08/30/2020"),
+	name: NAME_SUMMER,
+	type: TYPE_TOURNAMENT,
+	info: "M&W 3*",
+	url: URL_SUMMER
+},
+{
+	date: new Date("08/31/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+}
 	// { date: new Date("08/03/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	// { date: new Date("08/04/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	// { date: new Date("08/05/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
@@ -805,61 +805,61 @@ var august_events_worthing = [{
 ];
 
 var september_events_worthing = [{
-		date: new Date("09/05/2020"),
-		name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_HIRE_WORTHING
-	},
-	{
-		date: new Date("09/06/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("09/12/2020"),
-		name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_HIRE_WORTHING
-	},
-	{
-		date: new Date("09/13/2020"),
-		name: NAME_CHALLENGER,
-		type: TYPE_TOURNAMENT,
-		info: "M&W 2*",
-		url: URL_CHALLENGER
-	},
-	{
-		date: new Date("09/19/2020"),
-		name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_HIRE_WORTHING
-	},
-	{
-		date: new Date("09/20/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("09/26/2020"),
-		name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_HIRE_WORTHING
-	},
-	{
-		date: new Date("09/27/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	}
+	date: new Date("09/05/2020"),
+	name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_HIRE_WORTHING
+},
+{
+	date: new Date("09/06/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("09/12/2020"),
+	name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_HIRE_WORTHING
+},
+{
+	date: new Date("09/13/2020"),
+	name: NAME_CHALLENGER,
+	type: TYPE_TOURNAMENT,
+	info: "M&W 2*",
+	url: URL_CHALLENGER
+},
+{
+	date: new Date("09/19/2020"),
+	name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_HIRE_WORTHING
+},
+{
+	date: new Date("09/20/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("09/26/2020"),
+	name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_HIRE_WORTHING
+},
+{
+	date: new Date("09/27/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+}
 	// { date: new Date("09/01/2019"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: "Men", url: "" },
 	// { date: new Date("09/07/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	// { date: new Date("09/08/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
@@ -872,65 +872,72 @@ var september_events_worthing = [{
 ];
 
 var october_events_worthing = [{
-		date: new Date("10/04/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("10/11/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("10/18/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("10/25/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	}
-
-];
-
-var november_events_worthing = [
-{
-	date: new Date("11/8/2020"),
+	date: new Date("10/04/2020"),
 	name: NAME_AYCP,
 	type: TYPE_PLAY,
 	info: "",
 	url: URL_AYCP
 },
 {
-	date: new Date("11/15/2020"),
+	date: new Date("10/11/2020"),
 	name: NAME_AYCP,
 	type: TYPE_PLAY,
 	info: "",
 	url: URL_AYCP
 },
 {
-	date: new Date("11/22/2020"),
+	date: new Date("10/18/2020"),
 	name: NAME_AYCP,
 	type: TYPE_PLAY,
 	info: "",
 	url: URL_AYCP
 },
 {
-	date: new Date("11/29/2020"),
+	date: new Date("10/25/2020"),
 	name: NAME_AYCP,
 	type: TYPE_PLAY,
 	info: "",
 	url: URL_AYCP
 }
+
+];
+
+var november_events_worthing = [
+	{
+		date: new Date("11/1/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("11/8/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("11/15/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("11/22/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("11/29/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	}
 ];
 
 
