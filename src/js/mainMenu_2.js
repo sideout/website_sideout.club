@@ -27,9 +27,9 @@ const PART2 =
 function renderMenu(filter, level) {
 
   console.log(navigator.userAgent);
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     console.log("mobile_view:ON");
-   }
+  }
 
   var index = '<li><a href="' + level + 'index.html">Home</a></li>';
   var winter = '<li><a href="' + level + 'winter.html">Winter at SideOut</a></li>';
@@ -38,7 +38,7 @@ function renderMenu(filter, level) {
   var calendar = '<li><a href="' + level + 'calendar-leyton.html">Events Calendar</a></li>';
   var tournaments = '<li><a href="' + level + 'tournaments.html">Tournaments</a></li>';
   var camps = '<li><a href="' + level + 'camps-and-clinics.html">Camps & Clinics</a></li>';
-  var team = '<li><a href="' + level + 'meet-the-team.html">Meet the Team</a></li>';
+  // var team = '<li><a href="' + level + 'meet-the-team.html">Meet the Team</a></li>';
   var shop = '<li><a href="' + level + 'shop.html">Online Store</a></li>';
 
   switch (filter) {
@@ -59,21 +59,21 @@ function renderMenu(filter, level) {
       calendar = '<li class="current-menu-item"><a href="' + level + 'events-calendar.html">Events Calendar</a></li>';
       break;
     case "tournaments":
-    tournaments = '<li class="current-menu-item"><a href="' + level + 'tournaments.html">Tournaments</a></li>';
+      tournaments = '<li class="current-menu-item"><a href="' + level + 'tournaments.html">Tournaments</a></li>';
       break;
     case "camps":
       camps = '<li class="current-menu-item"><a href="' + level + 'camps-and-clinics.html">Camps & Clinics</a></li>';
       break;
-    case "team":
-      team = '<li class="current-menu-item"><a href="' + level + 'meet-the-team.html">Meet the Team</a></li>';
-      break;
+    // case "team":
+    //   team = '<li class="current-menu-item"><a href="' + level + 'meet-the-team.html">Meet the Team</a></li>';
+    //   break;
     case "shop":
       shop = '<li class="current-menu-item"><a href="' + level + 'shop.html">Online Store</a></li>';
       break;
     default:
     // buttonAll = "btn gradient-bg";
   }
-  var links = index + winter + membership + bookCourt + calendar + tournaments +  team + shop;
+  var links = index + winter + membership + bookCourt + calendar + tournaments + shop;
 
   //console.log(partOne(level));
   var menu = document.getElementById('mainMenu');

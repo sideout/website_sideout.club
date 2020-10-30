@@ -17,12 +17,14 @@ function columnLinks(level) {
   return '<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">\
     <h2>Useful Links</h2>\
     <ul>\
+      <li><a href="' + level + 'winter.html">Winter at SideOut</a></li>\
       <li><a href="' + level + 'membership.html">Membership</a></li>\
       <li><a href="' + level + 'book-a-court-leyton.html">Book a court</a></li>\
       <li><a href="' + level + 'calendar-leyton.html">Events Calendar</a></li>\
       <li><a href="' + level + 'tournaments.html">Tournaments</a></li>\
       <li><a href="' + level + 'camps-and-clinics.html">Camps & Clinics</a></li>\
       <li><a href="' + level + 'meet-the-team.html">Meet the Team</a></li>\
+      <li><a href="' + level + 'shop.html">Online Store</a></li>\
     </ul>\
     <ul>\
       <li><a href="club-history.html">Club History</a></li>\
