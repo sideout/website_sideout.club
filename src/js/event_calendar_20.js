@@ -516,6 +516,13 @@ var november_events_leyton = [{
 	url: URL_SIDE_IT_OUT
 },
 {
+	date: new Date("11/4/2020"),
+	name: NAME_SIDE_IT_OUT,
+	type: TYPE_PLAY,
+	info: "6:30-8:30pm",
+	url: URL_SIDE_IT_OUT
+},
+{
 	date: new Date("11/7/2020"),
 	name: NAME_AYCP,
 	type: TYPE_PLAY,
@@ -911,6 +918,13 @@ var november_events_worthing = [
 		url: URL_AYCP
 	},
 	{
+		date: new Date("11/4/2020"),
+		name: "Open Play",
+		type: TYPE_PLAY,
+		info: "5:30-8:30pm",
+		url: ""
+	},
+	{
 		date: new Date("11/8/2020"),
 		name: NAME_AYCP,
 		type: TYPE_PLAY,
@@ -1028,15 +1042,21 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 				}
 
 				text += "<tr class=\"row100 body\">\
-      			<td class=\"cell100 column1X\">" + gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year + "</td>\
-      			<td class=\"cell100 columnX\"><a style=\"color:" + color + "\" href=" + eventUrl + ">" + eventName + "</a></td>\
+      			<td class=\"cell100 column1X\">" + gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year + "</td>";
+				 
+				 if(eventUrl !== "") {
+					text += "<td class=\"cell100 columnX\"><a style=\"color:" + color + "\" href=" + eventUrl + ">" + eventName + "</a></td>";
+				 } else {
+					text += "<td class=\"cell100 columnX\">" + eventName + "</td>";
+				 }
+				  text += "\
       			<td class=\"cell100 columnX\">" + eventType + "</td>\
       			<td class=\"cell100 columnX\">" + eventInfo + "</td></tr>";
 				//console.log(text);
 			}
 		}
 	}
-	console.log("has events?" + hasThisMonthEvents);
+	//console.log("has events?" + hasThisMonthEvents);
 
 	var tableContent = "";
 	if (hasThisMonthEvents) {
@@ -1168,10 +1188,17 @@ function renderNextEvents(eventList, beach, counter) {
                             </figure> -->\
 							\
                             <div class="event-content-wrap">\
-                                <header class="entry-header d-flex flex-wrap align-items-center">\
-                                    <h3 class="entry-title w-100 m-0"><a style="color:red;" href=' + eventUrl + '>' + eventName + '</a></h3>\
-									\
-									<div class="posted-date">\
+								<header class="entry-header d-flex flex-wrap align-items-center">';
+								
+								if( eventUrl !== ""){
+									htmlEvent += '<h3 class="entry-title w-100 m-0"><a style="color:red;" href=' + eventUrl + '>' + eventName + '</a></h3>';
+								} else {
+									htmlEvent += '<h3 class="entry-title w-100 m-0"><p style="font-size: 18px;font-weight: 600;">' + eventName + '</p></h3>';
+								}
+
+                                    // <h3 class="entry-title w-100 m-0"><a style="color:red;" href=' + eventUrl + '>' + eventName + '</a></h3>\
+									// \
+									htmlEvent += '	<div class="posted-date">\
 									<p>' + gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year + '</p>\
 									<!--<a href="#">Aug 25, 2018 </a> -->\
                                     </div>\
