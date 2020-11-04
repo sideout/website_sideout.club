@@ -521,56 +521,56 @@ var november_events_leyton = [{
 	type: TYPE_PLAY,
 	info: "6:30-8:30pm",
 	url: URL_SIDE_IT_OUT
-},
-{
-	date: new Date("11/7/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("11/10/2020"),
-	name: NAME_SIDE_IT_OUT,
-	type: TYPE_PLAY,
-	info: "6:30-8:30pm",
-	url: URL_SIDE_IT_OUT
-},
-{
-	date: new Date("11/14/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("11/17/2020"),
-	name: NAME_SIDE_IT_OUT,
-	type: TYPE_PLAY,
-	info: "6:30-8:30pm",
-	url: URL_SIDE_IT_OUT
-},
-{
-	date: new Date("11/21/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("11/24/2020"),
-	name: NAME_SIDE_IT_OUT,
-	type: TYPE_PLAY,
-	info: "6:30-8:30pm",
-	url: URL_SIDE_IT_OUT
-},
-{
-	date: new Date("11/28/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
 }
+// {
+// 	date: new Date("11/7/2020"),
+// 	name: NAME_AYCP,
+// 	type: TYPE_PLAY,
+// 	info: "",
+// 	url: URL_AYCP
+// },
+// {
+// 	date: new Date("11/10/2020"),
+// 	name: NAME_SIDE_IT_OUT,
+// 	type: TYPE_PLAY,
+// 	info: "6:30-8:30pm",
+// 	url: URL_SIDE_IT_OUT
+// },
+// {
+// 	date: new Date("11/14/2020"),
+// 	name: NAME_AYCP,
+// 	type: TYPE_PLAY,
+// 	info: "",
+// 	url: URL_AYCP
+// },
+// {
+// 	date: new Date("11/17/2020"),
+// 	name: NAME_SIDE_IT_OUT,
+// 	type: TYPE_PLAY,
+// 	info: "6:30-8:30pm",
+// 	url: URL_SIDE_IT_OUT
+// },
+// {
+// 	date: new Date("11/21/2020"),
+// 	name: NAME_AYCP,
+// 	type: TYPE_PLAY,
+// 	info: "",
+// 	url: URL_AYCP
+// },
+// {
+// 	date: new Date("11/24/2020"),
+// 	name: NAME_SIDE_IT_OUT,
+// 	type: TYPE_PLAY,
+// 	info: "6:30-8:30pm",
+// 	url: URL_SIDE_IT_OUT
+// },
+// {
+// 	date: new Date("11/28/2020"),
+// 	name: NAME_AYCP,
+// 	type: TYPE_PLAY,
+// 	info: "",
+// 	url: URL_AYCP
+// }
 ];
 
 //WOTHRING
@@ -923,35 +923,35 @@ var november_events_worthing = [
 		type: TYPE_PLAY,
 		info: "5:30-8:30pm",
 		url: ""
-	},
-	{
-		date: new Date("11/8/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("11/15/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("11/22/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("11/29/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
 	}
+	// {
+	// 	date: new Date("11/8/2020"),
+	// 	name: NAME_AYCP,
+	// 	type: TYPE_PLAY,
+	// 	info: "",
+	// 	url: URL_AYCP
+	// },
+	// {
+	// 	date: new Date("11/15/2020"),
+	// 	name: NAME_AYCP,
+	// 	type: TYPE_PLAY,
+	// 	info: "",
+	// 	url: URL_AYCP
+	// },
+	// {
+	// 	date: new Date("11/22/2020"),
+	// 	name: NAME_AYCP,
+	// 	type: TYPE_PLAY,
+	// 	info: "",
+	// 	url: URL_AYCP
+	// },
+	// {
+	// 	date: new Date("11/29/2020"),
+	// 	name: NAME_AYCP,
+	// 	type: TYPE_PLAY,
+	// 	info: "",
+	// 	url: URL_AYCP
+	// }
 ];
 
 
@@ -1173,7 +1173,7 @@ function renderNextEvents(eventList, beach, counter) {
 
 			var thisDate = new Date(eventDate);
 
-			if (thisDate > today) {
+			if (thisDate.setHours(0, 0, 0, 0) >= today.setHours(0, 0, 0, 0)) {
 
 
 				var dayOfWeekInt = eventDate.getDay();
