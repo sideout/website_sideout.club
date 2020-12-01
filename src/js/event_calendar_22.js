@@ -522,55 +522,120 @@ var november_events_leyton = [{
 	info: "6:30-8:30pm",
 	url: URL_SIDE_IT_OUT
 }
-// {
-// 	date: new Date("11/7/2020"),
-// 	name: NAME_AYCP,
-// 	type: TYPE_PLAY,
-// 	info: "",
-// 	url: URL_AYCP
-// },
-// {
-// 	date: new Date("11/10/2020"),
-// 	name: NAME_SIDE_IT_OUT,
-// 	type: TYPE_PLAY,
-// 	info: "6:30-8:30pm",
-// 	url: URL_SIDE_IT_OUT
-// },
-// {
-// 	date: new Date("11/14/2020"),
-// 	name: NAME_AYCP,
-// 	type: TYPE_PLAY,
-// 	info: "",
-// 	url: URL_AYCP
-// },
-// {
-// 	date: new Date("11/17/2020"),
-// 	name: NAME_SIDE_IT_OUT,
-// 	type: TYPE_PLAY,
-// 	info: "6:30-8:30pm",
-// 	url: URL_SIDE_IT_OUT
-// },
-// {
-// 	date: new Date("11/21/2020"),
-// 	name: NAME_AYCP,
-// 	type: TYPE_PLAY,
-// 	info: "",
-// 	url: URL_AYCP
-// },
-// {
-// 	date: new Date("11/24/2020"),
-// 	name: NAME_SIDE_IT_OUT,
-// 	type: TYPE_PLAY,
-// 	info: "6:30-8:30pm",
-// 	url: URL_SIDE_IT_OUT
-// },
-// {
-// 	date: new Date("11/28/2020"),
-// 	name: NAME_AYCP,
-// 	type: TYPE_PLAY,
-// 	info: "",
-// 	url: URL_AYCP
-// }
+	// {
+	// 	date: new Date("11/7/2020"),
+	// 	name: NAME_AYCP,
+	// 	type: TYPE_PLAY,
+	// 	info: "",
+	// 	url: URL_AYCP
+	// },
+	// {
+	// 	date: new Date("11/10/2020"),
+	// 	name: NAME_SIDE_IT_OUT,
+	// 	type: TYPE_PLAY,
+	// 	info: "6:30-8:30pm",
+	// 	url: URL_SIDE_IT_OUT
+	// },
+	// {
+	// 	date: new Date("11/14/2020"),
+	// 	name: NAME_AYCP,
+	// 	type: TYPE_PLAY,
+	// 	info: "",
+	// 	url: URL_AYCP
+	// },
+	// {
+	// 	date: new Date("11/17/2020"),
+	// 	name: NAME_SIDE_IT_OUT,
+	// 	type: TYPE_PLAY,
+	// 	info: "6:30-8:30pm",
+	// 	url: URL_SIDE_IT_OUT
+	// },
+	// {
+	// 	date: new Date("11/21/2020"),
+	// 	name: NAME_AYCP,
+	// 	type: TYPE_PLAY,
+	// 	info: "",
+	// 	url: URL_AYCP
+	// },
+	// {
+	// 	date: new Date("11/24/2020"),
+	// 	name: NAME_SIDE_IT_OUT,
+	// 	type: TYPE_PLAY,
+	// 	info: "6:30-8:30pm",
+	// 	url: URL_SIDE_IT_OUT
+	// },
+	// {
+	// 	date: new Date("11/28/2020"),
+	// 	name: NAME_AYCP,
+	// 	type: TYPE_PLAY,
+	// 	info: "",
+	// 	url: URL_AYCP
+	// }
+];
+
+var december_events_leyton = [{
+	date: new Date("12/02/2020"),
+	name: NAME_SIDE_IT_OUT,
+	type: TYPE_PLAY,
+	info: "6:30-8:30pm",
+	url: URL_INDOOR_ON_THE_BEACH
+},
+{
+	date: new Date("12/05/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("12/08/2020"),
+	name: NAME_SIDE_IT_OUT,
+	type: TYPE_PLAY,
+	info: "6:30-8:30pm",
+	url: URL_INDOOR_ON_THE_BEACH
+},
+{
+	date: new Date("12/12/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("12/15/2020"),
+	name: NAME_SIDE_IT_OUT,
+	type: TYPE_PLAY,
+	info: "6:30-8:30pm",
+	url: URL_INDOOR_ON_THE_BEACH
+},
+{
+	date: new Date("12/19/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("12/22/2020"),
+	name: NAME_SIDE_IT_OUT,
+	type: TYPE_PLAY,
+	info: "6:30-8:30pm",
+	url: URL_INDOOR_ON_THE_BEACH
+},
+{
+	date: new Date("12/26/2020"),
+	name: NAME_AYCP,
+	type: TYPE_PLAY,
+	info: "",
+	url: URL_AYCP
+},
+{
+	date: new Date("12/29/2020"),
+	name: NAME_SIDE_IT_OUT,
+	type: TYPE_PLAY,
+	info: "6:30-8:30pm",
+	url: URL_INDOOR_ON_THE_BEACH
+}
 ];
 
 //WOTHRING
@@ -954,6 +1019,37 @@ var november_events_worthing = [
 	// }
 ];
 
+var december_events_worthing = [
+	{
+		date: new Date("12/06/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("12/13/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("12/20/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	},
+	{
+		date: new Date("12/27/2020"),
+		name: NAME_AYCP,
+		type: TYPE_PLAY,
+		info: "",
+		url: URL_AYCP
+	}
+];
+
 
 var TABLE_HEADER =
 	'<table>\
@@ -1043,13 +1139,13 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 
 				text += "<tr class=\"row100 body\">\
       			<td class=\"cell100 column1X\">" + gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year + "</td>";
-				 
-				 if(eventUrl !== "") {
+
+				if (eventUrl !== "") {
 					text += "<td class=\"cell100 columnX\"><a style=\"color:" + color + "\" href=" + eventUrl + ">" + eventName + "</a></td>";
-				 } else {
+				} else {
 					text += "<td class=\"cell100 columnX\">" + eventName + "</td>";
-				 }
-				  text += "\
+				}
+				text += "\
       			<td class=\"cell100 columnX\">" + eventType + "</td>\
       			<td class=\"cell100 columnX\">" + eventInfo + "</td></tr>";
 				//console.log(text);
@@ -1118,6 +1214,7 @@ function eventController(filter, dateFilter) {
 		tables += renderMonthTable("Leyton", september_events_leyton, 'september-table', filter, dateFilter, "September");
 		tables += renderMonthTable("Leyton", october_events_leyton, 'october-table', filter, dateFilter, "October");
 		tables += renderMonthTable("Leyton", november_events_leyton, 'november-table', filter, dateFilter, "November");
+		tables += renderMonthTable("Leyton", december_events_leyton, 'december-table', filter, dateFilter, "December");
 
 		document.getElementById('calendar-tables').innerHTML = tables;
 	} else {
@@ -1130,6 +1227,7 @@ function eventController(filter, dateFilter) {
 		tables += renderMonthTable("Worthing", september_events_worthing, 'september-table', filter, dateFilter, "September");
 		tables += renderMonthTable("Worthing", october_events_worthing, 'october-table', filter, dateFilter, "October");
 		tables += renderMonthTable("Worthing", november_events_worthing, 'november-table', filter, dateFilter, "November");
+		tables += renderMonthTable("Worthing", december_events_worthing, 'december-table', filter, dateFilter, "December");
 
 		document.getElementById('calendar-tables').innerHTML = tables;
 	}
@@ -1189,16 +1287,16 @@ function renderNextEvents(eventList, beach, counter) {
 							\
                             <div class="event-content-wrap">\
 								<header class="entry-header d-flex flex-wrap align-items-center">';
-								
-								if( eventUrl !== ""){
-									htmlEvent += '<h3 class="entry-title w-100 m-0"><a style="color:red;" href=' + eventUrl + '>' + eventName + '</a></h3>';
-								} else {
-									htmlEvent += '<h3 class="entry-title w-100 m-0"><p style="font-size: 18px;font-weight: 600;">' + eventName + '</p></h3>';
-								}
 
-                                    // <h3 class="entry-title w-100 m-0"><a style="color:red;" href=' + eventUrl + '>' + eventName + '</a></h3>\
-									// \
-									htmlEvent += '	<div class="posted-date">\
+				if (eventUrl !== "") {
+					htmlEvent += '<h3 class="entry-title w-100 m-0"><a style="color:red;" href=' + eventUrl + '>' + eventName + '</a></h3>';
+				} else {
+					htmlEvent += '<h3 class="entry-title w-100 m-0"><p style="font-size: 18px;font-weight: 600;">' + eventName + '</p></h3>';
+				}
+
+				// <h3 class="entry-title w-100 m-0"><a style="color:red;" href=' + eventUrl + '>' + eventName + '</a></h3>\
+				// \
+				htmlEvent += '	<div class="posted-date">\
 									<p>' + gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year + '</p>\
 									<!--<a href="#">Aug 25, 2018 </a> -->\
                                     </div>\
@@ -1334,6 +1432,7 @@ if (page == 'index.html' || page == 'indexc.html') {
 	counterLeyton = renderNextEvents(september_events_leyton, "Leyton", counterLeyton);
 	counterLeyton = renderNextEvents(october_events_leyton, "Leyton", counterLeyton);
 	counterLeyton = renderNextEvents(november_events_leyton, "Leyton", counterLeyton);
+	counterLeyton = renderNextEvents(december_events_leyton, "Leyton", counterLeyton);
 
 	var counterWorthing = renderNextEvents(april_events_worthing, "Worthing", 0);
 	counterWorthing = renderNextEvents(may_events_worthing, "Worthing", counterWorthing);
@@ -1343,6 +1442,7 @@ if (page == 'index.html' || page == 'indexc.html') {
 	counterWorthing = renderNextEvents(september_events_worthing, "Worthing", counterWorthing);
 	counterWorthing = renderNextEvents(october_events_worthing, "Worthing", counterWorthing);
 	counterWorthing = renderNextEvents(november_events_worthing, "Worthing", counterWorthing);
+	counterWorthing = renderNextEvents(december_events_worthing, "Worthing", counterWorthing);
 }
 //event pages with dateFilter
 if (page == 'calendar-leyton.html' || page == 'calendar-worthing.html') {
