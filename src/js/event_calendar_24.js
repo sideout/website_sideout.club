@@ -573,69 +573,70 @@ var november_events_leyton = [{
 	// }
 ];
 
-var december_events_leyton = [{
-	date: new Date("12/02/2020"),
-	name: NAME_SIDE_IT_OUT,
-	type: TYPE_PLAY,
-	info: "6:30-8:30pm",
-	url: URL_SIDE_IT_OUT
-},
-{
-	date: new Date("12/05/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "11:00am-4:00pm",
-	url: URL_AYCP
-},
-{
-	date: new Date("12/08/2020"),
-	name: NAME_SIDE_IT_OUT,
-	type: TYPE_PLAY,
-	info: "6:30-8:30pm",
-	url: URL_SIDE_IT_OUT
-},
-{
-	date: new Date("12/12/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "11:00am-4:00pm",
-	url: URL_AYCP
-},
-{
-	date: new Date("12/15/2020"),
-	name: NAME_SIDE_IT_OUT,
-	type: TYPE_PLAY,
-	info: "6:30-8:30pm",
-	url: URL_SIDE_IT_OUT
-},
-{
-	date: new Date("12/19/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "11:00am-4:00pm",
-	url: URL_AYCP
-},
-{
-	date: new Date("12/22/2020"),
-	name: NAME_SIDE_IT_OUT,
-	type: TYPE_PLAY,
-	info: "6:30-8:30pm",
-	url: URL_SIDE_IT_OUT
-},
-{
-	date: new Date("12/26/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "11:00am-4:00pm",
-	url: URL_AYCP
-},
-{
-	date: new Date("12/29/2020"),
-	name: NAME_SIDE_IT_OUT,
-	type: TYPE_PLAY,
-	info: "6:30-8:30pm",
-	url: URL_SIDE_IT_OUT
-}
+var december_events_leyton = [
+// 	{
+// 	date: new Date("12/02/2020"),
+// 	name: NAME_SIDE_IT_OUT,
+// 	type: TYPE_PLAY,
+// 	info: "6:30-8:30pm",
+// 	url: URL_SIDE_IT_OUT
+// },
+// {
+// 	date: new Date("12/05/2020"),
+// 	name: NAME_AYCP,
+// 	type: TYPE_PLAY,
+// 	info: "11:00am-4:00pm",
+// 	url: URL_AYCP
+// },
+// {
+// 	date: new Date("12/08/2020"),
+// 	name: NAME_SIDE_IT_OUT,
+// 	type: TYPE_PLAY,
+// 	info: "6:30-8:30pm",
+// 	url: URL_SIDE_IT_OUT
+// },
+// {
+// 	date: new Date("12/12/2020"),
+// 	name: NAME_AYCP,
+// 	type: TYPE_PLAY,
+// 	info: "11:00am-4:00pm",
+// 	url: URL_AYCP
+// },
+// {
+// 	date: new Date("12/15/2020"),
+// 	name: NAME_SIDE_IT_OUT,
+// 	type: TYPE_PLAY,
+// 	info: "6:30-8:30pm",
+// 	url: URL_SIDE_IT_OUT
+// },
+// {
+// 	date: new Date("12/19/2020"),
+// 	name: NAME_AYCP,
+// 	type: TYPE_PLAY,
+// 	info: "11:00am-4:00pm",
+// 	url: URL_AYCP
+// },
+// {
+// 	date: new Date("12/22/2020"),
+// 	name: NAME_SIDE_IT_OUT,
+// 	type: TYPE_PLAY,
+// 	info: "6:30-8:30pm",
+// 	url: URL_SIDE_IT_OUT
+// },
+// {
+// 	date: new Date("12/26/2020"),
+// 	name: NAME_AYCP,
+// 	type: TYPE_PLAY,
+// 	info: "11:00am-4:00pm",
+// 	url: URL_AYCP
+// },
+// {
+// 	date: new Date("12/29/2020"),
+// 	name: NAME_SIDE_IT_OUT,
+// 	type: TYPE_PLAY,
+// 	info: "6:30-8:30pm",
+// 	url: URL_SIDE_IT_OUT
+// }
 ];
 
 //WOTHRING
