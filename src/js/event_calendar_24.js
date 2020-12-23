@@ -1041,13 +1041,6 @@ var december_events_worthing = [
 		type: TYPE_PLAY,
 		info: "11:00am-4:00pm",
 		url: URL_AYCP
-	},
-	{
-		date: new Date("12/27/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "11:00am-4:00pm",
-		url: URL_AYCP
 	}
 ];
 
