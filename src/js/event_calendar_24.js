@@ -1421,8 +1421,11 @@ function renderFutureTournamentsBothVenues(tournamentName, finalsTournamentName)
 
 //run
 var path = window.location.pathname;
+var fullpath = window.location;
+
 var page = path.split("/").pop();
 console.log("page:" + page);
+console.log("fullpath:" + fullpath);
 if (page == 'index.html' || page == 'indexc.html' || page == '') {
 	console.log("rendering");
 	var counterLeyton = renderNextEvents(april_events_leyton, "Leyton", 0);
