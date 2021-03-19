@@ -73,7 +73,7 @@ function renderMenu(filter, level) {
     default:
     // buttonAll = "btn gradient-bg";
   }
-  var links = index + winter + membership + bookCourt + calendar + tournaments + shop;
+  var links = index + membership + bookCourt + calendar + tournaments + shop;
 
   //console.log(partOne(level));
   var menu = document.getElementById('mainMenu');
