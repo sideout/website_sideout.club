@@ -18,7 +18,7 @@ function columnLinks(level) {
     <h2>Useful Links</h2>\
     <ul>\
       <li><a href="' + level + 'winter.html">Winter at SideOut</a></li>\
-      <li><a href="' + level + 'membership.html">Membership</a></li>\
+      <li><a href="' + level + 'membership-coming-soon.html">Membership</a></li>\
       <li><a href="' + level + 'book-a-court-leyton.html">Book a court</a></li>\
       <li><a href="' + level + 'calendar-leyton.html">Events Calendar</a></li>\
       <li><a href="' + level + 'tournaments.html">Tournaments</a></li>\

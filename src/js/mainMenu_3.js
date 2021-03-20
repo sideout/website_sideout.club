@@ -33,7 +33,7 @@ function renderMenu(filter, level) {
 
   var index = '<li><a href="' + level + 'index.html">Home</a></li>';
   var winter = '<li><a href="' + level + 'winter.html">Winter at SideOut</a></li>';
-  var membership = '<li><a href="' + level + 'membership.html">Membership</a></li>';
+  var membership = '<li><a href="' + level + 'membership-coming-soon.html">Membership</a></li>';
   var bookCourt = '<li><a href="' + level + 'book-a-court-leyton.html">Book a court</a></li>';
   var calendar = '<li><a href="' + level + 'calendar-leyton.html">Events Calendar</a></li>';
   var tournaments = '<li><a href="' + level + 'tournaments.html">Tournaments</a></li>';
@@ -50,7 +50,7 @@ function renderMenu(filter, level) {
       break;
     case "membership":
       // membership = '<li class="current-menu-item"><a href="' + level + 'membership-leyton.html">Membership</a></li>';
-      membership = '<li class="current-menu-item"><a href="' + level + 'membership.html">Membership</a></li>';
+      membership = '<li class="current-menu-item"><a href="' + level + 'membership-coming-soon.html">Membership</a></li>';
       break;
     case "bookCourt":
       bookCourt = '<li class="current-menu-item"><a href="' + level + 'book-a-court-leyton.html">Book a court</a></li>';
