@@ -56,7 +56,7 @@ function renderMenu(filter, level) {
       bookCourt = '<li class="current-menu-item"><a href="' + level + 'book-a-court-leyton.html">Book a court</a></li>';
       break;
     case "calendar":
-      calendar = '<li class="current-menu-item"><a href="' + level + 'events-calendar.html">Events Calendar</a></li>';
+      calendar = '<li class="current-menu-item"><a href="' + level + 'calendar-leyton.html">Events Calendar</a></li>';
       break;
     case "tournaments":
       tournaments = '<li class="current-menu-item"><a href="' + level + 'tournaments.html">Tournaments</a></li>';

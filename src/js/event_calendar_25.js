@@ -1067,7 +1067,7 @@ var TABLE_HEADER =
 function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, monthName) {
 	//console.log(eventList);
 	var i;
-	var text = "";
+	var tableEventContent = "";
 	var hasThisMonthEvents = false;
 
 	for (i = 0; i < eventList.length; i++) {
@@ -1138,15 +1138,15 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 						color = COLOR_DEFAULT;
 				}
 
-				text += "<tr class=\"row100 body\">\
+				tableEventContent += "<tr class=\"row100 body\">\
       			<td class=\"cell100 column1X\">" + gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year + "</td>";
 
 				if (eventUrl !== "") {
-					text += "<td class=\"cell100 columnX\"><a style=\"color:" + color + "\" href=" + eventUrl + ">" + eventName + "</a></td>";
+					tableEventContent += "<td class=\"cell100 columnX\"><a style=\"color:" + color + "\" href=" + eventUrl + ">" + eventName + "</a></td>";
 				} else {
-					text += "<td class=\"cell100 columnX\">" + eventName + "</td>";
+					tableEventContent += "<td class=\"cell100 columnX\">" + eventName + "</td>";
 				}
-				text += "\
+				tableEventContent += "\
       			<td class=\"cell100 columnX\">" + eventType + "</td>\
       			<td class=\"cell100 columnX\">" + eventInfo + "</td></tr>";
 				//console.log(text);
@@ -1160,7 +1160,7 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 		tableContent = "<h2 class=\"entry-title\">" + monthName + " in " + beachName + " Beach</h2>\
 		<div class=\"table100 ver2 m-b-20\">\
 			<div class=\"table100-head\">" + TABLE_HEADER + "</div>\
-			<div class=\"table100-body\">" + "<table><tbody>" + text + "</tbody></table>\
+			<div class=\"table100-body\">" + "<table><tbody>" + tableEventContent + "</tbody></table>\
 			</div>\
 		</div>"
 
@@ -1217,6 +1217,9 @@ function eventController(filter, dateFilter) {
 		tables += renderMonthTable("Leyton", november_events_leyton, 'november-table', filter, dateFilter, "November");
 		tables += renderMonthTable("Leyton", december_events_leyton, 'december-table', filter, dateFilter, "December");
 
+		if (tables == "") {
+			tables = "<p>More events are coming soon </p>"
+		}
 		document.getElementById('calendar-tables').innerHTML = tables;
 	} else {
 		var tables = "";
@@ -1230,6 +1233,9 @@ function eventController(filter, dateFilter) {
 		tables += renderMonthTable("Worthing", november_events_worthing, 'november-table', filter, dateFilter, "November");
 		tables += renderMonthTable("Worthing", december_events_worthing, 'december-table', filter, dateFilter, "December");
 
+		if (tables == "") {
+			tables = "<p>More events are coming soon </p>"
+		}
 		document.getElementById('calendar-tables').innerHTML = tables;
 	}
 }
@@ -1323,6 +1329,14 @@ function renderNextEvents(eventList, beach, counter) {
 
 		}
 	}
+
+	if (counter == 0) {
+		eventDiv.innerHTML = '<div class="section-heading">\
+                            <h2 class="entry-title">Upcoming Events ' + beach + '</h2>\
+							<p>More events are coming soon </p>\
+                        </div>';
+	}
+
 	return counter;
 }
 //console.log("Page location is " + window.location.href);
