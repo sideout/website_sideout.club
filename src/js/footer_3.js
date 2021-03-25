@@ -4,10 +4,7 @@ function columnDDescriptionAndSocial(level) {
     <h2><a class="foot-logo" href="#"><img src="' + level + 'images/footer.png" alt=""></a></h2>\
     <p>Established in 2011, SideOut is the UK\'s largest, most innovative, dynamic and member-focused beach volleyball club. We are based in Leyton, East London and in Worthing, West Sussex.</p>\
     <ul class="d-flex flex-wrap align-items-center">\
-        <li><a href="https://www.facebook.com/SideOutLtd"><i class="fa fa-facebook"></i></a></li>\
-        <li><a href="https://www.instagram.com/sideout_uk/"><i class="fa fa-instagram"></i></a></li>\
-        <li><a href="https://www.youtube.com/user/SideOutUK"><i class="fa fa-youtube"></i></a></li>\
-        <li><a href="https://twitter.com/SideOut_UK"><i class="fa fa-twitter"></i></a></li>\
+     \
     </ul>\
   </div>\
 </div>';
@@ -17,16 +14,7 @@ function columnLinks(level) {
   return '<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">\
     <h2>Useful Links</h2>\
     <ul>\
-      <li><a href="' + level + 'winter.html">Winter at SideOut</a></li>\
-      <li><a href="' + level + 'membership-coming-soon.html">Membership</a></li>\
-      <li><a href="' + level + 'book-a-court-leyton.html">Book a court</a></li>\
-      <li><a href="' + level + 'calendar-leyton.html">Events Calendar</a></li>\
-      <li><a href="' + level + 'tournaments.html">Tournaments</a></li>\
-      <li><a href="' + level + 'camps-and-clinics.html">Camps & Clinics</a></li>\
       <li><a href="' + level + 'meet-the-team.html">Meet the Team</a></li>\
-      <li><a href="' + level + 'shop.html">Online Store</a></li>\
-    </ul>\
-    <ul>\
       <li><a href="club-history.html">Club History</a></li>\
       <li><a href="https://sideout.co.uk">Sideout ltd</a></li>\
     </ul>\
@@ -36,12 +24,12 @@ function columnLinks(level) {
 function columnUpdates(level) {
   return '<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">\
     <div class="foot-latest-news">\
-      <h2>Important Updates</h2>\
+      <h2>Social Media</h2>\
         <ul>\
-          <li>\
-              <h3><a href="' + level + 'winter.html">Winter at SideOut</a></h3>\
-              <div class="posted-date">October 2020</div>\
-          </li>\
+        <li style="margin-bottom: 10px;"><a href="https://www.facebook.com/SideOutLtd"><i class="fa fa-facebook"></i>acebook</a></li>\
+        <li style="margin-bottom: 10px;"><a href="https://www.instagram.com/sideout_uk/"><i class="fa fa-instagram"></i>instagram</a></li>\
+        <li style="margin-bottom: 10px;"><a href="https://www.youtube.com/user/SideOutUK"><i class="fa fa-youtube"></i>youtube</a></li>\
+        <li style="margin-bottom: 10px;"><a href="https://twitter.com/SideOut_UK"><i class="fa fa-twitter"></i>twitter</a></li>\
       </ul>\
     </div>\
   </div>';
