@@ -14,7 +14,7 @@ var WOMEN = "Women";
 var MIXED = "Mixed";
 
 //TOURNAMENT NAMEs
-var NAME_AYCP = "Winter AYCP";
+var NAME_AYCP = "AYCP";
 var NAME_SIDE_IT_OUT = "SIDE-it-OUT";
 var NAME_AVAILABLE_FOR_HIRE_WORTHING = "Available for court hire";
 var NAME_OPEN_PLAY = "Open Play";
@@ -106,9 +106,9 @@ var march_events_leyton = [
 	// { date: new Date("04/26/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
 	// { date: new Date("04/27/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SPRING },
 	// { date: new Date("04/28/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MIXED, url: URL_SPRING },
-	{ date: new Date("04/29/2021"), name: "FREE Side-it-Out", type: TYPE_PLAY, info: "", url: URL_SIDE_IT_OUT },
-	{ date: new Date("04/30/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: "", url: URL_OPEN_PLAY },
-	{ date: new Date("04/31/2021"), name: NAME_SIDE_IT_OUT, type: TYPE_PLAY, info: "", url: URL_SIDE_IT_OUT }
+	{ date: new Date("03/29/2021"), name: "FREE Side-it-Out", type: TYPE_PLAY, info: "", url: URL_SIDE_IT_OUT },
+	{ date: new Date("03/30/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: "", url: URL_OPEN_PLAY },
+	{ date: new Date("03/31/2021"), name: NAME_SIDE_IT_OUT, type: TYPE_PLAY, info: "", url: URL_SIDE_IT_OUT }
 ];
 
 var april_events_leyton = [
@@ -678,9 +678,9 @@ var december_events_leyton = [
 
 //WOTHRING
 var march_events_worthing = [
-	{ date: new Date("04/29/2021"), name: "FREE Open Play", type: TYPE_PLAY, info: "", url: URL_OPEN_PLAY },
-	{ date: new Date("04/30/2021"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
-	{ date: new Date("04/31/2021"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING }
+	{ date: new Date("03/29/2021"), name: "FREE Open Play", type: TYPE_PLAY, info: "", url: URL_OPEN_PLAY },
+	{ date: new Date("03/30/2021"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
+	{ date: new Date("03/31/2021"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING }
 ];
 
 var april_events_worthing = [
