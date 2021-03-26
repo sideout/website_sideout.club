@@ -35,11 +35,13 @@ var NAME_INDOOR_ON_THE_BEACH = "Indoor on the Beach";
 var TYPE_TOURNAMENT = "Tournament";
 var TYPE_PLAY = "Play";
 var TYPE_TRAINING = "Training";
+var TYPE_JUNIORS = "Juniors";
 
 //EVENT LINKS
 var URL_MIX_N_MATCH = "tournaments/mixnmatch.html";
 var URL_KING_QUEEN = "tournaments/king-queen-court.html";
 var URL_AYCP = "all-you-can-play.html";
+var URL_OPEN_PLAY = "open-play.html";
 var URL_INDOOR_ON_THE_BEACH = "indoor-on-the-beach.html";
 var URL_SIDE_IT_OUT = "tournaments/side-it-out.html";
 var URL_WILSON = "tournaments/ukbt-wilson-championships.html";
@@ -64,6 +66,7 @@ var INFO_OPEN_PLAY = "18:00-22:00";
 
 //TOURNAMENT COLORS
 var COLOR_AYCP = "#1d29e4";
+var COLOR_OPEN_PLAY = "#0300b5";
 var COLOR_SIDE_IT_OUT = "#043101";
 var COLOR_SPRING = "#229432";
 var COLOR_SUMMER = "#2b94b7";
@@ -79,7 +82,41 @@ var COLOR_DEFAULT = "#3a1d13";
 var gsDayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
+var march_events_leyton = [
+	// { date: new Date("04/06/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "10.30am - 7:30pm, all levels are welcome!", url: URL_AYCP },
+	// { date: new Date("04/07/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/08/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/09/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/10/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/11/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/12/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/13/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/14/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/15/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/16/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/17/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/18/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/19/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/20/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/21/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/22/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/23/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/24/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/25/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/26/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/27/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SPRING },
+	// { date: new Date("04/28/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MIXED, url: URL_SPRING },
+	{ date: new Date("04/29/2021"), name: "FREE Side-it-Out", type: TYPE_PLAY, info: "", url: URL_SIDE_IT_OUT },
+	{ date: new Date("04/30/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: "", url: URL_OPEN_PLAY },
+	{ date: new Date("04/31/2021"), name: NAME_SIDE_IT_OUT, type: TYPE_PLAY, info: "", url: URL_SIDE_IT_OUT }
+];
+
 var april_events_leyton = [
+	{ date: new Date("04/01/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: "", url: URL_OPEN_PLAY },
+	{ date: new Date("04/02/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	{ date: new Date("04/03/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	{ date: new Date("04/04/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	{ date: new Date("04/05/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP }
 	// { date: new Date("04/06/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "10.30am - 7:30pm, all levels are welcome!", url: URL_AYCP },
 	// { date: new Date("04/07/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	// { date: new Date("04/08/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
@@ -640,7 +677,18 @@ var december_events_leyton = [
 ];
 
 //WOTHRING
+var march_events_worthing = [
+	{ date: new Date("04/29/2021"), name: "FREE Open Play", type: TYPE_PLAY, info: "", url: URL_OPEN_PLAY },
+	{ date: new Date("04/30/2021"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
+	{ date: new Date("04/31/2021"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING }
+];
+
 var april_events_worthing = [
+	{ date: new Date("04/01/2021"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
+	{ date: new Date("04/02/2021"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
+	{ date: new Date("04/03/2021"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
+	{ date: new Date("04/04/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	{ date: new Date("04/05/2021"), name: NAME_AVAILABLE_FOR_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING }
 	// { date: new Date("04/06/2019"), name: "Official Opening. Free play, all day!", type: TYPE_PLAY, info: "", url: "" },
 	// { date: new Date("04/07/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	// { date: new Date("04/08/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
@@ -1134,6 +1182,9 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 					case NAME_SIDE_IT_OUT:
 						color = COLOR_SIDE_IT_OUT;
 						break;
+					case NAME_OPEN_PLAY:
+						color = COLOR_OPEN_PLAY;
+						break;
 					default:
 						color = COLOR_DEFAULT;
 				}
@@ -1177,6 +1228,7 @@ function filterButtons(filter) {
 	var buttonTournament = "btn red-border";
 	var buttonPlay = "btn red-border";
 	var buttonTraining = "btn red-border";
+	var buttonJuniors = "btn red-border";
 
 	switch (filter) {
 		case TYPE_TOURNAMENT:
@@ -1188,15 +1240,19 @@ function filterButtons(filter) {
 		case TYPE_TRAINING:
 			buttonTraining = "btn gradient-bg";
 			break;
+		case TYPE_TRAINING:
+			buttonJuniors = "btn gradient-bg";
+			break;
 		default:
 			buttonAll = "btn gradient-bg";
 	}
 
 	document.getElementById('filter-buttons').innerHTML =
-		"<a onclick=\"eventController('display-all',true)\" href=\"#\" style='width: 250px' class=\" " + buttonAll + " \">All Events</a>\
-    <a onclick=\"eventController('Tournament',true)\" href=\"#\" style='width: 250px' class=\" " + buttonTournament + " \">Tournaments</a>\
-    <a onclick=\"eventController('Play',true)\" href=\"#\" style='width: 250px' class=\" " + buttonPlay + " \">Play</a>\
-    <a onclick=\"eventController('Training',true)\" href=\"#\" style='width: 250px' class=\" " + buttonTraining + " \">Training</a>";
+		"<a onclick=\"eventController('display-all',true)\" href=\"#\" style='width: 160px' class=\" " + buttonAll + " \">All Events</a>\
+    <a onclick=\"eventController('Tournament',true)\" href=\"#\" style='width: 190px' class=\" " + buttonTournament + " \">Tournaments</a>\
+    <a onclick=\"eventController('Play',true)\" href=\"#\" style='width: 190px' class=\" " + buttonPlay + " \">Play</a>\
+    <a onclick=\"eventController('Training',true)\" href=\"#\" style='width: 190px' class=\" " + buttonTraining + " \">Training</a>\
+	<a onclick=\"eventController('Juniors',true)\" href=\"#\" style='width: 190px' class=\" " + buttonJuniors + " \">Juniors</a>";
 }
 
 function eventController(filter, dateFilter) {
@@ -1207,6 +1263,7 @@ function eventController(filter, dateFilter) {
 
 	if (isleyton) {
 		var tables = "";
+		tables += renderMonthTable("Leyton", march_events_leyton, 'march-table', filter, dateFilter, "March");
 		tables += renderMonthTable("Leyton", april_events_leyton, 'april-table', filter, dateFilter, "April");
 		tables += renderMonthTable("Leyton", may_events_leyton, 'may-table', filter, dateFilter, "May");
 		tables += renderMonthTable("Leyton", june_events_leyton, 'june-table', filter, dateFilter, "June");
@@ -1223,6 +1280,7 @@ function eventController(filter, dateFilter) {
 		document.getElementById('calendar-tables').innerHTML = tables;
 	} else {
 		var tables = "";
+		tables += renderMonthTable("Worthing", march_events_worthing, 'march-table', filter, dateFilter, "March");
 		tables += renderMonthTable("Worthing", april_events_worthing, 'april-table', filter, dateFilter, "April");
 		tables += renderMonthTable("Worthing", may_events_worthing, 'may-table', filter, dateFilter, "May");
 		tables += renderMonthTable("Worthing", june_events_worthing, 'june-table', filter, dateFilter, "June");
@@ -1380,6 +1438,7 @@ function renderFutureTournamentDays(eventList, tournamentName, finalsTournamentN
 }
 
 function renderFutureTournamentsForLeyton(tournamentName, finalsTournamentName) {
+	var march = renderFutureTournamentDays(march_events_leyton, tournamentName, finalsTournamentName);
 	var april = renderFutureTournamentDays(april_events_leyton, tournamentName, finalsTournamentName);
 	var may = renderFutureTournamentDays(may_events_leyton, tournamentName, finalsTournamentName);
 	var june = renderFutureTournamentDays(june_events_leyton, tournamentName, finalsTournamentName);
@@ -1387,7 +1446,7 @@ function renderFutureTournamentsForLeyton(tournamentName, finalsTournamentName) 
 	var august = renderFutureTournamentDays(august_events_leyton, tournamentName, finalsTournamentName);
 	var september = renderFutureTournamentDays(september_events_leyton, tournamentName, finalsTournamentName);
 
-	var leyton = april + may + june + july + august + september;
+	var leyton = march + april + may + june + july + august + september;
 	if (leyton) { //leyton === ""
 		return '\
 	<li>\
@@ -1401,6 +1460,7 @@ function renderFutureTournamentsForLeyton(tournamentName, finalsTournamentName) 
 }
 
 function renderFutureTournamentsForWorthing(tournamentName, finalsTournamentName) {
+	var march = renderFutureTournamentDays(march_events_worthing, tournamentName, finalsTournamentName);
 	var april = renderFutureTournamentDays(april_events_worthing, tournamentName, finalsTournamentName);
 	var may = renderFutureTournamentDays(may_events_worthing, tournamentName, finalsTournamentName);
 	var june = renderFutureTournamentDays(june_events_worthing, tournamentName, finalsTournamentName);
@@ -1408,7 +1468,7 @@ function renderFutureTournamentsForWorthing(tournamentName, finalsTournamentName
 	var august = renderFutureTournamentDays(august_events_worthing, tournamentName, finalsTournamentName);
 	var september = renderFutureTournamentDays(september_events_worthing, tournamentName, finalsTournamentName);
 
-	var worthing = april + may + june + july + august + september;
+	var worthing = march + april + may + june + july + august + september;
 	if (worthing) { //worthing === ""
 		return '\
 		<li>\
@@ -1442,7 +1502,8 @@ console.log("page:" + page);
 console.log("fullpath:" + fullpath);
 if (page == 'index.html' || page == 'indexc.html' || page == '') {
 	console.log("rendering");
-	var counterLeyton = renderNextEvents(april_events_leyton, "Leyton", 0);
+	var counterLeyton = renderNextEvents(march_events_leyton, "Leyton", 0);
+	counterLeyton = renderNextEvents(april_events_leyton, "Leyton", counterLeyton);
 	counterLeyton = renderNextEvents(may_events_leyton, "Leyton", counterLeyton);
 	counterLeyton = renderNextEvents(june_events_leyton, "Leyton", counterLeyton);
 	counterLeyton = renderNextEvents(july_events_leyton, "Leyton", counterLeyton);
@@ -1452,7 +1513,8 @@ if (page == 'index.html' || page == 'indexc.html' || page == '') {
 	counterLeyton = renderNextEvents(november_events_leyton, "Leyton", counterLeyton);
 	counterLeyton = renderNextEvents(december_events_leyton, "Leyton", counterLeyton);
 
-	var counterWorthing = renderNextEvents(april_events_worthing, "Worthing", 0);
+	var counterWorthing = renderNextEvents(march_events_worthing, "Worthing", 0);
+	counterWorthing = renderNextEvents(april_events_worthing, "Worthing", counterWorthing);
 	counterWorthing = renderNextEvents(may_events_worthing, "Worthing", counterWorthing);
 	counterWorthing = renderNextEvents(june_events_worthing, "Worthing", counterWorthing);
 	counterWorthing = renderNextEvents(july_events_worthing, "Worthing", counterWorthing);
