@@ -1,12 +1,3 @@
-/*
-final edition should be a framework that will read the list of the event objects and it will create title-table-rows per month
-*/
-
-// function mylog(){
-//   console.log("ekana click");
-// }
-// document.getElementById("leytonButton").onclick = function() {mylog()};
-
 //INFO
 var MEN_N_WOMEN = "M&W";
 var MEN = "Men";
@@ -15,7 +6,7 @@ var MIXED = "Mixed";
 
 //TOURNAMENT NAMEs
 var NAME_AYCP = "AYCP";
-var NAME_SIDE_IT_OUT = "SIDE-it-OUT";
+var NAME_SIDE_IT_OUT = "Side-it-Out";
 var NAME_AVAILABLE_FOR_HIRE_WORTHING = "Available for court hire";
 var NAME_OPEN_PLAY = "Open Play";
 var NAME_SPRING = "SideOut Spring Tourney";
@@ -43,7 +34,7 @@ var URL_KING_QUEEN = "tournaments/king-queen-court.html";
 var URL_AYCP = "all-you-can-play.html";
 var URL_OPEN_PLAY = "open-play.html";
 var URL_INDOOR_ON_THE_BEACH = "indoor-on-the-beach.html";
-var URL_SIDE_IT_OUT = "tournaments/side-it-out.html";
+var URL_SIDE_IT_OUT = "side-it-out.html";
 var URL_WILSON = "tournaments/ukbt-wilson-championships.html";
 var URL_WILSON_FINALS = "tournaments/ukbt-wilson-championships-finals.html";
 var URL_WILSON_QUALIFIERS = "tournaments/ukbt-wilson-qualifiers.html";
@@ -62,7 +53,9 @@ var URL_POLONIA = "tournaments/poloniasOneMoreBeachTournie.html";
 
 //INFO
 // var INFO_OPEN_PLAY = "18:00-22:00, £10 per person (£5 for Club members, FREE with Social, Open Group or Private Group add-on), No need to register"
-var INFO_OPEN_PLAY = "18:00-22:00";
+var INFO_OPEN_PLAY = "18:30-22:00";
+var INFO_AYCP = "10:00-17:00";
+var INFO_SIDE_IT_OUT = "18:30-20:30";
 
 //TOURNAMENT COLORS
 var COLOR_AYCP = "#1d29e4";
@@ -106,17 +99,17 @@ var march_events_leyton = [
 	// { date: new Date("04/26/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
 	// { date: new Date("04/27/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SPRING },
 	// { date: new Date("04/28/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MIXED, url: URL_SPRING },
-	{ date: new Date("03/29/2021"), name: "FREE Side-it-Out", type: TYPE_PLAY, info: "", url: URL_SIDE_IT_OUT },
-	{ date: new Date("03/30/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: "", url: URL_OPEN_PLAY },
-	{ date: new Date("03/31/2021"), name: NAME_SIDE_IT_OUT, type: TYPE_PLAY, info: "", url: URL_SIDE_IT_OUT }
+	{ date: new Date("03/29/2021"), name: "FREE Side-it-Out", type: TYPE_PLAY, info: INFO_SIDE_IT_OUT, url: URL_SIDE_IT_OUT },
+	{ date: new Date("03/30/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: URL_OPEN_PLAY },
+	{ date: new Date("03/31/2021"), name: NAME_SIDE_IT_OUT, type: TYPE_PLAY, info: INFO_SIDE_IT_OUT, url: URL_SIDE_IT_OUT }
 ];
 
 var april_events_leyton = [
-	{ date: new Date("04/01/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: "", url: URL_OPEN_PLAY },
-	{ date: new Date("04/02/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("04/03/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("04/04/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("04/05/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP }
+	{ date: new Date("04/01/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: URL_OPEN_PLAY },
+	{ date: new Date("04/02/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/03/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/04/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/05/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP }
 	// { date: new Date("04/06/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "10.30am - 7:30pm, all levels are welcome!", url: URL_AYCP },
 	// { date: new Date("04/07/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
 	// { date: new Date("04/08/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
@@ -247,125 +240,7 @@ var july_events_leyton = [
 	// { date: new Date("07/31/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON }
 ];
 
-var august_events_leyton = [{
-	date: new Date("08/01/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("08/02/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("08/08/2020"),
-	name: NAME_SUMMER,
-	type: TYPE_TOURNAMENT,
-	info: MEN_N_WOMEN,
-	url: URL_SUMMER
-},
-{
-	date: new Date("08/08/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("08/09/2020"),
-	name: NAME_CHALLENGER,
-	type: TYPE_TOURNAMENT,
-	info: MEN_N_WOMEN,
-	url: URL_CHALLENGER
-},
-{
-	date: new Date("08/09/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("08/15/2020"),
-	name: NAME_WILSON,
-	type: TYPE_TOURNAMENT,
-	info: "WOMEN 4*",
-	url: URL_WILSON
-},
-{
-	date: new Date("08/15/2020"),
-	name: NAME_WILSON_QUALIFIERS,
-	type: TYPE_TOURNAMENT,
-	info: "WOMEN 3*",
-	url: URL_WILSON_QUALIFIERS
-},
-{
-	date: new Date("08/16/2020"),
-	name: NAME_WILSON,
-	type: TYPE_TOURNAMENT,
-	info: "MEN 4*",
-	url: URL_WILSON
-},
-{
-	date: new Date("08/16/2020"),
-	name: NAME_WILSON_QUALIFIERS,
-	type: TYPE_TOURNAMENT,
-	info: "MEN 3*",
-	url: URL_WILSON_QUALIFIERS
-},
-{
-	date: new Date("08/22/2020"),
-	name: NAME_WILSON_QUALIFIERS,
-	type: TYPE_TOURNAMENT,
-	info: "WOMEN 3*",
-	url: URL_WILSON_QUALIFIERS
-},
-{
-	date: new Date("08/22/2020"),
-	name: NAME_WILSON,
-	type: TYPE_TOURNAMENT,
-	info: "WOMEN 4*",
-	url: URL_WILSON
-},
-{
-	date: new Date("08/23/2020"),
-	name: NAME_WILSON_QUALIFIERS,
-	type: TYPE_TOURNAMENT,
-	info: "MEN 3*",
-	url: URL_WILSON_QUALIFIERS
-},
-{
-	date: new Date("08/23/2020"),
-	name: NAME_WILSON,
-	type: TYPE_TOURNAMENT,
-	info: "MEN 4*",
-	url: URL_WILSON
-},
-{
-	date: new Date("08/29/2020"),
-	name: NAME_SUMMER,
-	type: TYPE_TOURNAMENT,
-	info: "M&W 3*",
-	url: URL_SUMMER
-},
-{
-	date: new Date("08/30/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("08/31/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-}
+var august_events_leyton = [
 	// { date: new Date("08/07/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
 	// { date: new Date("08/08/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
 	// { date: new Date("08/09/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
@@ -393,287 +268,137 @@ var august_events_leyton = [{
 	// { date: new Date("08/31/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP }
 ];
 
-var september_events_leyton = [{
-	date: new Date("09/05/2020"),
-	name: NAME_WILSON_QUALIFIERS,
-	type: TYPE_TOURNAMENT,
-	info: "WOMEN 3*",
-	url: URL_WILSON_QUALIFIERS
-},
-{
-	date: new Date("09/05/2020"),
-	name: NAME_WILSON,
-	type: TYPE_TOURNAMENT,
-	info: "WOMEN 4*",
-	url: URL_WILSON
-},
-{
-	date: new Date("09/06/2020"),
-	name: NAME_WILSON_QUALIFIERS,
-	type: TYPE_TOURNAMENT,
-	info: "MEN 3*",
-	url: URL_WILSON_QUALIFIERS
-},
-{
-	date: new Date("09/06/2020"),
-	name: NAME_WILSON,
-	type: TYPE_TOURNAMENT,
-	info: "MEN 4*",
-	url: URL_WILSON
-},
-{
-	date: new Date("09/12/2020"),
-	name: "UKBT Wilson Championships Finals (QT)",
-	type: TYPE_TOURNAMENT,
-	info: "M&W 3*",
-	url: URL_WILSON_FINALS
-},
-{
-	date: new Date("09/13/2020"),
-	name: "UKBT Wilson Championships Finals (MD)",
-	type: TYPE_TOURNAMENT,
-	info: "M&W 4*",
-	url: URL_WILSON_FINALS
-},
-{
-	date: new Date("09/19/2020"),
-	name: NAME_CHALLENGER,
-	type: TYPE_TOURNAMENT,
-	info: "M&W 2*",
-	url: URL_CHALLENGER
-},
-{
-	date: new Date("09/20/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("09/26/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("09/27/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-}
-	// { date: new Date("09/01/2019"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_GRAND_PRIX },
-	// { date: new Date("09/01/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	// { date: new Date("09/07/2019"), name: NAME_LONDON_FINALS, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_LONDON_FINALS },
-	// { date: new Date("09/08/2019"), name: NAME_LONDON_FINALS, type: TYPE_TOURNAMENT, info: MIXED + " + M & W semis and finals", url: URL_LONDON_FINALS },
-	// { date: new Date("09/14/2019"), name: "Polonia's One More Beach Tournie", type: TYPE_TOURNAMENT, info: "M & W & Mixed", url: "" },
-	// { date: new Date("09/15/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	// { date: new Date("09/16/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
-	// { date: new Date("09/17/2019"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_CHALLENGER },
-	// { date: new Date("09/18/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	// { date: new Date("09/19/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
-	// { date: new Date("09/20/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
-	// { date: new Date("09/21/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	// { date: new Date("09/22/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	// { date: new Date("09/28/2019"), name: NAME_END_OF_SEASON_PARTY, type: "", info: "", url: "" }
+var september_events_leyton = [
+	{ date: new Date("04/01/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: URL_OPEN_PLAY },
+	{ date: new Date("04/02/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/03/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/04/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/05/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP }
+	// { date: new Date("04/06/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "10.30am - 7:30pm, all levels are welcome!", url: URL_AYCP },
+	// { date: new Date("04/07/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/08/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/09/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/10/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/11/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/12/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/13/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/14/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/15/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/16/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/17/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/18/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/19/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/20/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/21/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/22/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/23/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/24/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/25/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/26/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/27/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SPRING },
+	// { date: new Date("04/28/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MIXED, url: URL_SPRING },
+	// { date: new Date("04/29/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/30/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON }
 ];
 
-var october_events_leyton = [{
-	date: new Date("10/06/2020"),
-	name: NAME_SIDE_IT_OUT,
-	type: TYPE_PLAY,
-	info: "6:30-8:30pm",
-	url: URL_SIDE_IT_OUT
-},
-{
-	date: new Date("10/10/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("10/13/2020"),
-	name: NAME_SIDE_IT_OUT,
-	type: TYPE_PLAY,
-	info: "6:30-8:30pm",
-	url: URL_SIDE_IT_OUT
-},
-{
-	date: new Date("10/17/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("10/20/2020"),
-	name: NAME_SIDE_IT_OUT,
-	type: TYPE_PLAY,
-	info: "6:30-8:30pm",
-	url: URL_SIDE_IT_OUT
-},
-{
-	date: new Date("10/24/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("10/27/2020"),
-	name: NAME_SIDE_IT_OUT,
-	type: TYPE_PLAY,
-	info: "6:30-8:30pm",
-	url: URL_SIDE_IT_OUT
-},
-{
-	date: new Date("10/31/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-}
+var october_events_leyton = [
+	{ date: new Date("04/01/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: URL_OPEN_PLAY },
+	{ date: new Date("04/02/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/03/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/04/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/05/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP }
+	// { date: new Date("04/06/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "10.30am - 7:30pm, all levels are welcome!", url: URL_AYCP },
+	// { date: new Date("04/07/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/08/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/09/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/10/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/11/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/12/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/13/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/14/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/15/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/16/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/17/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/18/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/19/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/20/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/21/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/22/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/23/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/24/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/25/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/26/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/27/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SPRING },
+	// { date: new Date("04/28/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MIXED, url: URL_SPRING },
+	// { date: new Date("04/29/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/30/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON }
 
 ];
 
-var november_events_leyton = [{
-	date: new Date("11/01/2020"),
-	name: NAME_INDOOR_ON_THE_BEACH,
-	type: TYPE_PLAY,
-	info: "free taster session",
-	url: URL_INDOOR_ON_THE_BEACH
-},
-{
-	date: new Date("11/3/2020"),
-	name: NAME_SIDE_IT_OUT,
-	type: TYPE_PLAY,
-	info: "6:30-8:30pm",
-	url: URL_SIDE_IT_OUT
-},
-{
-	date: new Date("11/4/2020"),
-	name: NAME_SIDE_IT_OUT,
-	type: TYPE_PLAY,
-	info: "6:30-8:30pm",
-	url: URL_SIDE_IT_OUT
-}
-	// {
-	// 	date: new Date("11/7/2020"),
-	// 	name: NAME_AYCP,
-	// 	type: TYPE_PLAY,
-	// 	info: "",
-	// 	url: URL_AYCP
-	// },
-	// {
-	// 	date: new Date("11/10/2020"),
-	// 	name: NAME_SIDE_IT_OUT,
-	// 	type: TYPE_PLAY,
-	// 	info: "6:30-8:30pm",
-	// 	url: URL_SIDE_IT_OUT
-	// },
-	// {
-	// 	date: new Date("11/14/2020"),
-	// 	name: NAME_AYCP,
-	// 	type: TYPE_PLAY,
-	// 	info: "",
-	// 	url: URL_AYCP
-	// },
-	// {
-	// 	date: new Date("11/17/2020"),
-	// 	name: NAME_SIDE_IT_OUT,
-	// 	type: TYPE_PLAY,
-	// 	info: "6:30-8:30pm",
-	// 	url: URL_SIDE_IT_OUT
-	// },
-	// {
-	// 	date: new Date("11/21/2020"),
-	// 	name: NAME_AYCP,
-	// 	type: TYPE_PLAY,
-	// 	info: "",
-	// 	url: URL_AYCP
-	// },
-	// {
-	// 	date: new Date("11/24/2020"),
-	// 	name: NAME_SIDE_IT_OUT,
-	// 	type: TYPE_PLAY,
-	// 	info: "6:30-8:30pm",
-	// 	url: URL_SIDE_IT_OUT
-	// },
-	// {
-	// 	date: new Date("11/28/2020"),
-	// 	name: NAME_AYCP,
-	// 	type: TYPE_PLAY,
-	// 	info: "",
-	// 	url: URL_AYCP
-	// }
+var november_events_leyton = [
+	{ date: new Date("04/01/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: URL_OPEN_PLAY },
+	{ date: new Date("04/02/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/03/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/04/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/05/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP }
+	// { date: new Date("04/06/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "10.30am - 7:30pm, all levels are welcome!", url: URL_AYCP },
+	// { date: new Date("04/07/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/08/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/09/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/10/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/11/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/12/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/13/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/14/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/15/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/16/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/17/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/18/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/19/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/20/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/21/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/22/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/23/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/24/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/25/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/26/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/27/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SPRING },
+	// { date: new Date("04/28/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MIXED, url: URL_SPRING },
+	// { date: new Date("04/29/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/30/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON }
 ];
 
 var december_events_leyton = [
-	// 	{
-	// 	date: new Date("12/02/2020"),
-	// 	name: NAME_SIDE_IT_OUT,
-	// 	type: TYPE_PLAY,
-	// 	info: "6:30-8:30pm",
-	// 	url: URL_SIDE_IT_OUT
-	// },
-	// {
-	// 	date: new Date("12/05/2020"),
-	// 	name: NAME_AYCP,
-	// 	type: TYPE_PLAY,
-	// 	info: "11:00am-4:00pm",
-	// 	url: URL_AYCP
-	// },
-	// {
-	// 	date: new Date("12/08/2020"),
-	// 	name: NAME_SIDE_IT_OUT,
-	// 	type: TYPE_PLAY,
-	// 	info: "6:30-8:30pm",
-	// 	url: URL_SIDE_IT_OUT
-	// },
-	// {
-	// 	date: new Date("12/12/2020"),
-	// 	name: NAME_AYCP,
-	// 	type: TYPE_PLAY,
-	// 	info: "11:00am-4:00pm",
-	// 	url: URL_AYCP
-	// },
-	// {
-	// 	date: new Date("12/15/2020"),
-	// 	name: NAME_SIDE_IT_OUT,
-	// 	type: TYPE_PLAY,
-	// 	info: "6:30-8:30pm",
-	// 	url: URL_SIDE_IT_OUT
-	// },
-	// {
-	// 	date: new Date("12/19/2020"),
-	// 	name: NAME_AYCP,
-	// 	type: TYPE_PLAY,
-	// 	info: "11:00am-4:00pm",
-	// 	url: URL_AYCP
-	// },
-	// {
-	// 	date: new Date("12/22/2020"),
-	// 	name: NAME_SIDE_IT_OUT,
-	// 	type: TYPE_PLAY,
-	// 	info: "6:30-8:30pm",
-	// 	url: URL_SIDE_IT_OUT
-	// },
-	// {
-	// 	date: new Date("12/26/2020"),
-	// 	name: NAME_AYCP,
-	// 	type: TYPE_PLAY,
-	// 	info: "11:00am-4:00pm",
-	// 	url: URL_AYCP
-	// },
-	// {
-	// 	date: new Date("12/29/2020"),
-	// 	name: NAME_SIDE_IT_OUT,
-	// 	type: TYPE_PLAY,
-	// 	info: "6:30-8:30pm",
-	// 	url: URL_SIDE_IT_OUT
-	// }
+	{ date: new Date("04/01/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: URL_OPEN_PLAY },
+	{ date: new Date("04/02/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/03/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/04/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/05/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP }
+	// { date: new Date("04/06/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "10.30am - 7:30pm, all levels are welcome!", url: URL_AYCP },
+	// { date: new Date("04/07/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/08/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/09/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/10/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/11/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/12/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/13/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/14/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/15/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/16/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/17/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/18/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/19/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/20/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/21/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/22/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/23/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/24/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/25/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/26/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/27/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SPRING },
+	// { date: new Date("04/28/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MIXED, url: URL_SPRING },
+	// { date: new Date("04/29/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/30/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON }
 ];
 
 //WOTHRING
@@ -817,286 +542,170 @@ var july_events_worthing = [
 	// { date: new Date("07/31/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING }
 ];
 
-var august_events_worthing = [{
-	date: new Date("08/01/2020"),
-	name: NAME_SUMMER,
-	type: TYPE_TOURNAMENT,
-	info: "M&W 3*",
-	url: URL_SUMMER
-},
-{
-	date: new Date("08/02/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("08/08/2020"),
-	name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_HIRE_WORTHING
-},
-{
-	date: new Date("08/09/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("08/15/2020"),
-	name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_HIRE_WORTHING
-},
-{
-	date: new Date("08/16/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("08/22/2020"),
-	name: NAME_CHALLENGER,
-	type: TYPE_TOURNAMENT,
-	info: "M&W 2*",
-	url: URL_CHALLENGER
-},
-{
-	date: new Date("08/23/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("08/29/2020"),
-	name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_HIRE_WORTHING
-},
-{
-	date: new Date("08/30/2020"),
-	name: NAME_SUMMER,
-	type: TYPE_TOURNAMENT,
-	info: "M&W 3*",
-	url: URL_SUMMER
-},
-{
-	date: new Date("08/31/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-}
-	// { date: new Date("08/03/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	// { date: new Date("08/04/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	// { date: new Date("08/05/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/06/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/07/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/08/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/09/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/10/2019"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_CHALLENGER },
-	// { date: new Date("08/11/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	// { date: new Date("08/12/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/13/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/14/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/15/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/16/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/17/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	// { date: new Date("08/18/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	// { date: new Date("08/19/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/20/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/21/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/22/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/23/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/24/2019"), name: "'1, 2, BBQ!' Old School Tournie", type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: "" },
-	// { date: new Date("08/25/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	// { date: new Date("08/26/2019"), name: "King & Queen of the Court", type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: "" },
-	// { date: new Date("08/27/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/28/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/29/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/30/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING },
-	// { date: new Date("08/31/2019"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: "Women", url: "" }
+var august_events_worthing = [
+	{ date: new Date("04/01/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: URL_OPEN_PLAY },
+	{ date: new Date("04/02/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/03/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/04/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/05/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP }
+	// { date: new Date("04/06/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "10.30am - 7:30pm, all levels are welcome!", url: URL_AYCP },
+	// { date: new Date("04/07/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/08/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/09/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/10/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/11/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/12/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/13/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/14/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/15/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/16/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/17/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/18/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/19/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/20/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/21/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/22/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/23/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/24/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/25/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/26/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/27/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SPRING },
+	// { date: new Date("04/28/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MIXED, url: URL_SPRING },
+	// { date: new Date("04/29/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/30/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON }
 ];
 
-var september_events_worthing = [{
-	date: new Date("09/05/2020"),
-	name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_HIRE_WORTHING
-},
-{
-	date: new Date("09/06/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("09/12/2020"),
-	name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_HIRE_WORTHING
-},
-{
-	date: new Date("09/13/2020"),
-	name: NAME_CHALLENGER,
-	type: TYPE_TOURNAMENT,
-	info: "M&W 2*",
-	url: URL_CHALLENGER
-},
-{
-	date: new Date("09/19/2020"),
-	name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_HIRE_WORTHING
-},
-{
-	date: new Date("09/20/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("09/26/2020"),
-	name: NAME_AVAILABLE_FOR_HIRE_WORTHING,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_HIRE_WORTHING
-},
-{
-	date: new Date("09/27/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-}
-	// { date: new Date("09/01/2019"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: "Men", url: "" },
-	// { date: new Date("09/07/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	// { date: new Date("09/08/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	// { date: new Date("09/14/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	// { date: new Date("09/15/2019"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_CHALLENGER },
-	// { date: new Date("09/21/2019"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SUMMER },
-	// { date: new Date("09/22/2019"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: MIXED, url: URL_SUMMER },
-	// { date: new Date("09/28/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	// { date: new Date("09/29/2019"), name: NAME_END_OF_SEASON_PARTY, type: "", info: "", url: "" }
+var september_events_worthing = [
+	{ date: new Date("04/01/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: URL_OPEN_PLAY },
+	{ date: new Date("04/02/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/03/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/04/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/05/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP }
+	// { date: new Date("04/06/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "10.30am - 7:30pm, all levels are welcome!", url: URL_AYCP },
+	// { date: new Date("04/07/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/08/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/09/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/10/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/11/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/12/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/13/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/14/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/15/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/16/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/17/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/18/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/19/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/20/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/21/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/22/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/23/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/24/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/25/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/26/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/27/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SPRING },
+	// { date: new Date("04/28/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MIXED, url: URL_SPRING },
+	// { date: new Date("04/29/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/30/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON }
 ];
 
-var october_events_worthing = [{
-	date: new Date("10/04/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("10/11/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("10/18/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-},
-{
-	date: new Date("10/25/2020"),
-	name: NAME_AYCP,
-	type: TYPE_PLAY,
-	info: "",
-	url: URL_AYCP
-}
+var october_events_worthing = [
+	{ date: new Date("04/01/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: URL_OPEN_PLAY },
+	{ date: new Date("04/02/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/03/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/04/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/05/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP }
+	// { date: new Date("04/06/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "10.30am - 7:30pm, all levels are welcome!", url: URL_AYCP },
+	// { date: new Date("04/07/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/08/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/09/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/10/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/11/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/12/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/13/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/14/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/15/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/16/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/17/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/18/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/19/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/20/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/21/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/22/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/23/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/24/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/25/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/26/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/27/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SPRING },
+	// { date: new Date("04/28/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MIXED, url: URL_SPRING },
+	// { date: new Date("04/29/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/30/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON }
 
 ];
 
 var november_events_worthing = [
-	{
-		date: new Date("11/1/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("11/4/2020"),
-		name: "Open Play",
-		type: TYPE_PLAY,
-		info: "5:30-8:30pm",
-		url: ""
-	}
-	// {
-	// 	date: new Date("11/8/2020"),
-	// 	name: NAME_AYCP,
-	// 	type: TYPE_PLAY,
-	// 	info: "",
-	// 	url: URL_AYCP
-	// },
-	// {
-	// 	date: new Date("11/15/2020"),
-	// 	name: NAME_AYCP,
-	// 	type: TYPE_PLAY,
-	// 	info: "",
-	// 	url: URL_AYCP
-	// },
-	// {
-	// 	date: new Date("11/22/2020"),
-	// 	name: NAME_AYCP,
-	// 	type: TYPE_PLAY,
-	// 	info: "",
-	// 	url: URL_AYCP
-	// },
-	// {
-	// 	date: new Date("11/29/2020"),
-	// 	name: NAME_AYCP,
-	// 	type: TYPE_PLAY,
-	// 	info: "",
-	// 	url: URL_AYCP
-	// }
+	{ date: new Date("04/01/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: URL_OPEN_PLAY },
+	{ date: new Date("04/02/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/03/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/04/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/05/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP }
+	// { date: new Date("04/06/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "10.30am - 7:30pm, all levels are welcome!", url: URL_AYCP },
+	// { date: new Date("04/07/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/08/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/09/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/10/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/11/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/12/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/13/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/14/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/15/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/16/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/17/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/18/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/19/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/20/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/21/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/22/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/23/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/24/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/25/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/26/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/27/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SPRING },
+	// { date: new Date("04/28/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MIXED, url: URL_SPRING },
+	// { date: new Date("04/29/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/30/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON }
 ];
 
 var december_events_worthing = [
-	{
-		date: new Date("12/06/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "11:00am-4:00pm",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("12/13/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "11:00am-4:00pm",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("12/20/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "11:00am-4:00pm",
-		url: URL_AYCP
-	},
-	{
-		date: new Date("12/27/2020"),
-		name: NAME_AYCP,
-		type: TYPE_PLAY,
-		info: "11:00am-4:00pm",
-		url: URL_AYCP
-	}
+	{ date: new Date("04/01/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: URL_OPEN_PLAY },
+	{ date: new Date("04/02/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/03/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/04/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP },
+	{ date: new Date("04/05/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP, url: URL_AYCP }
+	// { date: new Date("04/06/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "10.30am - 7:30pm, all levels are welcome!", url: URL_AYCP },
+	// { date: new Date("04/07/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/08/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/09/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/10/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/11/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/12/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/13/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/14/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/15/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/16/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/17/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/18/2019"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: INFO_OPEN_PLAY, url: "#" },
+	// { date: new Date("04/19/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/20/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/21/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/22/2019"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
+	// { date: new Date("04/23/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/24/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/25/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/26/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/27/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MEN_N_WOMEN, url: URL_SPRING },
+	// { date: new Date("04/28/2019"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: MIXED, url: URL_SPRING },
+	// { date: new Date("04/29/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON },
+	// { date: new Date("04/30/2019"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON }
 ];
 
 
@@ -1208,7 +817,7 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 
 	var tableContent = "";
 	if (hasThisMonthEvents) {
-		tableContent = "<h2 class=\"entry-title\">" + monthName + " in " + beachName + " Beach</h2>\
+		tableContent = "<h2 class=\"entry-title\" style=\"font-weight:bold;\">" + monthName + " at " + beachName + " Beach</h2>\
 		<div class=\"table100 ver2 m-b-20\">\
 			<div class=\"table100-head\">" + TABLE_HEADER + "</div>\
 			<div class=\"table100-body\">" + "<table><tbody>" + tableEventContent + "</tbody></table>\
@@ -1240,7 +849,7 @@ function filterButtons(filter) {
 		case TYPE_TRAINING:
 			buttonTraining = "btn gradient-bg";
 			break;
-		case TYPE_TRAINING:
+		case TYPE_JUNIORS:
 			buttonJuniors = "btn gradient-bg";
 			break;
 		default:
@@ -1540,3 +1149,9 @@ if (page == 'challenger-series.html') {
 	var eventsDiv = document.getElementById('upcomingTournaments');
 	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_CHALLENGER, "NOTHING_FOR_NOW");
 }
+
+
+// function mylog(){
+//   console.log("ekana click");
+// }
+// document.getElementById("leytonButton").onclick = function() {mylog()};

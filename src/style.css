@@ -261,7 +261,7 @@ a:active {
 .hero-content-overlay {
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-content-wrap img {
@@ -1432,6 +1432,10 @@ ul.tabs-nav .tab-nav.active {
   background: url(images/banner/2.png) no-repeat center;
 }
 
+/* .causes-page .page-header-worthing {
+  background: url(images/banner/book-a-court-worthing-banner.png) no-repeat center;
+} */
+
 .causes-page .featured-cause {
   padding: 96px 0;
 }
@@ -1513,7 +1517,7 @@ ul.tabs-nav .tab-nav.active {
 # Single Cause
 --------------------------------------------------------------*/
 .single-cause .page-header {
-  background: url(images/banner/6.png) no-repeat center;
+  background: url(images/banner/online-store-banner.png) no-repeat center;
 }
 
 .single-cause .highlighted-cause {

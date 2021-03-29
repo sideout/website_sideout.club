@@ -1,0 +1,6 @@
+<span style="font-weight:bold;">
+text in bold
+</span>
+<span style="font-style:italic;">
+text in italic
+</span>
