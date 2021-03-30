@@ -430,7 +430,7 @@ var april_events_worthing = [
 	{ date: new Date("04/02/2021"), name: NAME_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
 	{ date: new Date("04/03/2021"), name: NAME_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
 	{ date: new Date("04/04/2021"), name: NAME_AYCP, type: TYPE_PLAY, info: "", url: URL_AYCP },
-	{ date: new Date("04/05/2021"), name: NAME_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING }
+	{ date: new Date("04/05/2021"), name: NAME_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
 	{ date: new Date("04/06/2021"), name: NAME_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
 	{ date: new Date("04/07/2021"), name: NAME_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
 	{ date: new Date("04/08/2021"), name: NAME_HIRE_WORTHING, type: TYPE_PLAY, info: "", url: URL_HIRE_WORTHING },
