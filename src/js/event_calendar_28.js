@@ -317,8 +317,8 @@ var august_events_leyton = [
 	getSideItOutxxxx("08/25/2021"),
 	getHireLeytonCou("08/26/2021"),
 	getHireLeytonCou("08/27/2021"),
-	{ date: new Date("08/28/2021"), name: "SideOut Grand Slam", type: TYPE_TOURNAMENT, info: "5*", url: "tournaments/sideout-grand-slam.html" },
-	{ date: new Date("08/29/2021"), name: "SideOut Grand Slam", type: TYPE_TOURNAMENT, info: "5*", url: "tournaments/sideout-grand-slam.html" },
+	{ date: new Date("08/28/2021"), name: "SideOut Grand Slam", type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + "5*", url: "tournaments/sideout-grand-slam.html" },
+	{ date: new Date("08/29/2021"), name: "SideOut Grand Slam", type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + "5*", url: "tournaments/sideout-grand-slam.html" },
 	{ date: new Date("08/29/2021"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
 	getAllYouCanPlay("08/30/2021"),
 	getHireLeytonCou("08/31/2021")
