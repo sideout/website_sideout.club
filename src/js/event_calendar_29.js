@@ -36,10 +36,10 @@ var TYPE_JUNIORS = "Juniors";
 //EVENT LINKS
 var URL_MIX_N_MATCH = "tournaments/mixnmatch.html";
 var URL_KING_QUEEN = "tournaments/king-queen-court.html";
-var URL_AYCP = "all-you-can-play.html";
-var URL_OPEN_PLAY = "open-play.html";
+var URL_AYCP = "play/all-you-can-play.html";
+var URL_OPEN_PLAY = "play/open-play.html";
 var URL_INDOOR_ON_THE_BEACH = "indoor-on-the-beach.html";
-var URL_SIDE_IT_OUT = "side-it-out.html";
+var URL_SIDE_IT_OUT = "play/side-it-out.html";
 var URL_WILSON = "tournaments/ukbt-wilson-championships.html";
 var URL_WILSON_FINALS = "tournaments/ukbt-wilson-championships-finals.html";
 var URL_WILSON_QUALIFIERS = "tournaments/ukbt-wilson-qualifiers.html";
