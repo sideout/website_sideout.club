@@ -205,7 +205,7 @@ var may_events_leyton = [
 	getOpenPlayxxxxx("05/21/2021"),
 	{ date: new Date("05/22/2021"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX },
 	{ date: new Date("05/23/2021"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX },
-	{ date: new Date("05/23/2021"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 1*", url: URL_CHALLENGER },
+	{ date: new Date("05/23/2021"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
 	getJuniorTrainin("05/24/2021"),
 	getAdultTraining("05/25/2021"),
 	getSideItOutxxxx("05/26/2021"),
@@ -246,6 +246,7 @@ var june_events_leyton = [
 	getAdultTraining("06/24/2021"),
 	getOpenPlayxxxxx("06/25/2021"),
 	{ date: new Date("06/26/2021"), name: NAME_ALL_NATIONS, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2vs2", url: URL_ALL_NATIONS },
+	{ date: new Date("06/27/2021"), name: NAME_ALL_NATIONS, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2vs2", url: URL_ALL_NATIONS },
 	{ date: new Date("06/27/2021"), name: NAME_ALL_NATIONS, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 2vs2", url: URL_ALL_NATIONS },
 	getJuniorTrainin("06/28/2021"),
 	getAdultTraining("06/29/2021"),
@@ -596,7 +597,7 @@ var july_events_worthing = [
 	getHireWorthingC("07/28/2021"),
 	getHireWorthingC("07/29/2021"),
 	getHireWorthingC("07/30/2021"),
-	{ date: new Date("07/31/2021"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER }
+	getHireWorthingC("07/31/2021")
 ];
 
 var august_events_worthing = [
