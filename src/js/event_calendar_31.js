@@ -157,6 +157,7 @@ var april_events_leyton = [
 	getOpenPlayxxxxx("04/09/2021"),
 	getAllYouCanPlay("04/10/2021"),
 	{ date: new Date("04/11/2021"), name: NAME_UNDER_18, type: TYPE_JUNIORS, info: "", url: URL_UNDER_18 },
+	getAllYouCanPlay("04/11/2021"),
 	getOpenPlayxxxxx("04/12/2021"),
 	getOpenPlayxxxxx("04/13/2021"),
 	getSideItOutxxxx("04/14/2021"),
@@ -1074,7 +1075,7 @@ function renderFutureTournamentDays(eventList, tournamentName, finalsTournamentN
 
 				var htmlEvent = '\
 				<li>\
-					<h6 class="font_6" style="font-size:14px; line-height:1.3em; text-align:justify; font-family:open sans,sans-serif;">' +
+					<h6 class="font_6" style="font-size:14px; line-height:1.3em; text-align:justify;">' +
 					gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year +
 					'</h6>\
 				</li>';
@@ -1135,10 +1136,10 @@ function renderFutureTournamentsBothVenues(tournamentName, finalsTournamentName)
 	var worthing = renderFutureTournamentsForWorthing(tournamentName, finalsTournamentName);
 	var both = leyton + worthing;
 	if (both) {
-		return '<ul class="font_6" style="font-family:open sans,sans-serif; font-size:14px; text-align:left;">' +
+		return '<ul class="font_6" style="font-size:14px; text-align:left;">' +
 			both + '</ul>';
 	} else {
-		return '<ul class="font_6" style="font-family:open sans,sans-serif; font-size:14px; text-align:left;"><li><h6 class="font_6" style="font-size:14px; line-height:1.3em;">TBC</h6></li></ul>';
+		return '<ul class="font_6" style="font-size:14px; text-align:left;"><li><h6 class="font_6" style="font-size:14px; line-height:1.3em;">TBC</h6></li></ul>';
 	}
 }
 
