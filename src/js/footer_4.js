@@ -12,7 +12,7 @@ function columnDDescriptionAndSocial(level) {
 
 function columnLinks(level) {
   return '<div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">\
-    <h2>Useful Links</h2>\
+    <h2>About Us</h2>\
     <ul>\
       <li><a href="' + level + 'meet-the-team.html">Meet the Team</a></li>\
       <li><a href="club-history.html">Club History</a></li>\
@@ -26,10 +26,10 @@ function columnUpdates(level) {
     <div class="foot-latest-news">\
       <h2>Social Media</h2>\
         <ul>\
-        <li style="margin-bottom: 10px;"><a href="https://www.facebook.com/SideOutLtd"><i class="fa fa-facebook"></i>acebook</a></li>\
-        <li style="margin-bottom: 10px;"><a href="https://www.instagram.com/sideout_uk/"><i class="fa fa-instagram"></i>instagram</a></li>\
-        <li style="margin-bottom: 10px;"><a href="https://www.youtube.com/user/SideOutUK"><i class="fa fa-youtube"></i>youtube</a></li>\
-        <li style="margin-bottom: 10px;"><a href="https://twitter.com/SideOut_UK"><i class="fa fa-twitter"></i>twitter</a></li>\
+        <li style="margin-bottom: 10px;"><a href="https://www.facebook.com/SideOutUK" target="_blank"><i class="fa fa-facebook"></i>acebook</a></li>\
+        <li style="margin-bottom: 10px;"><a href="https://www.instagram.com/sideout_uk/" target="_blank"><i class="fa fa-instagram"></i>instagram</a></li>\
+        <li style="margin-bottom: 10px;"><a href="https://www.youtube.com/user/SideOutUK" target="_blank"><i class="fa fa-youtube"></i>youtube</a></li>\
+        <li style="margin-bottom: 10px;"><a href="https://twitter.com/SideOut_UK" target="_blank"><i class="fa fa-twitter"></i>twitter</a></li>\
       </ul>\
     </div>\
   </div>';
@@ -41,7 +41,7 @@ const COLUMN_CONTACT =
     <h2>Contact</h2>\
     <ul>\
         <li><i class="fa fa-envelope"></i><span>Email: info[at]sideout.co.uk</span></li>\
-        <li><i class="fa fa-map-marker"></i><span>London, Ive Farm Close, E10 5HQ</span></li>\
+        <li><i class="fa fa-map-marker"></i><span>London, Ive Farm Sports Ground, E10 5UE</span></li>\
         <li><i class="fa fa-map-marker"></i><span>Worthing, Beach Volleyball, BN11 2FG</span></li>\
     </ul>\
   </div>\
