@@ -27,9 +27,9 @@ function columnUpdates(level) {
       <h2>Social Media</h2>\
         <ul>\
         <li style="margin-bottom: 10px;"><a href="https://www.facebook.com/SideOutUK" target="_blank"><i class="fa fa-facebook"></i>acebook</a></li>\
-        <li style="margin-bottom: 10px;"><a href="https://www.instagram.com/sideout_uk/" target="_blank"><i class="fa fa-instagram"></i>instagram</a></li>\
-        <li style="margin-bottom: 10px;"><a href="https://www.youtube.com/user/SideOutUK" target="_blank"><i class="fa fa-youtube"></i>youtube</a></li>\
-        <li style="margin-bottom: 10px;"><a href="https://twitter.com/SideOut_UK" target="_blank"><i class="fa fa-twitter"></i>twitter</a></li>\
+        <li style="margin-bottom: 10px;"><a href="https://www.instagram.com/sideout_uk/" target="_blank"><i class="fa fa-instagram"></i> instagram</a></li>\
+        <li style="margin-bottom: 10px;"><a href="https://www.youtube.com/user/SideOutUK" target="_blank"><i class="fa fa-youtube"></i> youtube</a></li>\
+        <li style="margin-bottom: 10px;"><a href="https://twitter.com/SideOut_UK" target="_blank"><i class="fa fa-twitter"></i> twitter</a></li>\
       </ul>\
     </div>\
   </div>';
