@@ -34,7 +34,7 @@ function renderMenu(page, level) {
   var training = '<li><a href="' + level + 'training-leyton.html">Training</a></li>';
   var play = '<li><a href="' + level + 'play.html">Play</a></li>';
   var tournaments = '<li><a href="' + level + 'tournaments.html">Tournaments</a></li>';
-  var juniors = '<li><a href="' + level + 'juniors.html">Juniors</a></li>';
+  var juniors = '<li><a href="' + level + 'juniors-leyton.html">Juniors</a></li>';
   var bookCourt = '<li><a href="' + level + 'book-a-court-worthing.html">Book a court</a></li>';
   var calendar = '<li><a href="' + level + 'calendar-leyton.html">Events Calendar</a></li>';
   var shop = '<li><a href="' + level + 'shop.html">Online Store</a></li>';
@@ -50,7 +50,7 @@ function renderMenu(page, level) {
       tournaments = '<li class="current-menu-item"><a href="' + level + 'tournaments.html">Tournaments</a></li>';
       break;
     case "juniors":
-      juniors = '<li class="current-menu-item"><a href="' + level + 'juniors.html">Juniors</a></li>';
+      juniors = '<li class="current-menu-item"><a href="' + level + 'juniors-leyton.html">Juniors</a></li>';
       break;
     case "bookCourt":
       bookCourt = '<li class="current-menu-item"><a href="' + level + 'book-a-court-worthing.html">Book a court</a></li>';
