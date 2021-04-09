@@ -89,7 +89,7 @@ function getAdultTraining(date) {
 }
 
 function getJuniorTrainin(date) {
-	return { date: new Date(date), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "", url: "" };
+	return { date: new Date(date), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "", url: URL_JUNIOR_LEYTON };
 }
 
 function getWorthingJuniorTrainin(date) {

@@ -64,7 +64,7 @@ function renderMenu(page, level) {
     default:
 
   }
-  var links = training + play + tournaments + bookCourt + calendar + shop;
+  var links = training + play + tournaments + juniors + bookCourt + calendar + shop;
   var menu = document.getElementById('mainMenu');
   menu.innerHTML = partOne(level) + links + PART2;
 
