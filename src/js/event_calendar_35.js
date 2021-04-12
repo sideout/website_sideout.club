@@ -26,6 +26,7 @@ var NAME_JUNIOR_SERIES = "SideOut Junior Series";
 var NAME_JUNIOR_TRAINING = "Junior Training";
 var NAME_ADULT_TRAINING = "Adult Training";
 var NAME_MIX_N_MATCH = "Mix & Match";
+var NAME_GRAND_SLAM = "SideOut Grand Slam";
 
 //TOURNAMENT TYPES
 var TYPE_TOURNAMENT = "Tournament";
@@ -214,8 +215,8 @@ var may_events_leyton = [
 	getSideItOutxxxx("05/19/2021"),
 	getAdultTraining("05/20/2021"),
 	getOpenPlayxxxxx("05/21/2021"),
-	{ date: new Date("05/22/2021"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX },
-	{ date: new Date("05/23/2021"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX },
+	{ date: new Date("05/22/2021"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 2 },
+	{ date: new Date("05/23/2021"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 0 },
 	{ date: new Date("05/23/2021"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
 	getJuniorTrainin("05/24/2021"),
 	getAdultTraining("05/25/2021"),
@@ -240,8 +241,8 @@ var june_events_leyton = [
 	getSideItOutxxxx("06/09/2021"),
 	getAdultTraining("06/10/2021"),
 	getOpenPlayxxxxx("06/11/2021"),
-	{ date: new Date("06/12/2021"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX },
-	{ date: new Date("06/13/2021"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX },
+	{ date: new Date("06/12/2021"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 2 },
+	{ date: new Date("06/13/2021"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 0 },
 	{ date: new Date("06/13/2021"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
 	getJuniorTrainin("06/14/2021"),
 	getAdultTraining("06/15/2021"),
@@ -274,8 +275,8 @@ var july_events_leyton = [
 	getSideItOutxxxx("07/07/2021"),
 	getAdultTraining("07/08/2021"),
 	getOpenPlayxxxxx("07/09/2021"),
-	{ date: new Date("07/10/2021"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX },
-	{ date: new Date("07/11/2021"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX },
+	{ date: new Date("07/10/2021"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 2 },
+	{ date: new Date("07/11/2021"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 0 },
 	{ date: new Date("07/11/2021"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
 	getJuniorTrainin("07/12/2021"),
 	getAdultTraining("07/13/2021"),
@@ -329,8 +330,8 @@ var august_events_leyton = [
 	getSideItOutxxxx("08/25/2021"),
 	getHireLeytonCou("08/26/2021"),
 	getHireLeytonCou("08/27/2021"),
-	{ date: new Date("08/28/2021"), name: "SideOut Grand Slam", type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + "5*", url: "tournaments/sideout-grand-slam.html" },
-	{ date: new Date("08/29/2021"), name: "SideOut Grand Slam", type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + "5*", url: "tournaments/sideout-grand-slam.html" },
+	{ date: new Date("08/28/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/sideout-grand-slam.html" },
+	{ date: new Date("08/29/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/sideout-grand-slam.html" },
 	{ date: new Date("08/29/2021"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
 	getAllYouCanPlay("08/30/2021"),
 	getHireLeytonCou("08/31/2021")
@@ -989,7 +990,7 @@ function renderNextEvents(eventList, beach, counter) {
 	var i;
 	var text = "";
 	var eventDiv;
-	if (beach == 'Leyton') {
+	if (beach == 'Leyton beach') {
 		eventDiv = document.getElementById('upcomingEventLeyton');
 		console.log("Venue: Leyton");
 	} else {
@@ -998,8 +999,8 @@ function renderNextEvents(eventList, beach, counter) {
 	}
 
 	if (counter == 0) {
-		eventDiv.innerHTML = '<div class="section-heading">\
-                            <h2 class="entry-title">Upcoming Events ' + beach + '</h2>\
+		eventDiv.innerHTML = '<div>\
+                            <h2 >' + beach + '</h2>\
                         </div>';
 	}
 
@@ -1025,7 +1026,7 @@ function renderNextEvents(eventList, beach, counter) {
 				var year = eventDate.getFullYear();
 
 				var htmlEvent = '\
-				<div class="event-wrap d-flex flex-wrap justify-content-between">\
+				<div class="event-wrap d-flex flex-wrap justify-content-between" style="margin-top: 10px;">\
                             <div class="event-content-wrap">\
 								<header class="entry-header d-flex flex-wrap align-items-center">';
 
@@ -1061,7 +1062,7 @@ function renderNextEvents(eventList, beach, counter) {
 //console.log("Page location is " + window.location.href);
 
 //tourname pages display event dates
-function renderFutureTournamentDays(eventList, tournamentName, finalsTournamentName) {
+function renderFutureTournamentDays(eventList, tournamentName, finalsTournamentName, isPrintInfoEnabled) {
 	console.log("renderNextEvents");
 	var i;
 	var eventDiv = '';
@@ -1074,8 +1075,13 @@ function renderFutureTournamentDays(eventList, tournamentName, finalsTournamentN
 
 			var eventName = eventList[i].name;
 			var eventDate = eventList[i].date;
+			var eventInfo = eventList[i].info;
+			var twoDaysTournament = eventList[i].daysOfTournament;
 			var today = new Date();
 			var thisDate = new Date(eventDate);
+
+
+
 
 			if (thisDate > today) {
 
@@ -1084,73 +1090,99 @@ function renderFutureTournamentDays(eventList, tournamentName, finalsTournamentN
 				var monthInt = eventDate.getMonth();
 				var year = eventDate.getFullYear();
 
-				var htmlEvent = '\
-				<li>\
-					<h6 class="font_6" style="font-size:14px; line-height:1.3em; text-align:justify;">' +
-					gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year +
-					'</h6>\
-				</li>';
-				console.log("Event: " + eventName + " Month: " + months[monthInt] + " DIV: " + htmlEvent);
-				eventDiv += htmlEvent;
+				var shouldTournamentBePrinted = true;
+
+				var printedDate = '';
+				if (twoDaysTournament === 1 || typeof twoDaysTournament == 'undefined') {
+					printedDate = gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year;
+				}
+
+				if (twoDaysTournament === 0) {
+					shouldTournamentBePrinted = false;
+				}
+
+				if (twoDaysTournament === 2) {
+					var day = 60 * 60 * 24 * 1000;
+					var thisDatePlusOneDay = new Date(thisDate.getTime() + day);
+
+					var dayOfWeekIntPlusOne = thisDatePlusOneDay.getDay();
+					var dayIntPlusOne = thisDatePlusOneDay.getDate();
+					var monthIntPlusOne = thisDatePlusOneDay.getMonth();
+					var yearPlusOne = thisDatePlusOneDay.getFullYear();
+					printedDate = gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " & " + gsDayNames[dayOfWeekIntPlusOne] + " " + dayIntPlusOne + " " + months[monthIntPlusOne] + " " + year;
+				}
+
+				// var infoHtml = '';
+				if (isPrintInfoEnabled) {
+					// infoHtml = " - " + eventInfo;
+					printedDate += " - " + eventInfo;
+				}
+
+
+				if (shouldTournamentBePrinted) {
+					var htmlEvent = '<li>' + printedDate + '</li>';
+
+					eventDiv += htmlEvent;
+				}
+
 			}
 		}
 	}
 	return eventDiv;
 }
 
-function renderFutureTournamentsForLeyton(tournamentName, finalsTournamentName) {
-	var march = renderFutureTournamentDays(march_events_leyton, tournamentName, finalsTournamentName);
-	var april = renderFutureTournamentDays(april_events_leyton, tournamentName, finalsTournamentName);
-	var may = renderFutureTournamentDays(may_events_leyton, tournamentName, finalsTournamentName);
-	var june = renderFutureTournamentDays(june_events_leyton, tournamentName, finalsTournamentName);
-	var july = renderFutureTournamentDays(july_events_leyton, tournamentName, finalsTournamentName);
-	var august = renderFutureTournamentDays(august_events_leyton, tournamentName, finalsTournamentName);
-	var september = renderFutureTournamentDays(september_events_leyton, tournamentName, finalsTournamentName);
+function renderFutureTournamentsForLeyton(tournamentName, finalsTournamentName, isPrintInfoEnabled) {
+	var march = renderFutureTournamentDays(march_events_leyton, tournamentName, finalsTournamentName, isPrintInfoEnabled);
+	var april = renderFutureTournamentDays(april_events_leyton, tournamentName, finalsTournamentName, isPrintInfoEnabled);
+	var may = renderFutureTournamentDays(may_events_leyton, tournamentName, finalsTournamentName, isPrintInfoEnabled);
+	var june = renderFutureTournamentDays(june_events_leyton, tournamentName, finalsTournamentName, isPrintInfoEnabled);
+	var july = renderFutureTournamentDays(july_events_leyton, tournamentName, finalsTournamentName, isPrintInfoEnabled);
+	var august = renderFutureTournamentDays(august_events_leyton, tournamentName, finalsTournamentName, isPrintInfoEnabled);
+	var september = renderFutureTournamentDays(september_events_leyton, tournamentName, finalsTournamentName, isPrintInfoEnabled);
 
 	var leyton = march + april + may + june + july + august + september;
 	if (leyton) { //leyton === ""
 		return '\
 	<li>\
-		<h6 class="font_6" style="font-size:14px; line-height:1.3em; font-weight:bold;">\
+		<span style="font-size:14px;  font-weight:bold;">\
 						SideOut Beach, Leyton\
-		</h6>\
+		</span>\
 		<ul style="text-align:left;"> ' + leyton + '</ul></li>';
 	} else {
 		return '';
 	}
 }
 
-function renderFutureTournamentsForWorthing(tournamentName, finalsTournamentName) {
-	var march = renderFutureTournamentDays(march_events_worthing, tournamentName, finalsTournamentName);
-	var april = renderFutureTournamentDays(april_events_worthing, tournamentName, finalsTournamentName);
-	var may = renderFutureTournamentDays(may_events_worthing, tournamentName, finalsTournamentName);
-	var june = renderFutureTournamentDays(june_events_worthing, tournamentName, finalsTournamentName);
-	var july = renderFutureTournamentDays(july_events_worthing, tournamentName, finalsTournamentName);
-	var august = renderFutureTournamentDays(august_events_worthing, tournamentName, finalsTournamentName);
-	var september = renderFutureTournamentDays(september_events_worthing, tournamentName, finalsTournamentName);
+function renderFutureTournamentsForWorthing(tournamentName, finalsTournamentName, isPrintInfoEnabled) {
+	var march = renderFutureTournamentDays(march_events_worthing, tournamentName, finalsTournamentName, isPrintInfoEnabled);
+	var april = renderFutureTournamentDays(april_events_worthing, tournamentName, finalsTournamentName, isPrintInfoEnabled);
+	var may = renderFutureTournamentDays(may_events_worthing, tournamentName, finalsTournamentName, isPrintInfoEnabled);
+	var june = renderFutureTournamentDays(june_events_worthing, tournamentName, finalsTournamentName, isPrintInfoEnabled);
+	var july = renderFutureTournamentDays(july_events_worthing, tournamentName, finalsTournamentName, isPrintInfoEnabled);
+	var august = renderFutureTournamentDays(august_events_worthing, tournamentName, finalsTournamentName, isPrintInfoEnabled);
+	var september = renderFutureTournamentDays(september_events_worthing, tournamentName, finalsTournamentName, isPrintInfoEnabled);
 
 	var worthing = march + april + may + june + july + august + september;
 	if (worthing) { //worthing === ""
 		return '\
 		<li>\
-			<h6 class="font_6" style="font-size:14px; line-height:1.3em; font-weight:bold;">\
-			SideOut Beach, Worthing\
-			</h6>\
+			<span style="font-size:14px;font-weight:bold;">SideOut Beach, Worthing\
+			</span>\
 			<ul style="text-align:left;"> ' + worthing + '</ul></li>';
 	} else {
 		return '';
 	}
 }
 
-function renderFutureTournamentsBothVenues(tournamentName, finalsTournamentName) {
-	var leyton = renderFutureTournamentsForLeyton(tournamentName, finalsTournamentName);
-	var worthing = renderFutureTournamentsForWorthing(tournamentName, finalsTournamentName);
+function renderFutureTournamentsBothVenues(tournamentName, finalsTournamentName, isPrintInfoEnabled) {
+	var leyton = renderFutureTournamentsForLeyton(tournamentName, finalsTournamentName, isPrintInfoEnabled);
+	var worthing = renderFutureTournamentsForWorthing(tournamentName, finalsTournamentName, isPrintInfoEnabled);
 	var both = leyton + worthing;
 	if (both) {
-		return '<ul class="font_6" style="font-size:14px; text-align:left;">' +
+		return '<ul style="font-size:14px; text-align:left;">' +
 			both + '</ul>';
 	} else {
-		return '<ul class="font_6" style="font-size:14px; text-align:left;"><li><h6 class="font_6" style="font-size:14px; line-height:1.3em;">TBC</h6></li></ul>';
+		return '<ul style="font-size:14px; text-align:left;"><li><p style="font-size:14px;">TBC</p></li></ul>';
 	}
 }
 
@@ -1163,27 +1195,27 @@ console.log("page:" + page);
 console.log("fullpath:" + fullpath);
 if (page == 'index.html' || page == 'indexc.html' || page == '') {
 	console.log("rendering");
-	var counterLeyton = renderNextEvents(march_events_leyton, "Leyton", 0);
-	counterLeyton = renderNextEvents(april_events_leyton, "Leyton", counterLeyton);
-	counterLeyton = renderNextEvents(may_events_leyton, "Leyton", counterLeyton);
-	counterLeyton = renderNextEvents(june_events_leyton, "Leyton", counterLeyton);
-	counterLeyton = renderNextEvents(july_events_leyton, "Leyton", counterLeyton);
-	counterLeyton = renderNextEvents(august_events_leyton, "Leyton", counterLeyton);
-	counterLeyton = renderNextEvents(september_events_leyton, "Leyton", counterLeyton);
-	counterLeyton = renderNextEvents(october_events_leyton, "Leyton", counterLeyton);
-	counterLeyton = renderNextEvents(november_events_leyton, "Leyton", counterLeyton);
-	counterLeyton = renderNextEvents(december_events_leyton, "Leyton", counterLeyton);
+	var counterLeyton = renderNextEvents(march_events_leyton, "Leyton beach", 0);
+	counterLeyton = renderNextEvents(april_events_leyton, "Leyton beach", counterLeyton);
+	counterLeyton = renderNextEvents(may_events_leyton, "Leyton beach", counterLeyton);
+	counterLeyton = renderNextEvents(june_events_leyton, "Leyton beach", counterLeyton);
+	counterLeyton = renderNextEvents(july_events_leyton, "Leyton beach", counterLeyton);
+	counterLeyton = renderNextEvents(august_events_leyton, "Leyton beach", counterLeyton);
+	counterLeyton = renderNextEvents(september_events_leyton, "Leyton beach", counterLeyton);
+	counterLeyton = renderNextEvents(october_events_leyton, "Leyton beach", counterLeyton);
+	counterLeyton = renderNextEvents(november_events_leyton, "Leyton beach", counterLeyton);
+	counterLeyton = renderNextEvents(december_events_leyton, "Leyton beach", counterLeyton);
 
-	var counterWorthing = renderNextEvents(march_events_worthing, "Worthing", 0);
-	counterWorthing = renderNextEvents(april_events_worthing, "Worthing", counterWorthing);
-	counterWorthing = renderNextEvents(may_events_worthing, "Worthing", counterWorthing);
-	counterWorthing = renderNextEvents(june_events_worthing, "Worthing", counterWorthing);
-	counterWorthing = renderNextEvents(july_events_worthing, "Worthing", counterWorthing);
-	counterWorthing = renderNextEvents(august_events_worthing, "Worthing", counterWorthing);
-	counterWorthing = renderNextEvents(september_events_worthing, "Worthing", counterWorthing);
-	counterWorthing = renderNextEvents(october_events_worthing, "Worthing", counterWorthing);
-	counterWorthing = renderNextEvents(november_events_worthing, "Worthing", counterWorthing);
-	counterWorthing = renderNextEvents(december_events_worthing, "Worthing", counterWorthing);
+	var counterWorthing = renderNextEvents(march_events_worthing, "Worthing beach", 0);
+	counterWorthing = renderNextEvents(april_events_worthing, "Worthing beach", counterWorthing);
+	counterWorthing = renderNextEvents(may_events_worthing, "Worthing beach", counterWorthing);
+	counterWorthing = renderNextEvents(june_events_worthing, "Worthing beach", counterWorthing);
+	counterWorthing = renderNextEvents(july_events_worthing, "Worthing beach", counterWorthing);
+	counterWorthing = renderNextEvents(august_events_worthing, "Worthing beach", counterWorthing);
+	counterWorthing = renderNextEvents(september_events_worthing, "Worthing beach", counterWorthing);
+	counterWorthing = renderNextEvents(october_events_worthing, "Worthing beach", counterWorthing);
+	counterWorthing = renderNextEvents(november_events_worthing, "Worthing beach", counterWorthing);
+	counterWorthing = renderNextEvents(december_events_worthing, "Worthing beach", counterWorthing);
 }
 //event pages with dateFilter
 if (page == 'calendar-leyton.html' || page == 'calendar-worthing.html') {
@@ -1194,13 +1226,45 @@ if (page == 'calendar-leyton.html' || page == 'calendar-worthing.html') {
 //tournament dates
 if (page == 'summer-series.html') {
 	var eventsDiv = document.getElementById('upcomingTournaments');
-	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_SUMMER, "NOTHING_FOR_NOW");
+	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_SUMMER, "NOTHING_FOR_NOW", false);
 }
 
 if (page == 'challenger-series.html') {
 	var eventsDiv = document.getElementById('upcomingTournaments');
-	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_CHALLENGER, "NOTHING_FOR_NOW");
+	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_CHALLENGER, "NOTHING_FOR_NOW", false);
 }
+
+if (page == 'spring-tourney.html') {
+	var eventsDiv = document.getElementById('upcomingTournaments');
+	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_SPRING, "NOTHING_FOR_NOW", false);
+}
+
+if (page == 'all-nations.html') {
+	var eventsDiv = document.getElementById('upcomingTournaments');
+	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_ALL_NATIONS, "NOTHING_FOR_NOW", true);
+}
+
+if (page == 'sideout-mixed-series.html') {
+	var eventsDiv = document.getElementById('upcomingTournaments');
+	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_MIXED_SERIES, "NOTHING_FOR_NOW", false);
+}
+
+if (page == 'junior-series.html') {
+	var eventsDiv = document.getElementById('upcomingTournaments');
+	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_JUNIOR_SERIES, "NOTHING_FOR_NOW", false);
+}
+
+if (page == 'grand-prix.html') {
+	var eventsDiv = document.getElementById('upcomingTournaments');
+	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_GRAND_PRIX, "NOTHING_FOR_NOW", true);
+}
+
+if (page == 'grand-slam.html') {
+	var eventsDiv = document.getElementById('upcomingTournaments');
+	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_GRAND_SLAM, "NOTHING_FOR_NOW", true);
+}
+
+
 
 
 // function mylog(){

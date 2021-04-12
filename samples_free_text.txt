@@ -4,3 +4,31 @@ text in bold
 <span style="font-style:italic;">
 text in italic
 </span>
+
+
+
+
+
+tournament dates to add manually
+<div id="upcomingTournaments">
+	<ul style="font-size:14px; text-align:left;">
+		<li> <span style="font-size:14px;  font-weight:bold;"> SideOut Beach, Leyton </span>
+			<ul style="text-align:left;">
+				<li>Sun 9 May 2021</li>
+				<li>Sun 23 May 2021</li>
+				<li>Sun 13 Jun 2021</li>
+				<li>Sun 11 Jul 2021</li>
+				<li>Sun 29 Aug 2021</li>
+			</ul>
+		</li>
+		<li> <span style="font-size:14px;  font-weight:bold;"> SideOut Beach, Worthing </span>
+			<ul style="text-align:left;">
+				<li>Sat 15 May 2021</li>
+				<li>Sat 19 Jun 2021</li>
+				<li>Sat 24 Jul 2021</li>
+				<li>Sat 7 Aug 2021</li>
+				<li>Sun 19 Sept 2021</li>
+			</ul>
+		</li>
+	</ul>
+</div>
