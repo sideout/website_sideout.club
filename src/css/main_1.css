@@ -245,7 +245,7 @@ td {
 [ Ver1 ]*/
 
 .table100.ver1 th {
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-size: 18px;
   color: #fff;
   line-height: 1.4;

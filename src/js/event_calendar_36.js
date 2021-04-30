@@ -514,7 +514,7 @@ var april_events_worthing = [
 
 var may_events_worthing = [
 	getHireWorthingC("05/01/2021"),
-	getHireWorthingC("05/02/2021"),
+	getWorthingAllYouCanPlay("05/02/2021"),
 	getWorthingAllYouCanPlay("05/03/2021"),
 	getHireWorthingC("05/04/2021"),
 	getHireWorthingC("05/05/2021"),
@@ -1145,7 +1145,7 @@ function renderFutureTournamentsForLeyton(tournamentName, finalsTournamentName, 
 		return '\
 	<li>\
 		<span style="font-size:14px;  font-weight:bold;">\
-						SideOut Beach, Leyton\
+		Leyton Beach\
 		</span>\
 		<ul style="text-align:left;"> ' + leyton + '</ul></li>';
 	} else {
@@ -1166,7 +1166,7 @@ function renderFutureTournamentsForWorthing(tournamentName, finalsTournamentName
 	if (worthing) { //worthing === ""
 		return '\
 		<li>\
-			<span style="font-size:14px;font-weight:bold;">SideOut Beach, Worthing\
+			<span style="font-size:14px;font-weight:bold;">Worthing Beach\
 			</span>\
 			<ul style="text-align:left;"> ' + worthing + '</ul></li>';
 	} else {
