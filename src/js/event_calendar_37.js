@@ -209,7 +209,6 @@ var may_events_leyton = [
 	getOpenPlayxxxxx("05/14/2021"),
 	getAllYouCanPlay("05/15/2021"),
 	{ date: new Date("05/16/2021"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1*", url: URL_MIXED_SERIES },
-	getAllYouCanPlay("05/16/2021"),
 	getJuniorTrainin("05/17/2021"),
 	getAdultTraining("05/18/2021"),
 	getSideItOutxxxx("05/19/2021"),
