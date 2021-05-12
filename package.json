@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "author": "",
+  "main":"index.js",
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
@@ -12,7 +13,9 @@
     "e2e:open": "cypress open",
     "test": "jest --watch"
   },
-  "dependencies": {},
+  "dependencies": {
+    "airtable": "^0.11.0"
+  },
   "devDependencies": {
     "cypress": "^4.11.0",
     "jest": "^24.8.0",
