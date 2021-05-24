@@ -984,12 +984,12 @@ function renderNextEvents(eventList, beach, counter) {
 		//events to display in index
 		return 3;
 	}
-	console.log("renderNextEvents");
+	//console.log("renderNextEvents");
 
 	var i;
 	var text = "";
 	var eventDiv;
-	if (beach == 'Leyton beach') {
+	if (beach == 'Leyton Beach') {
 		eventDiv = document.getElementById('upcomingEventLeyton');
 		console.log("Venue: Leyton");
 	} else {
@@ -1041,7 +1041,7 @@ function renderNextEvents(eventList, beach, counter) {
 									<p>' + gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year + '</p>\
                             </div>\
 						</div>';
-				console.log("Event: " + eventName + " Month: " + months[monthInt] + " DIV: " + htmlEvent);
+				//console.log("Event: " + eventName + " Month: " + months[monthInt] + " DIV: " + htmlEvent);
 				counter++;
 				eventDiv.innerHTML += htmlEvent;
 			}
@@ -1194,27 +1194,27 @@ console.log("page:" + page);
 console.log("fullpath:" + fullpath);
 if (page == 'index.html' || page == 'indexc.html' || page == '') {
 	console.log("rendering");
-	var counterLeyton = renderNextEvents(march_events_leyton, "Leyton beach", 0);
-	counterLeyton = renderNextEvents(april_events_leyton, "Leyton beach", counterLeyton);
-	counterLeyton = renderNextEvents(may_events_leyton, "Leyton beach", counterLeyton);
-	counterLeyton = renderNextEvents(june_events_leyton, "Leyton beach", counterLeyton);
-	counterLeyton = renderNextEvents(july_events_leyton, "Leyton beach", counterLeyton);
-	counterLeyton = renderNextEvents(august_events_leyton, "Leyton beach", counterLeyton);
-	counterLeyton = renderNextEvents(september_events_leyton, "Leyton beach", counterLeyton);
-	counterLeyton = renderNextEvents(october_events_leyton, "Leyton beach", counterLeyton);
-	counterLeyton = renderNextEvents(november_events_leyton, "Leyton beach", counterLeyton);
-	counterLeyton = renderNextEvents(december_events_leyton, "Leyton beach", counterLeyton);
+	var counterLeyton = renderNextEvents(march_events_leyton, "Leyton Beach", 0);
+	counterLeyton = renderNextEvents(april_events_leyton, "Leyton Beach", counterLeyton);
+	counterLeyton = renderNextEvents(may_events_leyton, "Leyton Beach", counterLeyton);
+	counterLeyton = renderNextEvents(june_events_leyton, "Leyton Beach", counterLeyton);
+	counterLeyton = renderNextEvents(july_events_leyton, "Leyton Beach", counterLeyton);
+	counterLeyton = renderNextEvents(august_events_leyton, "Leyton Beach", counterLeyton);
+	counterLeyton = renderNextEvents(september_events_leyton, "Leyton Beach", counterLeyton);
+	counterLeyton = renderNextEvents(october_events_leyton, "Leyton Beach", counterLeyton);
+	counterLeyton = renderNextEvents(november_events_leyton, "Leyton Beach", counterLeyton);
+	counterLeyton = renderNextEvents(december_events_leyton, "Leyton Beach", counterLeyton);
 
-	var counterWorthing = renderNextEvents(march_events_worthing, "Worthing beach", 0);
-	counterWorthing = renderNextEvents(april_events_worthing, "Worthing beach", counterWorthing);
-	counterWorthing = renderNextEvents(may_events_worthing, "Worthing beach", counterWorthing);
-	counterWorthing = renderNextEvents(june_events_worthing, "Worthing beach", counterWorthing);
-	counterWorthing = renderNextEvents(july_events_worthing, "Worthing beach", counterWorthing);
-	counterWorthing = renderNextEvents(august_events_worthing, "Worthing beach", counterWorthing);
-	counterWorthing = renderNextEvents(september_events_worthing, "Worthing beach", counterWorthing);
-	counterWorthing = renderNextEvents(october_events_worthing, "Worthing beach", counterWorthing);
-	counterWorthing = renderNextEvents(november_events_worthing, "Worthing beach", counterWorthing);
-	counterWorthing = renderNextEvents(december_events_worthing, "Worthing beach", counterWorthing);
+	var counterWorthing = renderNextEvents(march_events_worthing, "Worthing Beach", 0);
+	counterWorthing = renderNextEvents(april_events_worthing, "Worthing Beach", counterWorthing);
+	counterWorthing = renderNextEvents(may_events_worthing, "Worthing Beach", counterWorthing);
+	counterWorthing = renderNextEvents(june_events_worthing, "Worthing Beach", counterWorthing);
+	counterWorthing = renderNextEvents(july_events_worthing, "Worthing Beach", counterWorthing);
+	counterWorthing = renderNextEvents(august_events_worthing, "Worthing Beach", counterWorthing);
+	counterWorthing = renderNextEvents(september_events_worthing, "Worthing Beach", counterWorthing);
+	counterWorthing = renderNextEvents(october_events_worthing, "Worthing Beach", counterWorthing);
+	counterWorthing = renderNextEvents(november_events_worthing, "Worthing Beach", counterWorthing);
+	counterWorthing = renderNextEvents(december_events_worthing, "Worthing Beach", counterWorthing);
 }
 //event pages with dateFilter
 if (page == 'calendar-leyton.html' || page == 'calendar-worthing.html') {
