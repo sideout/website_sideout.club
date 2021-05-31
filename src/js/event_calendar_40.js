@@ -814,6 +814,17 @@ var INDEX_EVENT_DIV = '\
 	</div>\
 </div>';
 
+var INDEX_MORE_EVENTS_DIV = '\
+<div class="event-wrap d-flex flex-wrap justify-content-between" style="margin-top: 10px;">\
+	<div class="event-content-wrap">\
+		<header class="entry-header d-flex flex-wrap align-items-center">\
+			<div>\
+			<a style="color:red;" href=$URL$>More events...</a>\
+			</div>\
+		</header>\
+	</div>\
+</div>';
+
 function logger(level, event) {
 	if (LOGGER_LEVEL == level) {
 		console.log(event);
@@ -894,6 +905,14 @@ function moreEventsComingSoon(beach, elementId, eventsCounter) {
 				<h2 class="entry-title">' + beach + '</h2>\
 				<p>More events are coming soon </p>\
 			</div>';
+	}
+}
+
+function moreEventsInCalendar(elementId, eventsCounter, url) {
+	if (eventsCounter > 0) {
+		var eventDiv = document.getElementById(elementId);
+		var htmlEvent = INDEX_MORE_EVENTS_DIV.replace('$URL$', url);
+		eventDiv.innerHTML += htmlEvent;
 	}
 }
 
@@ -1231,6 +1250,7 @@ if (page == 'index.html' || page == '') {
 	counterLeyton = indexRenderNextEvents(november_events_leyton, LEYTON_BEACH, UPCOMING_EVENT_LEYTON, counterLeyton);
 	counterLeyton = indexRenderNextEvents(december_events_leyton, LEYTON_BEACH, UPCOMING_EVENT_LEYTON, counterLeyton);
 
+	moreEventsInCalendar(UPCOMING_EVENT_LEYTON, counterLeyton, 'calendar-leyton.html');
 	moreEventsComingSoon(LEYTON_BEACH, UPCOMING_EVENT_LEYTON, counterLeyton);
 
 	var UPCOMING_EVENT_WORTHING = 'upcomingEventWorthing';
@@ -1247,6 +1267,7 @@ if (page == 'index.html' || page == '') {
 	counterWorthing = indexRenderNextEvents(november_events_worthing, WORTHING_BEACH, UPCOMING_EVENT_WORTHING, counterWorthing);
 	counterWorthing = indexRenderNextEvents(december_events_worthing, WORTHING_BEACH, UPCOMING_EVENT_WORTHING, counterWorthing);
 
+	moreEventsInCalendar(UPCOMING_EVENT_WORTHING, counterWorthing, 'calendar-worthing.html');
 	moreEventsComingSoon(WORTHING_BEACH, UPCOMING_EVENT_WORTHING, counterWorthing);
 }
 
