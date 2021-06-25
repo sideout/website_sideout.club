@@ -14,10 +14,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "cypress": "^4.8.0",
+    "cypress": "^7.6.0",
     "jest": "^24.8.0",
     "jest-dom": "^3.2.2",
-    "surge": "^0.20.5"
+    "surge": "^0.23.0"
   },
   "jest": {
     "testMatch": [
