@@ -33,7 +33,7 @@ var NAME_JUNIOR_SERIES = "SideOut Junior Series";
 var NAME_JUNIOR_TRAINING = "Junior Training";
 var NAME_ADULT_TRAINING = "Adult Training";
 var NAME_MIX_N_MATCH = "Mix & Match";
-var NAME_GRAND_SLAM = "SideOut Grand Slam";
+var NAME_GRAND_SLAM = "London Grand Slam";
 
 //TOURNAMENT TYPES
 var TYPE_TOURNAMENT = "Tournament";
@@ -101,7 +101,7 @@ function getJuniorTrainin(date) {
 }
 
 function getWorthingJuniorTrainin(date) {
-	return { date: new Date(date), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "", url: URL_JUNIOR_WORTHING };
+	return { date: new Date(date), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "12:00-13:00 Boys & Girls aged 5-12", url: URL_JUNIOR_WORTHING };
 }
 
 function getOpenPlayxxxxx(date) {
@@ -258,7 +258,6 @@ var june_events_leyton = [
 	getOpenPlayxxxxx("06/18/2021"),
 	getAllYouCanPlay("06/19/2021"),
 	{ date: new Date("06/20/2021"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1*", url: URL_MIXED_SERIES },
-	getAllYouCanPlay("06/20/2021"),
 	getJuniorTrainin("06/21/2021"),
 	getAdultTraining("06/22/2021"),
 	getSideItOutxxxx("06/23/2021"),
@@ -290,7 +289,7 @@ var july_events_leyton = [
 	getSideItOutxxxx("07/14/2021"),
 	getAdultTraining("07/15/2021"),
 	getOpenPlayxxxxx("07/16/2021"),
-	{ date: new Date("07/17/2021"), name: NAME_ALL_NATIONS, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4vs4", url: URL_ALL_NATIONS },
+	getAllYouCanPlay("07/17/2021"),
 	{ date: new Date("07/18/2021"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
 	getJuniorTrainin("07/19/2021"),
 	getAdultTraining("07/20/2021"),
@@ -337,8 +336,8 @@ var august_events_leyton = [
 	getSideItOutxxxx("08/25/2021"),
 	getHireLeytonCou("08/26/2021"),
 	getHireLeytonCou("08/27/2021"),
-	{ date: new Date("08/28/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/sideout-grand-slam.html" },
-	{ date: new Date("08/29/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/sideout-grand-slam.html" },
+	{ date: new Date("08/28/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html" },
+	{ date: new Date("08/29/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html" },
 	{ date: new Date("08/29/2021"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
 	getAllYouCanPlay("08/30/2021"),
 	getHireLeytonCou("08/31/2021")
@@ -579,6 +578,7 @@ var june_events_worthing = [
 	getHireWorthingC("06/23/2021"),
 	getHireWorthingC("06/24/2021"),
 	getHireWorthingC("06/25/2021"),
+	getWorthingJuniorTrainin("06/26/2021"),
 	getHireWorthingC("06/26/2021"),
 	getWorthingAllYouCanPlay("06/27/2021"),
 	getHireWorthingC("06/28/2021"),
@@ -1312,7 +1312,7 @@ if (page == 'grand-prix.html') {
 	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_GRAND_PRIX, "NOTHING_FOR_NOW", true);
 }
 
-if (page == 'grand-slam.html') {
+if (page == 'london-grand-slam.html') {
 	var eventsDiv = document.getElementById('upcomingTournaments');
 	eventsDiv.innerHTML = renderFutureTournamentsBothVenues(NAME_GRAND_SLAM, "NOTHING_FOR_NOW", true);
 }
