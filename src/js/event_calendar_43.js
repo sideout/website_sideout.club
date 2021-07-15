@@ -310,71 +310,71 @@ var july_events_leyton = [
 var august_events_leyton = [
 	{ date: new Date("08/01/2021"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
 	getJuniorTrainin("08/02/2021"),
-	getHireLeytonCou("08/03/2021"),
+	// getHireLeytonCou("08/03/2021"),
 	getSideItOutxxxx("08/04/2021"),
-	getHireLeytonCou("08/05/2021"),
-	getHireLeytonCou("08/06/2021"),
+	// getHireLeytonCou("08/05/2021"),
+	// getHireLeytonCou("08/06/2021"),
 	getAllYouCanPlay("08/07/2021"),
 	{ date: new Date("08/08/2021"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "U14 & U18 boys and girls", url: URL_UNDER_18 },
 	getJuniorTrainin("08/09/2021"),
-	getHireLeytonCou("08/10/2021"),
+	// getHireLeytonCou("08/10/2021"),
 	getSideItOutxxxx("08/11/2021"),
-	getHireLeytonCou("08/12/2021"),
-	getHireLeytonCou("08/13/2021"),
+	// getHireLeytonCou("08/12/2021"),
+	// getHireLeytonCou("08/13/2021"),
 	getAllYouCanPlay("08/14/2021"),
 	{ date: new Date("08/15/2021"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1*", url: URL_MIXED_SERIES },
 	getAllYouCanPlay("08/15/2021"),
 	getJuniorTrainin("08/16/2021"),
-	getHireLeytonCou("08/17/2021"),
+	// getHireLeytonCou("08/17/2021"),
 	getSideItOutxxxx("08/18/2021"),
-	getHireLeytonCou("08/19/2021"),
-	getHireLeytonCou("08/20/2021"),
+	// getHireLeytonCou("08/19/2021"),
+	// getHireLeytonCou("08/20/2021"),
 	{ date: new Date("08/21/2021"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
 	getAllYouCanPlay("08/22/2021"),
 	getJuniorTrainin("08/23/2021"),
-	getHireLeytonCou("08/24/2021"),
+	// getHireLeytonCou("08/24/2021"),
 	getSideItOutxxxx("08/25/2021"),
-	getHireLeytonCou("08/26/2021"),
-	getHireLeytonCou("08/27/2021"),
+	// getHireLeytonCou("08/26/2021"),
+	// getHireLeytonCou("08/27/2021"),
 	{ date: new Date("08/28/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html" },
 	{ date: new Date("08/29/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html" },
 	{ date: new Date("08/29/2021"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
 	getAllYouCanPlay("08/30/2021"),
-	getHireLeytonCou("08/31/2021")
+	// getHireLeytonCou("08/31/2021")
 ];
 
 var september_events_leyton = [
 	getSideItOutxxxx("09/01/2021"),
-	getHireLeytonCou("09/02/2021"),
-	getHireLeytonCou("09/03/2021"),
+	// getHireLeytonCou("09/02/2021"),
+	// getHireLeytonCou("09/03/2021"),
 	{ date: new Date("09/04/2021"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
 	getAllYouCanPlay("09/05/2021"),
 	getJuniorTrainin("09/06/2021"),
-	getHireLeytonCou("09/07/2021"),
+	// getHireLeytonCou("09/07/2021"),
 	getSideItOutxxxx("09/08/2021"),
-	getHireLeytonCou("09/09/2021"),
-	getHireLeytonCou("09/10/2021"),
+	// getHireLeytonCou("09/09/2021"),
+	// getHireLeytonCou("09/10/2021"),
 	getAllYouCanPlay("09/11/2021"),
 	getAllYouCanPlay("09/12/2021"),
 	getJuniorTrainin("09/13/2021"),
-	getHireLeytonCou("09/14/2021"),
+	// getHireLeytonCou("09/14/2021"),
 	getSideItOutxxxx("09/15/2021"),
-	getHireLeytonCou("09/16/2021"),
-	getHireLeytonCou("09/17/2021"),
+	// getHireLeytonCou("09/16/2021"),
+	// getHireLeytonCou("09/17/2021"),
 	{ date: new Date("09/18/2021"), name: "Polonia's \"One more beach tournament\"", type: TYPE_TOURNAMENT, info: "", url: URL_POLONIA },
 	getAllYouCanPlay("09/19/2021"),
 	getJuniorTrainin("09/20/2021"),
-	getHireLeytonCou("09/21/2021"),
+	// getHireLeytonCou("09/21/2021"),
 	getSideItOutxxxx("09/22/2021"),
-	getHireLeytonCou("09/23/2021"),
-	getHireLeytonCou("09/24/2021"),
+	// getHireLeytonCou("09/23/2021"),
+	// getHireLeytonCou("09/24/2021"),
 	getAllYouCanPlay("09/25/2021"),
 	{ date: new Date("09/25/2021"), name: "End of season party", type: "", info: "", url: "" },
-	getHireLeytonCou("09/26/2021"),
+	// getHireLeytonCou("09/26/2021"),
 	getJuniorTrainin("09/27/2021"),
-	getHireLeytonCou("09/28/2021"),
+	// getHireLeytonCou("09/28/2021"),
 	getSideItOutxxxx("09/29/2021"),
-	getHireLeytonCou("09/30/2021")
+	// getHireLeytonCou("09/30/2021")
 ];
 
 var october_events_leyton = [
@@ -1103,7 +1103,7 @@ function eventController(filter, dateFilter) {
 	}
 }
 
-//tourname pages display event dates
+//tournament pages display event dates
 function renderFutureTournamentDays(eventList, tournamentName, finalsTournamentName, isPrintInfoEnabled) {
 	console.log("renderNextEvents");
 	var i;
