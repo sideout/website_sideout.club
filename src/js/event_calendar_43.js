@@ -17,6 +17,9 @@ var NAME_SIDE_IT_OUT = "Side-it-Out";
 var NAME_HIRE_WORTHING = "Available for court hire";
 var NAME_HIRE_LEYTON = "Available for court hire";
 var NAME_OPEN_PLAY = "Open Play";
+var NAME_FLEXI_TRAINING = "Available for Flexi Training";
+var NAME_FLEXI_PLAY = "Available for Flexi Play";
+var NAME_BEGINNERS_TRAINING = "Beginners’ Training"
 var NAME_SPRING = "SideOut Spring Tourney";
 var NAME_SUMMER = "SideOut Summer Series";
 var NAME_MIXED_SERIES = "SideOut Mixed Series ";
@@ -34,6 +37,7 @@ var NAME_JUNIOR_TRAINING = "Junior Training";
 var NAME_ADULT_TRAINING = "Adult Training";
 var NAME_MIX_N_MATCH = "Mix & Match";
 var NAME_GRAND_SLAM = "London Grand Slam";
+var NAME_FAMILY_OPEN_PLAY = "Family Open Session"
 
 //TOURNAMENT TYPES
 var TYPE_TOURNAMENT = "Tournament";
@@ -42,31 +46,39 @@ var TYPE_TRAINING = "Training";
 var TYPE_JUNIORS = "Juniors";
 
 //EVENT LINKS
-var URL_MIX_N_MATCH = "tournaments/mixnmatch.html";
-var URL_KING_QUEEN = "tournaments/king-queen-court.html";
+var URL_SIDE_IT_OUT = "play/side-it-out.html";
 var URL_AYCP = "play/all-you-can-play.html";
 var URL_OPEN_PLAY = "play/open-play.html";
+var URL_FAMILY_OPEN_SESSIONS = "play/family-open-sessions.html"
+var URL_FLEXI_PLAY = "play/flexi-play-packages.html";
 var URL_INDOOR_ON_THE_BEACH = "indoor-on-the-beach.html";
-var URL_SIDE_IT_OUT = "play/side-it-out.html";
+
+var URL_MIX_N_MATCH = "tournaments/mixnmatch.html";
+var URL_KING_QUEEN = "tournaments/king-queen-court.html";
 var URL_WILSON = "tournaments/ukbt-wilson-championships.html";
 var URL_WILSON_FINALS = "tournaments/ukbt-wilson-championships-finals.html";
 var URL_WILSON_QUALIFIERS = "tournaments/ukbt-wilson-qualifiers.html";
-var URL_HIRE_LEYTON = "book-a-court-leyton.html";
-var URL_HIRE_WORTHING = "book-a-court-worthing.html";
 var URL_SPRING = "tournaments/spring-tourney.html";
 var URL_SUMMER = "tournaments/summer-series.html";
 var URL_MIXED_SERIES = "tournaments/sideout-mixed-series.html";
 var URL_ALL_NATIONS = "tournaments/all-nations.html";
-var URL_CEV = "cev-continental-cup.html";
 var URL_CHALLENGER = "tournaments/challenger-series.html";
 var URL_GRAND_PRIX = "tournaments/grand-prix.html";
-var URL_LONDON_FINALS = "london-finals.html";
-var URL_TRAINING_LEYTON = "training-leyton.html";
-var URL_TRAINING_WORTHING = "training-worthing.html";
 var URL_POLONIA = "tournaments/poloniasOneMoreBeachTournie.html";
 var URL_UNDER_18 = "tournaments/junior-series.html"
+
+var URL_CEV = "cev-continental-cup.html";
+var URL_LONDON_FINALS = "london-finals.html";
+
+var URL_TRAINING_LEYTON = "training-leyton.html";
+var URL_TRAINING_LEYTON_BEGINNERS = "training-leyton.html#beginners";
+var URL_TRAINING_WORTHING = "training-worthing.html";
+var URL_FLEXI_TRAINING = "training-leyton.html#flexigrouppackages"
 var URL_JUNIOR_LEYTON = "juniors-leyton.html"
 var URL_JUNIOR_WORTHING = "juniors-wothing.html"
+var URL_HIRE_LEYTON = "book-a-court-leyton.html";
+var URL_HIRE_WORTHING = "book-a-court-worthing.html";
+
 
 //INFO
 // var INFO_OPEN_PLAY = "18:00-22:00, £10 per person (£5 for Club members, FREE with Social, Open Group or Private Group add-on), No need to register"
@@ -88,6 +100,8 @@ var COLOR_WILSON = "#000000";
 var COLOR_HIRE = "#e45a2a";
 var COLOR_LONDON_FINALS = "#ea450e";
 var COLOR_DEFAULT = "#3a1d13";
+var COLOR_ONE = "#e4dad7";
+var COLOR_TWO = "#eaeaea";
 
 var gsDayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
@@ -126,6 +140,26 @@ function getHireWorthingC(date) {
 
 function getSideItOutxxxx(date) {
 	return { date: new Date(date), name: NAME_SIDE_IT_OUT, type: TYPE_PLAY, info: INFO_SIDE_IT_OUT, url: URL_SIDE_IT_OUT };
+}
+
+function getFamilyOpenSes(date) {
+	return { date: new Date(date), name: NAME_FAMILY_OPEN_PLAY, type: TYPE_PLAY, type1: TYPE_JUNIORS, info: "16:30-18:30", url: URL_FAMILY_OPEN_SESSIONS };
+}
+
+function getBeginnersTrai(date) {
+	return { date: new Date(date), name: NAME_BEGINNERS_TRAINING, type: TYPE_TRAINING, info: "18:45-20:30", url: URL_TRAINING_LEYTON_BEGINNERS };
+}
+
+// function getBeginnersTrai(date) {
+// 	return { date: new Date(date), name: NAME_BEGINNERS_TRAINING, type: TYPE_TRAINING, info: "18:45-20:30", url: URL_TRAINING_LEYTON_BEGINNERS };
+// }
+
+function getFlexiTraining(date) {
+	return { date: new Date(date), name: NAME_FLEXI_TRAINING, type: TYPE_TRAINING, info: "18:30-22:00", url: URL_FLEXI_TRAINING };
+}
+
+function getFlexiPlayxxxx(date) {
+	return { date: new Date(date), name: NAME_FLEXI_PLAY, type: TYPE_PLAY, info: "18:30-22:00", url: URL_FLEXI_PLAY };
 }
 
 
@@ -292,89 +326,144 @@ var july_events_leyton = [
 	getOpenPlayxxxxx("07/17/2021"),
 	{ date: new Date("07/18/2021"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
 	getJuniorTrainin("07/19/2021"),
+	getBeginnersTrai("07/19/2021"),
 	getAdultTraining("07/20/2021"),
 	getSideItOutxxxx("07/21/2021"),
 	getAdultTraining("07/22/2021"),
-	getOpenPlayxxxxx("07/23/2021"),
-	{ date: new Date("07/24/2021"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1*", url: URL_MIXED_SERIES },
-	getAllYouCanPlay("07/24/2021"),
-	getAllYouCanPlay("07/25/2021"),
-	getJuniorTrainin("07/26/2021"),
-	getAdultTraining("07/27/2021"),
-	getSideItOutxxxx("07/28/2021"),
-	getAdultTraining("07/29/2021"),
-	getOpenPlayxxxxx("07/30/2021"),
-	getAllYouCanPlay("07/31/2021")
+	getFamilyOpenSes("07/23/2021"), //F
+	{ date: new Date("07/24/2021"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1*", url: URL_MIXED_SERIES }, //Sat
+	getAllYouCanPlay("07/24/2021"), //Sat
+	getAllYouCanPlay("07/25/2021"), //Sun
+	getJuniorTrainin("07/26/2021"), //M
+	getBeginnersTrai("07/26/2021"), //M
+	getAdultTraining("07/27/2021"), //T
+	getSideItOutxxxx("07/28/2021"), //W
+	getAdultTraining("07/29/2021"), //T
+	getFamilyOpenSes("07/30/2021"), //F
+	getAllYouCanPlay("07/31/2021")  //S 
 ];
 
 var august_events_leyton = [
-	{ date: new Date("08/01/2021"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
-	getJuniorTrainin("08/02/2021"),
-	// getHireLeytonCou("08/03/2021"),
-	getSideItOutxxxx("08/04/2021"),
-	// getHireLeytonCou("08/05/2021"),
-	// getHireLeytonCou("08/06/2021"),
-	getAllYouCanPlay("08/07/2021"),
-	{ date: new Date("08/08/2021"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "U14 & U18 boys and girls", url: URL_UNDER_18 },
-	getJuniorTrainin("08/09/2021"),
-	// getHireLeytonCou("08/10/2021"),
-	getSideItOutxxxx("08/11/2021"),
-	// getHireLeytonCou("08/12/2021"),
-	// getHireLeytonCou("08/13/2021"),
-	getAllYouCanPlay("08/14/2021"),
-	{ date: new Date("08/15/2021"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1*", url: URL_MIXED_SERIES },
-	getAllYouCanPlay("08/15/2021"),
-	getJuniorTrainin("08/16/2021"),
-	// getHireLeytonCou("08/17/2021"),
-	getSideItOutxxxx("08/18/2021"),
-	// getHireLeytonCou("08/19/2021"),
-	// getHireLeytonCou("08/20/2021"),
-	{ date: new Date("08/21/2021"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
-	getAllYouCanPlay("08/22/2021"),
-	getJuniorTrainin("08/23/2021"),
-	// getHireLeytonCou("08/24/2021"),
-	getSideItOutxxxx("08/25/2021"),
-	// getHireLeytonCou("08/26/2021"),
-	// getHireLeytonCou("08/27/2021"),
-	{ date: new Date("08/28/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html" },
-	{ date: new Date("08/29/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html" },
-	{ date: new Date("08/29/2021"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
-	getAllYouCanPlay("08/30/2021"),
-	// getHireLeytonCou("08/31/2021")
+	{ date: new Date("08/01/2021"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER }, //Sun
+	getJuniorTrainin("08/02/2021"), //Mon
+	getBeginnersTrai("08/02/2021"), //Mon
+	getFlexiTraining("08/02/2021"), //Mon
+	getFlexiPlayxxxx("08/02/2021"), //Mon
+	getFlexiTraining("08/03/2021"), //Tue
+	getFlexiPlayxxxx("08/03/2021"), //Tue
+	getSideItOutxxxx("08/04/2021"), //Wed
+	getFlexiTraining("08/05/2021"), //Thu
+	getFlexiPlayxxxx("08/05/2021"), //Thu
+	getFamilyOpenSes("08/06/2021"), //Fri
+	getOpenPlayxxxxx("08/06/2021"), //Fri
+	getAllYouCanPlay("08/07/2021"), //Sat
+	{ date: new Date("08/08/2021"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "U14 & U18 boys and girls", url: URL_UNDER_18 }, //Sun
+	getJuniorTrainin("08/09/2021"), //Mon
+	getBeginnersTrai("08/09/2021"), //Mon
+	getFlexiTraining("08/09/2021"), //Mon
+	getFlexiPlayxxxx("08/09/2021"), //Mon
+	getFlexiTraining("08/10/2021"), //Tue
+	getFlexiPlayxxxx("08/10/2021"), //Tue
+	getSideItOutxxxx("08/11/2021"), //Wed
+	getFlexiTraining("08/12/2021"), //Thu
+	getFlexiPlayxxxx("08/12/2021"), //Thu
+	getFamilyOpenSes("08/13/2021"), //Fri
+	getOpenPlayxxxxx("08/13/2021"), //Fri
+	getAllYouCanPlay("08/14/2021"), //Sat
+	{ date: new Date("08/15/2021"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1*", url: URL_MIXED_SERIES }, //Sun
+	getAllYouCanPlay("08/15/2021"), //Sun
+	getJuniorTrainin("08/16/2021"), //Mon
+	getBeginnersTrai("08/16/2021"), //Mon
+	getFlexiTraining("08/16/2021"), //Mon
+	getFlexiPlayxxxx("08/16/2021"), //Mon
+	getFlexiTraining("08/17/2021"), //Tue
+	getFlexiPlayxxxx("08/17/2021"), //Tue
+	getSideItOutxxxx("08/18/2021"), //Wed
+	getFlexiTraining("08/19/2021"), //Thu
+	getFlexiPlayxxxx("08/19/2021"), //Thu
+	getFamilyOpenSes("08/20/2021"), //Fri
+	getOpenPlayxxxxx("08/20/2021"), //Fri
+	{ date: new Date("08/21/2021"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER }, //Sat
+	getAllYouCanPlay("08/22/2021"), //Sun
+	getJuniorTrainin("08/23/2021"), //Mon
+	getBeginnersTrai("08/23/2021"), //Mon
+	getFlexiTraining("08/23/2021"), //Mon
+	getFlexiPlayxxxx("08/23/2021"), //Mon
+	getFlexiTraining("08/24/2021"), //Tue
+	getFlexiPlayxxxx("08/24/2021"), //Tue
+	getSideItOutxxxx("08/25/2021"), //Wed
+	getFlexiTraining("08/26/2021"), //Thu
+	getFlexiPlayxxxx("08/26/2021"), //Thu
+	getFamilyOpenSes("08/27/2021"), //Fri
+	getOpenPlayxxxxx("08/27/2021"), //Fri
+	{ date: new Date("08/28/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html" }, //Sat
+	{ date: new Date("08/29/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html" }, //Sun
+	{ date: new Date("08/29/2021"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER }, //Sun
+	getAllYouCanPlay("08/30/2021"), //Mon
+	getBeginnersTrai("08/30/2021"), //Mon
+	getFlexiTraining("08/30/2021"), //Mon
+	getFlexiPlayxxxx("08/30/2021"), //Mon
+	getFlexiTraining("08/31/2021"), //Tue
+	getFlexiPlayxxxx("08/31/2021")  //Tue
 ];
 
 var september_events_leyton = [
-	getSideItOutxxxx("09/01/2021"),
-	// getHireLeytonCou("09/02/2021"),
-	// getHireLeytonCou("09/03/2021"),
-	{ date: new Date("09/04/2021"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
-	getAllYouCanPlay("09/05/2021"),
-	getJuniorTrainin("09/06/2021"),
-	// getHireLeytonCou("09/07/2021"),
-	getSideItOutxxxx("09/08/2021"),
-	// getHireLeytonCou("09/09/2021"),
-	// getHireLeytonCou("09/10/2021"),
-	getAllYouCanPlay("09/11/2021"),
-	getAllYouCanPlay("09/12/2021"),
-	getJuniorTrainin("09/13/2021"),
-	// getHireLeytonCou("09/14/2021"),
-	getSideItOutxxxx("09/15/2021"),
-	// getHireLeytonCou("09/16/2021"),
-	// getHireLeytonCou("09/17/2021"),
-	{ date: new Date("09/18/2021"), name: "Polonia's \"One more beach tournament\"", type: TYPE_TOURNAMENT, info: "", url: URL_POLONIA },
-	getAllYouCanPlay("09/19/2021"),
-	getJuniorTrainin("09/20/2021"),
-	// getHireLeytonCou("09/21/2021"),
-	getSideItOutxxxx("09/22/2021"),
-	// getHireLeytonCou("09/23/2021"),
-	// getHireLeytonCou("09/24/2021"),
-	getAllYouCanPlay("09/25/2021"),
-	{ date: new Date("09/25/2021"), name: "End of season party", type: "", info: "", url: "" },
-	// getHireLeytonCou("09/26/2021"),
-	getJuniorTrainin("09/27/2021"),
-	// getHireLeytonCou("09/28/2021"),
-	getSideItOutxxxx("09/29/2021"),
-	// getHireLeytonCou("09/30/2021")
+	getSideItOutxxxx("09/01/2021"), //Wed
+	getFlexiTraining("09/02/2021"), //Thu
+	getFlexiPlayxxxx("09/02/2021"), //Thu
+	getFamilyOpenSes("09/03/2021"), //Fri
+	getOpenPlayxxxxx("09/03/2021"), //Fri
+	{ date: new Date("09/04/2021"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER }, //Sat
+	getAllYouCanPlay("09/05/2021"), //Sun
+	getJuniorTrainin("09/06/2021"), //Mon
+	getBeginnersTrai("08/06/2021"), //Mon
+	getFlexiTraining("08/06/2021"), //Mon
+	getFlexiPlayxxxx("08/06/2021"), //Mon
+	getFlexiTraining("09/07/2021"), //Tue
+	getFlexiPlayxxxx("09/07/2021"), //Tue
+	getSideItOutxxxx("09/08/2021"), //Wed
+	getFlexiTraining("09/09/2021"), //Thu
+	getFlexiPlayxxxx("09/09/2021"), //Thu
+	getFamilyOpenSes("09/10/2021"), //Fri
+	getOpenPlayxxxxx("09/10/2021"), //Fri
+	getAllYouCanPlay("09/11/2021"), //Sat
+	getAllYouCanPlay("09/12/2021"), //Sun
+	getJuniorTrainin("09/13/2021"), //Mon
+	getBeginnersTrai("08/13/2021"), //Mon
+	getFlexiTraining("08/13/2021"), //Mon
+	getFlexiPlayxxxx("08/13/2021"), //Mon
+	getFlexiTraining("09/14/2021"), //Tue
+	getFlexiPlayxxxx("09/14/2021"), //Tue
+	getSideItOutxxxx("09/15/2021"), //Wed
+	getFlexiTraining("09/16/2021"), //Thu
+	getFlexiPlayxxxx("09/16/2021"), //Thu
+	getFamilyOpenSes("09/17/2021"), //Fri
+	getOpenPlayxxxxx("09/17/2021"), //Fri
+	{ date: new Date("09/18/2021"), name: "Polonia's \"One more beach tournament\"", type: TYPE_TOURNAMENT, info: "", url: URL_POLONIA }, //Sat
+	getAllYouCanPlay("09/19/2021"), //Sun
+	getJuniorTrainin("09/20/2021"), //Mon
+	getBeginnersTrai("08/20/2021"), //Mon
+	getFlexiTraining("08/20/2021"), //Mon
+	getFlexiPlayxxxx("08/20/2021"), //Mon
+	getFlexiTraining("09/21/2021"), //Tue
+	getFlexiPlayxxxx("09/21/2021"), //Tue
+	getSideItOutxxxx("09/22/2021"), //Wed
+	getFlexiTraining("09/23/2021"), //Thu
+	getFlexiPlayxxxx("09/23/2021"), //Thu
+	getFamilyOpenSes("09/24/2021"), //Fri
+	getOpenPlayxxxxx("09/24/2021"), //Fri
+	getAllYouCanPlay("09/25/2021"), //Sat
+	{ date: new Date("09/25/2021"), name: "End of season party", type: "", info: "", url: "" }, //Sat
+	// getHireLeytonCou("09/26/2021"), //Sun
+	getJuniorTrainin("09/27/2021"), //Mon
+	getBeginnersTrai("08/27/2021"), //Mon
+	getFlexiTraining("08/27/2021"), //Mon
+	getFlexiPlayxxxx("08/27/2021"), //Mon
+	getFlexiTraining("09/28/2021"), //Tue
+	getFlexiPlayxxxx("09/28/2021"), //Tue
+	getSideItOutxxxx("09/29/2021"), //Wed
+	getFlexiTraining("09/30/2021"), //Thu
+	getFlexiPlayxxxx("09/30/2021")  //Thu
 ];
 
 var october_events_leyton = [
@@ -787,7 +876,6 @@ var december_events_worthing = [
 	// { date: new Date("04/30/2021"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON }
 ];
 
-
 var TABLE_HEADER =
 	'<table>\
 	<thead>\
@@ -917,6 +1005,8 @@ function moreEventsInCalendar(elementId, eventsCounter, url) {
 }
 
 //calendar pages
+var lineColorColor = "";
+var lineColorDay = "";
 function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, monthName) {
 
 	var i;
@@ -926,9 +1016,10 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 	for (i = 0; i < eventList.length; i++) {
 
 		var eventType = eventList[i].type;
+		var eventType1 = eventList[i].type1;
 
 
-		if (filter == 'display-all' || filter == eventType) {
+		if (filter == 'display-all' || filter == eventType || filter == eventType1) {
 
 			var eventName = eventList[i].name;
 			var eventInfo = eventList[i].info;
@@ -956,6 +1047,18 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 				var dayInt = eventDate.getDate();
 				var monthInt = eventDate.getMonth();
 				var year = eventDate.getFullYear();
+
+
+				if (lineColorDay !== dayOfWeekInt) {
+					lineColorDay = dayOfWeekInt;
+					if (lineColorColor == COLOR_ONE) {
+						lineColorColor = COLOR_TWO;
+					} else {
+						lineColorColor = COLOR_ONE;
+					}
+				}
+
+
 
 				var color;
 
@@ -994,7 +1097,7 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 						color = COLOR_DEFAULT;
 				}
 
-				tableEventContent += "<tr class=\"row100 body\">\
+				tableEventContent += "<tr class=\"row100 body\" style=\"background-color: " + lineColorColor + ";\">\
       			<td class=\"cell100 column1X\">" + gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year + "</td>";
 
 				if (eventUrl !== "") {
@@ -1002,8 +1105,17 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 				} else {
 					tableEventContent += "<td class=\"cell100 columnX\">" + eventName + "</td>";
 				}
+
+				eventTypeContent = '';
+				if (eventType1) {
+					eventTypeContent = eventType + " & " + eventType1;
+				} else {
+					eventTypeContent = eventType;
+				}
+
+
 				tableEventContent += "\
-      			<td class=\"cell100 columnX\">" + eventType + "</td>\
+      			<td class=\"cell100 columnX\">" + eventTypeContent + "</td>\
       			<td class=\"cell100 columnX\">" + eventInfo + "</td></tr>";
 				//console.log(text);
 			}
@@ -1052,12 +1164,12 @@ function filterButtons(filter) {
 			buttonAll = "btn gradient-bg";
 	}
 
-	document.getElementById('filter-buttons').innerHTML =
-		"<a onclick=\"eventController('display-all',true)\" href=\"#\" style='width: 160px' class=\" " + buttonAll + " \">All Events</a>\
-    <a onclick=\"eventController('Tournament',true)\" href=\"#\" style='width: 190px' class=\" " + buttonTournament + " \">Tournaments</a>\
-    <a onclick=\"eventController('Play',true)\" href=\"#\" style='width: 190px' class=\" " + buttonPlay + " \">Play</a>\
-    <a onclick=\"eventController('Training',true)\" href=\"#\" style='width: 190px' class=\" " + buttonTraining + " \">Training</a>\
-	<a onclick=\"eventController('Juniors',true)\" href=\"#\" style='width: 190px' class=\" " + buttonJuniors + " \">Juniors</a>";
+	document.getElementById('filter-buttons').innerHTML = "\
+		<a onclick=\"eventController('display-all',true)\" href=\"#\" style='width: 160px' class=\" " + buttonAll + " \">All Events</a>\
+		<a onclick=\"eventController('Tournament',true)\" href=\"#\" style='width: 190px' class=\" " + buttonTournament + " \">Tournaments</a>\
+		<a onclick=\"eventController('Play',true)\" href=\"#\" style='width: 190px' class=\" " + buttonPlay + " \">Play</a>\
+		<a onclick=\"eventController('Training',true)\" href=\"#\" style='width: 190px' class=\" " + buttonTraining + " \">Training</a>\
+		<a onclick=\"eventController('Juniors',true)\" href=\"#\" style='width: 190px' class=\" " + buttonJuniors + " \">Juniors</a>";
 }
 
 function eventController(filter, dateFilter) {
