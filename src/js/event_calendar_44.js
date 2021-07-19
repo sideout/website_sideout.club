@@ -73,7 +73,7 @@ var URL_LONDON_FINALS = "london-finals.html";
 var URL_TRAINING_LEYTON = "training-leyton.html";
 var URL_TRAINING_LEYTON_BEGINNERS = "training-leyton.html#beginners";
 var URL_TRAINING_WORTHING = "training-worthing.html";
-var URL_FLEXI_TRAINING = "training-leyton.html#flexigrouppackages"
+var URL_FLEXI_TRAINING = "training-leyton.html#flexitrainingpackages"
 var URL_JUNIOR_LEYTON = "juniors-leyton.html"
 var URL_JUNIOR_WORTHING = "juniors-wothing.html"
 var URL_HIRE_LEYTON = "book-a-court-leyton.html";
@@ -156,6 +156,10 @@ function getBeginnersTrai(date) {
 
 function getFlexiTraining(date) {
 	return { date: new Date(date), name: NAME_FLEXI_TRAINING, type: TYPE_TRAINING, info: "18:30-22:00", url: URL_FLEXI_TRAINING };
+}
+
+function getFlexiTrReduce(date) {
+	return { date: new Date(date), name: NAME_FLEXI_TRAINING, type: TYPE_TRAINING, info: "20:15-22:00", url: URL_FLEXI_TRAINING };
 }
 
 function getFlexiPlayxxxx(date) {
@@ -347,11 +351,11 @@ var august_events_leyton = [
 	{ date: new Date("08/01/2021"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER }, //Sun
 	getJuniorTrainin("08/02/2021"), //Mon
 	getBeginnersTrai("08/02/2021"), //Mon
-	getFlexiTraining("08/02/2021"), //Mon
-	getFlexiPlayxxxx("08/02/2021"), //Mon
+	getFlexiTrReduce("08/02/2021"), //Mon
 	getFlexiTraining("08/03/2021"), //Tue
 	getFlexiPlayxxxx("08/03/2021"), //Tue
 	getSideItOutxxxx("08/04/2021"), //Wed
+	getFlexiTrReduce("08/04/2021"), //Wed
 	getFlexiTraining("08/05/2021"), //Thu
 	getFlexiPlayxxxx("08/05/2021"), //Thu
 	getFamilyOpenSes("08/06/2021"), //Fri
@@ -360,11 +364,11 @@ var august_events_leyton = [
 	{ date: new Date("08/08/2021"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "U14 & U18 boys and girls", url: URL_UNDER_18 }, //Sun
 	getJuniorTrainin("08/09/2021"), //Mon
 	getBeginnersTrai("08/09/2021"), //Mon
-	getFlexiTraining("08/09/2021"), //Mon
-	getFlexiPlayxxxx("08/09/2021"), //Mon
+	getFlexiTrReduce("08/09/2021"), //Mon
 	getFlexiTraining("08/10/2021"), //Tue
 	getFlexiPlayxxxx("08/10/2021"), //Tue
 	getSideItOutxxxx("08/11/2021"), //Wed
+	getFlexiTrReduce("08/11/2021"), //Wed
 	getFlexiTraining("08/12/2021"), //Thu
 	getFlexiPlayxxxx("08/12/2021"), //Thu
 	getFamilyOpenSes("08/13/2021"), //Fri
@@ -374,11 +378,11 @@ var august_events_leyton = [
 	getAllYouCanPlay("08/15/2021"), //Sun
 	getJuniorTrainin("08/16/2021"), //Mon
 	getBeginnersTrai("08/16/2021"), //Mon
-	getFlexiTraining("08/16/2021"), //Mon
-	getFlexiPlayxxxx("08/16/2021"), //Mon
+	getFlexiTrReduce("08/16/2021"), //Mon
 	getFlexiTraining("08/17/2021"), //Tue
 	getFlexiPlayxxxx("08/17/2021"), //Tue
 	getSideItOutxxxx("08/18/2021"), //Wed
+	getFlexiTrReduce("08/18/2021"), //Wed
 	getFlexiTraining("08/19/2021"), //Thu
 	getFlexiPlayxxxx("08/19/2021"), //Thu
 	getFamilyOpenSes("08/20/2021"), //Fri
@@ -387,11 +391,11 @@ var august_events_leyton = [
 	getAllYouCanPlay("08/22/2021"), //Sun
 	getJuniorTrainin("08/23/2021"), //Mon
 	getBeginnersTrai("08/23/2021"), //Mon
-	getFlexiTraining("08/23/2021"), //Mon
-	getFlexiPlayxxxx("08/23/2021"), //Mon
+	getFlexiTrReduce("08/23/2021"), //Mon
 	getFlexiTraining("08/24/2021"), //Tue
 	getFlexiPlayxxxx("08/24/2021"), //Tue
 	getSideItOutxxxx("08/25/2021"), //Wed
+	getFlexiTrReduce("08/25/2021"), //Wed
 	getFlexiTraining("08/26/2021"), //Thu
 	getFlexiPlayxxxx("08/26/2021"), //Thu
 	getFamilyOpenSes("08/27/2021"), //Fri
@@ -401,14 +405,14 @@ var august_events_leyton = [
 	{ date: new Date("08/29/2021"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER }, //Sun
 	getAllYouCanPlay("08/30/2021"), //Mon
 	getBeginnersTrai("08/30/2021"), //Mon
-	getFlexiTraining("08/30/2021"), //Mon
-	getFlexiPlayxxxx("08/30/2021"), //Mon
+	getFlexiTrReduce("08/30/2021"), //Mon
 	getFlexiTraining("08/31/2021"), //Tue
 	getFlexiPlayxxxx("08/31/2021")  //Tue
 ];
 
 var september_events_leyton = [
 	getSideItOutxxxx("09/01/2021"), //Wed
+	getFlexiTrReduce("09/01/2021"), //Wed
 	getFlexiTraining("09/02/2021"), //Thu
 	getFlexiPlayxxxx("09/02/2021"), //Thu
 	getFamilyOpenSes("09/03/2021"), //Fri
@@ -417,11 +421,11 @@ var september_events_leyton = [
 	getAllYouCanPlay("09/05/2021"), //Sun
 	getJuniorTrainin("09/06/2021"), //Mon
 	getBeginnersTrai("08/06/2021"), //Mon
-	getFlexiTraining("08/06/2021"), //Mon
-	getFlexiPlayxxxx("08/06/2021"), //Mon
+	getFlexiTrReduce("08/06/2021"), //Mon
 	getFlexiTraining("09/07/2021"), //Tue
 	getFlexiPlayxxxx("09/07/2021"), //Tue
 	getSideItOutxxxx("09/08/2021"), //Wed
+	getFlexiTrReduce("09/08/2021"), //Wed
 	getFlexiTraining("09/09/2021"), //Thu
 	getFlexiPlayxxxx("09/09/2021"), //Thu
 	getFamilyOpenSes("09/10/2021"), //Fri
@@ -430,11 +434,11 @@ var september_events_leyton = [
 	getAllYouCanPlay("09/12/2021"), //Sun
 	getJuniorTrainin("09/13/2021"), //Mon
 	getBeginnersTrai("08/13/2021"), //Mon
-	getFlexiTraining("08/13/2021"), //Mon
-	getFlexiPlayxxxx("08/13/2021"), //Mon
+	getFlexiTrReduce("08/13/2021"), //Mon
 	getFlexiTraining("09/14/2021"), //Tue
 	getFlexiPlayxxxx("09/14/2021"), //Tue
 	getSideItOutxxxx("09/15/2021"), //Wed
+	getFlexiTrReduce("09/15/2021"), //Wed
 	getFlexiTraining("09/16/2021"), //Thu
 	getFlexiPlayxxxx("09/16/2021"), //Thu
 	getFamilyOpenSes("09/17/2021"), //Fri
@@ -443,25 +447,25 @@ var september_events_leyton = [
 	getAllYouCanPlay("09/19/2021"), //Sun
 	getJuniorTrainin("09/20/2021"), //Mon
 	getBeginnersTrai("08/20/2021"), //Mon
-	getFlexiTraining("08/20/2021"), //Mon
-	getFlexiPlayxxxx("08/20/2021"), //Mon
+	getFlexiTrReduce("08/20/2021"), //Mon
 	getFlexiTraining("09/21/2021"), //Tue
 	getFlexiPlayxxxx("09/21/2021"), //Tue
 	getSideItOutxxxx("09/22/2021"), //Wed
+	getFlexiTrReduce("09/22/2021"), //Wed
 	getFlexiTraining("09/23/2021"), //Thu
 	getFlexiPlayxxxx("09/23/2021"), //Thu
 	getFamilyOpenSes("09/24/2021"), //Fri
 	getOpenPlayxxxxx("09/24/2021"), //Fri
 	getAllYouCanPlay("09/25/2021"), //Sat
 	{ date: new Date("09/25/2021"), name: "End of season party", type: "", info: "", url: "" }, //Sat
-	// getHireLeytonCou("09/26/2021"), //Sun
+	getAllYouCanPlay("09/26/2021"), //Sun
 	getJuniorTrainin("09/27/2021"), //Mon
 	getBeginnersTrai("08/27/2021"), //Mon
-	getFlexiTraining("08/27/2021"), //Mon
-	getFlexiPlayxxxx("08/27/2021"), //Mon
+	getFlexiTrReduce("08/27/2021"), //Mon
 	getFlexiTraining("09/28/2021"), //Tue
 	getFlexiPlayxxxx("09/28/2021"), //Tue
 	getSideItOutxxxx("09/29/2021"), //Wed
+	getFlexiTrReduce("09/29/2021"), //Wed
 	getFlexiTraining("09/30/2021"), //Thu
 	getFlexiPlayxxxx("09/30/2021")  //Thu
 ];
@@ -706,7 +710,8 @@ var july_events_worthing = [
 	getHireWorthingC("07/28/2021"),
 	getHireWorthingC("07/29/2021"),
 	getHireWorthingC("07/30/2021"),
-	getHireWorthingC("07/31/2021")
+	getHireWorthingC("07/31/2021"),
+	getWorthingJuniorTrainin("07/31/2021")
 ];
 
 var august_events_worthing = [
@@ -724,6 +729,7 @@ var august_events_worthing = [
 	getHireWorthingC("08/12/2021"),
 	getHireWorthingC("08/13/2021"),
 	getHireWorthingC("08/14/2021"),
+	getWorthingJuniorTrainin("08/14/2021"),
 	getWorthingAllYouCanPlay("08/15/2021"),
 	getHireWorthingC("08/16/2021"),
 	getHireWorthingC("08/17/2021"),
@@ -731,6 +737,7 @@ var august_events_worthing = [
 	getHireWorthingC("08/19/2021"),
 	getHireWorthingC("08/20/2021"),
 	getHireWorthingC("08/21/2021"),
+	getWorthingJuniorTrainin("08/21/2021"),
 	getWorthingAllYouCanPlay("08/22/2021"),
 	getHireWorthingC("08/23/2021"),
 	getHireWorthingC("08/24/2021"),
@@ -738,6 +745,7 @@ var august_events_worthing = [
 	getHireWorthingC("08/26/2021"),
 	getHireWorthingC("08/27/2021"),
 	getHireWorthingC("08/28/2021"),
+	getWorthingJuniorTrainin("08/28/2021"),
 	getHireWorthingC("08/29/2021"),
 	getHireWorthingC("08/30/2021"),
 	getHireWorthingC("08/31/2021")
@@ -748,6 +756,7 @@ var september_events_worthing = [
 	getHireWorthingC("09/02/2021"),
 	getHireWorthingC("09/03/2021"),
 	getHireWorthingC("09/04/2021"),
+	getWorthingJuniorTrainin("09/04/2021"),
 	getWorthingAllYouCanPlay("09/05/2021"),
 	getHireWorthingC("09/06/2021"),
 	getHireWorthingC("09/07/2021"),
@@ -755,6 +764,7 @@ var september_events_worthing = [
 	getHireWorthingC("09/09/2021"),
 	getHireWorthingC("09/10/2021"),
 	getHireWorthingC("09/11/2021"),
+	getWorthingJuniorTrainin("09/11/2021"),
 	getWorthingAllYouCanPlay("09/12/2021"),
 	getHireWorthingC("09/13/2021"),
 	getHireWorthingC("09/14/2021"),
@@ -762,6 +772,7 @@ var september_events_worthing = [
 	getHireWorthingC("09/16/2021"),
 	getHireWorthingC("09/17/2021"),
 	getHireWorthingC("09/18/2021"),
+	getWorthingJuniorTrainin("09/18/2021"),
 	{ date: new Date("09/19/2021"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
 	getHireWorthingC("09/20/2021"),
 	getHireWorthingC("09/21/2021"),
@@ -769,6 +780,7 @@ var september_events_worthing = [
 	getHireWorthingC("09/23/2021"),
 	getHireWorthingC("09/24/2021"),
 	getHireWorthingC("09/25/2021"),
+	getWorthingJuniorTrainin("09/25/2021"),
 	{ date: new Date("09/26/2021"), name: "End of season party", type: "", info: "", url: "" },
 	getHireWorthingC("09/27/2021"),
 	getHireWorthingC("09/28/2021"),
