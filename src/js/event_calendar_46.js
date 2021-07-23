@@ -336,7 +336,6 @@ var july_events_leyton = [
 	getAdultTraining("07/22/2021"),
 	getFamilyOpenSes("07/23/2021"), //F
 	{ date: new Date("07/24/2021"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1*", url: URL_MIXED_SERIES }, //Sat
-	getAllYouCanPlay("07/24/2021"), //Sat
 	getAllYouCanPlay("07/25/2021"), //Sun
 	getJuniorTrainin("07/26/2021"), //M
 	getBeginnersTrai("07/26/2021"), //M
