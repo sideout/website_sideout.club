@@ -38,6 +38,7 @@ var NAME_ADULT_TRAINING = "Adult Training";
 var NAME_MIX_N_MATCH = "Mix & Match";
 var NAME_GRAND_SLAM = "London Grand Slam";
 var NAME_FAMILY_OPEN_PLAY = "Family Open Session"
+var NAME_TENTH_BIRTHDAY = "10th Birthday Tournament"
 
 //TOURNAMENT TYPES
 var TYPE_TOURNAMENT = "Tournament";
@@ -78,6 +79,7 @@ var URL_JUNIOR_LEYTON = "juniors-leyton.html"
 var URL_JUNIOR_WORTHING = "juniors-wothing.html"
 var URL_HIRE_LEYTON = "book-a-court-leyton.html";
 var URL_HIRE_WORTHING = "book-a-court-worthing.html";
+var URL_TENTH_BIRTHDAY = "10-years-anniversary.html#birthdaytournament"
 
 
 //INFO
@@ -401,7 +403,7 @@ var august_events_leyton = [
 	getOpenPlayxxxxx("08/27/2021"), //Fri
 	{ date: new Date("08/28/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html" }, //Sat
 	{ date: new Date("08/29/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html" }, //Sun
-	{ date: new Date("08/29/2021"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER }, //Sun
+	{ date: new Date("08/29/2021"), name: NAME_TENTH_BIRTHDAY, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_TENTH_BIRTHDAY }, //Sun
 	getAllYouCanPlay("08/30/2021"), //Mon
 	getBeginnersTrai("08/30/2021"), //Mon
 	getFlexiTrReduce("08/30/2021"), //Mon
