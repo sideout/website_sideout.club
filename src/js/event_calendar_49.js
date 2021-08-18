@@ -39,6 +39,7 @@ var NAME_MIX_N_MATCH = "Mix & Match";
 var NAME_GRAND_SLAM = "London Grand Slam";
 var NAME_FAMILY_OPEN_PLAY = "Family Open Session"
 var NAME_TENTH_BIRTHDAY = "10th Birthday Tournament"
+var NAME_FREE_AYCP = "Free AYCP"
 
 //TOURNAMENT TYPES
 var TYPE_TOURNAMENT = "Tournament";
@@ -80,7 +81,7 @@ var URL_JUNIOR_WORTHING = "juniors-wothing.html"
 var URL_HIRE_LEYTON = "book-a-court-leyton.html";
 var URL_HIRE_WORTHING = "book-a-court-worthing.html";
 var URL_TENTH_BIRTHDAY = "10-years-anniversary.html#birthdaytournament"
-
+var URL_TEN_YEAR_AYCP = "/10-years-anniversary.html#AYCP"
 
 //INFO
 // var INFO_OPEN_PLAY = "18:00-22:00, £10 per person (£5 for Club members, FREE with Social, Open Group or Private Group add-on), No need to register"
@@ -104,6 +105,7 @@ var COLOR_LONDON_FINALS = "#ea450e";
 var COLOR_DEFAULT = "#3a1d13";
 var COLOR_ONE = "#e4dad7";
 var COLOR_TWO = "#eaeaea";
+var COLOR_SIDEOUT_RED = "#ed2329";
 
 var gsDayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
@@ -404,7 +406,7 @@ var august_events_leyton = [
 	{ date: new Date("08/28/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html" }, //Sat
 	{ date: new Date("08/29/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html" }, //Sun
 	{ date: new Date("08/29/2021"), name: NAME_TENTH_BIRTHDAY, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_TENTH_BIRTHDAY }, //Sun
-	getAllYouCanPlay("08/30/2021"), //Mon
+	{ date: new Date("08/30/2021"), name: NAME_FREE_AYCP, type: TYPE_PLAY, info: "11:30-18:00", url: URL_TEN_YEAR_AYCP }, // Mon
 	getBeginnersTrai("08/30/2021"), //Mon
 	getFlexiTrReduce("08/30/2021"), //Mon
 	getFlexiTraining("08/31/2021"), //Tue
@@ -748,7 +750,7 @@ var august_events_worthing = [
 	getHireWorthingC("08/27/2021"),
 	getHireWorthingC("08/28/2021"),
 	getWorthingJuniorTrainin("08/28/2021"),
-	getHireWorthingC("08/29/2021"),
+  { date: new Date("08/29/2021"), name: NAME_FREE_AYCP, type: TYPE_PLAY, info: "09:00-13:00 & 13:00-17:00", url: URL_AYCP }, // Sun
 	getHireWorthingC("08/30/2021"),
 	getHireWorthingC("08/31/2021")
 ];
@@ -1080,6 +1082,18 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 					case NAME_AYCP:
 						color = COLOR_AYCP;
 						break;
+          case NAME_FREE_AYCP:
+              color = COLOR_SIDEOUT_RED;
+              break;
+          case NAME_GRAND_SLAM:
+            color = COLOR_SIDEOUT_RED;
+            break;
+          case NAME_GRAND_SLAM:
+            color = COLOR_SIDEOUT_RED;
+            break;
+          case NAME_TENTH_BIRTHDAY:
+            color = COLOR_SIDEOUT_RED;
+            break;
 					case NAME_SPRING:
 						color = COLOR_SPRING;
 						break;
@@ -1107,6 +1121,7 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 					case NAME_OPEN_PLAY:
 						color = COLOR_OPEN_PLAY;
 						break;
+          
 					default:
 						color = COLOR_DEFAULT;
 				}
