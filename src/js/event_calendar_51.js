@@ -401,8 +401,10 @@ var august_events_leyton = [
 	getFlexiTrReduce("08/25/2021"), //Wed
 	getFlexiTraining("08/26/2021"), //Thu
 	getFlexiPlayxxxx("08/26/2021"), //Thu
-	getFamilyOpenSes("08/27/2021"), //Fri
-	getOpenPlayxxxxx("08/27/2021"), //Fri
+	//getFamilyOpenSes("08/27/2021"), //Fri
+	{ date: new Date("08/27/2021"), name: NAME_FAMILY_OPEN_PLAY, type: TYPE_PLAY, type1: TYPE_JUNIORS, info: "CANCELLED", url: URL_FAMILY_OPEN_SESSIONS, status: "cancelled" },
+	{ date: new Date("08/27/2021"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: "CANCELLED", url: URL_OPEN_PLAY, status: "cancelled"},
+	//getOpenPlayxxxxx("08/27/2021"), //Fri
 	{ date: new Date("08/28/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html" }, //Sat
 	{ date: new Date("08/29/2021"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html" }, //Sun
 	{ date: new Date("08/29/2021"), name: NAME_TENTH_BIRTHDAY, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_TENTH_BIRTHDAY }, //Sun
@@ -962,6 +964,7 @@ function indexRenderNextEvents(eventList, beach, htmlElementId, eventsCounter) {
 			var eventName = eventList[eventCalendarIndex].name;
 			var eventDate = eventList[eventCalendarIndex].date;
 			var eventUrl = eventList[eventCalendarIndex].url;
+			var eventStatus = eventList[eventCalendarIndex].status;
 			var today = new Date();
 
 			var thisDate = new Date(eventDate);
@@ -979,6 +982,11 @@ function indexRenderNextEvents(eventList, beach, htmlElementId, eventsCounter) {
 					elementEventTitle = '<a style="color:red;" href=' + eventUrl + '>' + eventName + '</a>';
 				} else {
 					elementEventTitle = '<p style="font-size: 18px;font-weight: 600;">' + eventName + '</p>';
+				}
+
+				
+				if (eventStatus === "cancelled") {
+					elementEventTitle = '<del style="font-size: 18px;font-weight: 600;">' + eventName + '</del>';
 				}
 
 				var elementEventDate = gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year;
@@ -1040,6 +1048,7 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 			var eventName = eventList[i].name;
 			var eventInfo = eventList[i].info;
 			var eventDate = eventList[i].date;
+			var eventStatus = eventList[i].status;
 			var eventUrl = eventList[i].url;
 
 			//dateCheck here if is in the future
@@ -1129,11 +1138,20 @@ function renderMonthTable(beachName, eventList, elementId, filter, dateCheck, mo
 				tableEventContent += "<tr class=\"row100 body\" style=\"background-color: " + lineColorColor + ";\">\
       			<td class=\"cell100 column1X\">" + gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year + "</td>";
 
+
+				var nameAndUrl = "";
 				if (eventUrl !== "") {
-					tableEventContent += "<td class=\"cell100 columnX\"><a style=\"color:" + color + "\" href=" + eventUrl + ">" + eventName + "</a></td>";
+					nameAndUrl = "<td class=\"cell100 columnX\"><a style=\"color:" + color + "\" href=" + eventUrl + ">" + eventName + "</a></td>";
 				} else {
-					tableEventContent += "<td class=\"cell100 columnX\">" + eventName + "</td>";
+					nameAndUrl = "<td class=\"cell100 columnX\">" + eventName + "</td>";
 				}
+
+				if (eventStatus == "cancelled") {
+					nameAndUrl = "<td class=\"cell100 columnX\"><del style=\"color:" + color + "\">" + eventName + "</del></td>";
+				}
+
+				tableEventContent += nameAndUrl;
+
 
 				eventTypeContent = '';
 				if (eventType1) {
