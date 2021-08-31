@@ -361,6 +361,7 @@ var august_events_leyton = [
 	getOpenPlayxxxxx("08/06/2021"), //Fri
 	getAllYouCanPlay("08/07/2021"), //Sat
 	{ date: new Date("08/08/2021"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "U14 & U18 boys and girls", url: URL_UNDER_18 }, //Sun
+	getAllYouCanPlay("08/08/2021"), //Sun
 	getJuniorTrainin("08/09/2021"), //Mon
 	getBeginnersTrai("08/09/2021"), //Mon
 	getFlexiTrReduce("08/09/2021"), //Mon
