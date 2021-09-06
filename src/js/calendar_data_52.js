@@ -1,8 +1,15 @@
+//TODO
+//daysOfTournament in calendar_index_functions and index
+
+//STATUS
+var STATUS_CANCELLED = "cancelled";
+
 //INFO
 var INFO_MEN_N_WOMEN = "M&W";
 var INFO_MEN = "Men";
 var INFO_WOMEN = "Women";
 var INFO_MIXED = "Mixed";
+var CANCELLED = "CANCELLED"
 
 //TOURNAMENT NAMEs
 var NAME_AYCP = "AYCP";
