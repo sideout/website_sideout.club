@@ -108,6 +108,8 @@ var COLOR_TWO = "#eaeaea";
 var COLOR_SIDEOUT_RED = "#ed2329";
 
 var gsDayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+var DAY_NAMES_TABLE = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+var MONTHS_NAME_TABLE = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
 function getAdultTraining(date) {
@@ -894,18 +896,6 @@ var december_events_worthing = [
 	// { date: new Date("04/30/2021"), name: NAME_TRAINING, type: TYPE_TRAINING, info: "", url: URL_TRAINING_LEYTON }
 ];
 
-var TABLE_HEADER =
-	'<table>\
-	<thead>\
-		<tr class="row100 head">\
-			<th class="cell100 column1X">Date</th>\
-			<th class="cell100 columnX">Event Name</th>\
-			<th class="cell100 columnX">Event Type</th>\
-			<th class="cell100 columnX">Info</th>\
-		</tr>\
-	</thead>\
-</table>';
-
 var INDEX_NEXT_EVENTS_HEADER = '<div><h2>BEACH</h2></div>';
 
 var INDEX_EVENT_DIV = '\
@@ -931,3 +921,54 @@ var INDEX_MORE_EVENTS_DIV = '\
 	</div>\
 </div>';
 
+function getEventColor(eventName) {
+	var color;
+
+	switch (eventName) {
+		case NAME_AYCP:
+			color = COLOR_AYCP;
+			break;
+		case NAME_FREE_AYCP:
+			color = COLOR_SIDEOUT_RED;
+			break;
+		case NAME_GRAND_SLAM:
+			color = COLOR_SIDEOUT_RED;
+			break;
+		case NAME_GRAND_SLAM:
+			color = COLOR_SIDEOUT_RED;
+			break;
+		case NAME_TENTH_BIRTHDAY:
+			color = COLOR_SIDEOUT_RED;
+			break;
+		case NAME_SPRING:
+			color = COLOR_SPRING;
+			break;
+		case NAME_SUMMER:
+			color = COLOR_SUMMER;
+			break;
+		case NAME_ALL_NATIONS:
+			color = COLOR_ALL_NATIONS;
+			break;
+		case NAME_CHALLENGER:
+			color = COLOR_CHALLENGER;
+			break;
+		case NAME_GRAND_PRIX:
+			color = COLOR_GRAND_PRIX;
+			break;
+		case NAME_LONDON_FINALS:
+			color = COLOR_LONDON_FINALS;
+			break;
+		case NAME_CEV:
+			color = COLOR_CEV;
+			break;
+		case NAME_SIDE_IT_OUT:
+			color = COLOR_SIDE_IT_OUT;
+			break;
+		case NAME_OPEN_PLAY:
+			color = COLOR_OPEN_PLAY;
+			break;
+
+		default:
+			color = COLOR_DEFAULT;
+	}
+}
