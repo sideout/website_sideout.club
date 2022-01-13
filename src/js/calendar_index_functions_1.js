@@ -116,7 +116,9 @@ if (page == 'index.html' || page == '') {
     var UPCOMING_EVENT_WORTHING = 'upcomingEventWorthing';
     var WORTHING_BEACH = "Worthing Beach";
 
-    var counterWorthing = indexRenderNextEvents(march_events_worthing, WORTHING_BEACH, UPCOMING_EVENT_WORTHING, 0);
+    var counterWorthing = indexRenderNextEvents(january_events_worthing, WORTHING_BEACH, UPCOMING_EVENT_WORTHING, 0);
+    counterWorthing = indexRenderNextEvents(february_events_worthing, WORTHING_BEACH, UPCOMING_EVENT_WORTHING, counterWorthing);
+    counterWorthing = indexRenderNextEvents(march_events_worthing, WORTHING_BEACH, UPCOMING_EVENT_WORTHING, counterWorthing);
     counterWorthing = indexRenderNextEvents(april_events_worthing, WORTHING_BEACH, UPCOMING_EVENT_WORTHING, counterWorthing);
     counterWorthing = indexRenderNextEvents(may_events_worthing, WORTHING_BEACH, UPCOMING_EVENT_WORTHING, counterWorthing);
     counterWorthing = indexRenderNextEvents(june_events_worthing, WORTHING_BEACH, UPCOMING_EVENT_WORTHING, counterWorthing);
