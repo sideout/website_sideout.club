@@ -185,6 +185,8 @@ function eventController(selectedEventTypeFilter) {
         document.getElementById('calendar-tables').innerHTML = tables;
     } else {
         var tables = "";
+        tables += renderMonthTable("Worthing", january_events_worthing, selectedEventTypeFilter, "January");
+        tables += renderMonthTable("Worthing", february_events_worthing, selectedEventTypeFilter, "February");
         tables += renderMonthTable("Worthing", march_events_worthing, selectedEventTypeFilter, "March");
         tables += renderMonthTable("Worthing", april_events_worthing, selectedEventTypeFilter, "April");
         tables += renderMonthTable("Worthing", may_events_worthing, selectedEventTypeFilter, "May");

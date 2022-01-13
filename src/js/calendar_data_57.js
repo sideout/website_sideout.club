@@ -1,5 +1,5 @@
 //TODO
-//daysOfTournament in calendar_index_functions and index
+//daysOfTournament in calendar_index_functions_1 and index
 
 //STATUS
 var STATUS_CANCELLED = "cancelled";
@@ -579,10 +579,23 @@ var december_events_leyton = [
 ];
 
 //WOTHRING
+var january_events_worthing = [
+	{ date: new Date("01/16/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP_WINTER, url: URL_AYCP },
+	{ date: new Date("01/23/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP_WINTER, url: URL_AYCP },
+	{ date: new Date("01/30/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP_WINTER, url: URL_AYCP }
+];
+
+var february_events_worthing = [
+	{ date: new Date("02/06/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP_WINTER, url: URL_AYCP },
+	{ date: new Date("02/13/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP_WINTER, url: URL_AYCP },
+	{ date: new Date("02/20/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP_WINTER, url: URL_AYCP },
+	{ date: new Date("02/27/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP_WINTER, url: URL_AYCP }
+];
+
 var march_events_worthing = [
-	{ date: new Date("03/29/2021"), name: "FREE Open Play", type: TYPE_PLAY, info: "", url: URL_OPEN_PLAY },
-	getHireWorthingC("03/30/2021"),
-	getHireWorthingC("03/31/2021"),
+	{ date: new Date("03/06/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP_WINTER, url: URL_AYCP },
+	{ date: new Date("03/13/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP_WINTER, url: URL_AYCP },
+	{ date: new Date("03/20/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP_WINTER, url: URL_AYCP }
 ];
 
 var april_events_worthing = [
