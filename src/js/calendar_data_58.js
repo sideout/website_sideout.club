@@ -587,7 +587,7 @@ var january_events_worthing = [
 
 var february_events_worthing = [
 	{ date: new Date("02/06/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP_WINTER, url: URL_AYCP },
-	{ date: new Date("02/13/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP_WINTER, url: URL_AYCP },
+	{ date: new Date("02/13/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: CANCELLED, url: URL_AYCP , status: STATUS_CANCELLED},
 	{ date: new Date("02/20/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP_WINTER, url: URL_AYCP },
 	{ date: new Date("02/27/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: INFO_AYCP_WINTER, url: URL_AYCP }
 ];
