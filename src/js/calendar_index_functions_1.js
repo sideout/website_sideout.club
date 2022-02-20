@@ -74,8 +74,8 @@ function moreEventsComingSoon(beach, elementId, eventsCounter) {
 
     if (eventsCounter == 0) {
         eventDiv.innerHTML = '\
-			<div class="section-heading">\
-				<h2 class="entry-title">' + beach + '</h2>\
+			<div>\
+				<h2>' + beach + '</h2>\
 				<p>More events are coming soon </p>\
 			</div>';
     }
