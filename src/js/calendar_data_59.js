@@ -171,7 +171,7 @@ function getBegginersGaTi(date) {
 }
 
 function getKingAndQueenx(date) {
-	return { date: new Date(date), name: "Side-it-Out Mini-Series, type: TYPE_PLAY, info: "", url: URL_KING_QUEEN_PLAY };
+	return { date: new Date(date), name: "Side-it-Out Mini-Series", type: TYPE_PLAY, info: "", url: URL_KING_QUEEN_PLAY };
 }
 
 function getJuniorSeriesx(date) {
