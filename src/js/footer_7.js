@@ -1,7 +1,7 @@
 function columnDDescriptionAndSocial(level) {
   return '<div class="col-12 col-md-6 col-lg-3">\
   <div class="foot-about">\
-    <h2><a class="foot-logo" href="#"><img src="' + level + 'images/footer250.png" alt=""></a></h2>\
+    <h2><a class="foot-logo" href="#"><img src="' + level + 'images/footer.png" alt=""></a></h2>\
     <p>Established in 2011, SideOut is the UK\'s largest, most innovative, dynamic and member-focused beach volleyball club. We are based in Leyton, East London and in Worthing, West Sussex.</p>\
     <ul class="d-flex flex-wrap align-items-center">\
      \
