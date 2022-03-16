@@ -167,7 +167,7 @@ function getWedNighSocial(date) {
 }
 
 function getBegginersGaTi(date) {
-	return { date: new Date(date), name: "Begginers' GameTime", type: TYPE_PLAY, info: "18:45-20:30", url: "play/beginners-game-time.html" };
+	return { date: new Date(date), name: "Beginners' GameTime", type: TYPE_PLAY, info: "18:45-20:30", url: "play/beginners-game-time.html" };
 }
 
 function getKingAndQueenx(date) {
