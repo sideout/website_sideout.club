@@ -658,7 +658,7 @@ var march_events_worthing = [
 	{ date: new Date("03/20/2022"), name: "Volunteer Day - free play", type: TYPE_PLAY, info: "", url: "" },
 	getHireWorthingC("03/26/2022"),
 	{ date: new Date("03/26/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12", url: "juniors/worthing-beach.html#kids" },
-	{ date: new Date("03/27/2022"), name: "Season Opener - Free AYCP", type: TYPE_PLAY, info: "", url: "" },
+	{ date: new Date("03/27/2022"), name: "Season Opener - Free AYCP", type: TYPE_PLAY, info: "10:00-17:00, free for Club Members only", url: "" },
 	getHireWorthingC("03/28/2022"),
 	getHireWorthingC("03/29/2022"),
 	getHireWorthingC("03/30/2022"),
