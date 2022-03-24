@@ -58,7 +58,7 @@ var URL_SIDE_IT_OUT = "play/side-it-out.html";
 var URL_AYCP = "play/all-you-can-play.html";
 var URL_JUNIOR_AYCP = "juniors/junior-all-you-can-play.html";
 var URL_JUNIOR_GAME_TIME = "juniors/junior-game-time.html";
-var URL_KING_QUEEN_PLAY = "play/king-and-queen.html";
+var URL_MINI_SERIES = "play/side-it-out-mini-series.html";
 var URL_OPEN_PLAY = "play/open-play.html";
 var URL_FAMILY_OPEN_SESSIONS = "juniors/family-open-sessions.html"
 var URL_FLEXI_PLAY = "play/flexi-play-packages.html";
@@ -170,8 +170,8 @@ function getBegginersGaTi(date) {
 	return { date: new Date(date), name: "Beginners' GameTime", type: TYPE_PLAY, info: "18:45-20:30", url: "play/beginners-game-time.html" };
 }
 
-function getKingAndQueenx(date) {
-	return { date: new Date(date), name: "Side-it-Out Mini-Series", type: TYPE_PLAY, info: "", url: URL_KING_QUEEN_PLAY };
+function getMiniSeriesxxx(date) {
+	return { date: new Date(date), name: "Side-it-Out Mini-Series", type: TYPE_PLAY, info: "", url: URL_MINI_SERIES };
 }
 
 function getJuniorSeriesx(date) {
@@ -252,7 +252,7 @@ var march_events_leyton = [
 var april_events_leyton = [
 	getFamilyOpenSes("04/01/2022"),
 	getOpenPlayxxxxx("04/01/2022"),
-	getKingAndQueenx("04/02/2022"),
+	getMiniSeriesxxx("04/02/2022"),
 	getJuniorAYCPxxx("04/03/2022"),
 	getAllYouCanPlay("04/03/2022"),
 	getJuniorTrainin("04/04/2022"),
@@ -280,7 +280,7 @@ var april_events_leyton = [
 	getJuniorAYCPxxx("04/15/2022"),
 	getAllYouCanPlay("04/15/2022"),
 	{ date: new Date("04/15/2022"), name: "Social tournament for parents/beginners", type: TYPE_PLAY, info: "", url: "" },
-	getKingAndQueenx("04/16/2022"),
+	getMiniSeriesxxx("04/16/2022"),
 	getJuniorAYCPxxx("04/17/2022"),
 	getAllYouCanPlay("04/17/2022"),
 	getJuniorSeriesx("04/18/2022"),
@@ -293,7 +293,7 @@ var april_events_leyton = [
 	getAdultTraining("04/21/2022"),
 	getFamilyOpenSes("04/22/2022"),
 	getOpenPlayxxxxx("04/22/2022"),
-	getKingAndQueenx("04/23/2022"),
+	getMiniSeriesxxx("04/23/2022"),
 	getJuniorAYCPxxx("04/24/2022"),
 	getAllYouCanPlay("04/24/2022"),
 	getJuniorTrainin("04/25/2022"),
