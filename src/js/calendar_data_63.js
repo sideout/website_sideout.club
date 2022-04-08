@@ -175,7 +175,7 @@ function getMiniSeriesxxx(date) {
 }
 
 function getJuniorSeriesx(date) {
-	return { date: new Date(date), name: "Junior Series", type: TYPE_JUNIORS, info: "approx. 9:00am-1:00pm", url: "juniors/junior-series.html" };
+	return { date: new Date(date), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "approx. 9:00am-1:00pm", url: "juniors/junior-series.html" };
 }
 
 function getWorthingMixed(date) {
@@ -320,7 +320,7 @@ var may_events_leyton = [
 	getFamilyOpenSes("05/06/2022"),
 	getOpenPlayxxxxx("05/06/2022"),
 	{ date: new Date("05/07/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1* (9:00-14:00)", url: URL_MIXED_SERIES },
-	{ date: new Date("05/07/2022"), name: "Junior Series", type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
+	{ date: new Date("05/07/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
 	getJuniorAYCPxxx("05/08/2022"),
 	getAllYouCanPlay("05/08/2022"),
 	getJuniorTrainin("05/09/2022"),
@@ -384,7 +384,7 @@ var june_events_leyton = [
 	getOpenPlayxxxxx("06/10/2022"),
 
 	{ date: new Date("06/11/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1* (9:00-14:00)", url: URL_MIXED_SERIES },
-	{ date: new Date("06/11/2022"), name: "Junior Series", type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
+	{ date: new Date("06/11/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
 	getJuniorAYCPxxx("06/12/2022"),
 	getAllYouCanPlay("06/12/2022"),
 
@@ -460,7 +460,7 @@ var july_events_leyton = [
 	getOpenPlayxxxxx("07/15/2022"),
 
 	{ date: new Date("07/16/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1* (9:00-14:00)", url: URL_MIXED_SERIES },
-	{ date: new Date("07/16/2022"), name: "Junior Series", type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
+	{ date: new Date("07/16/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
 	getJuniorAYCPxxx("07/17/2022"),
 	getAllYouCanPlay("07/17/2022"),
 
@@ -524,7 +524,7 @@ var august_events_leyton = [
 	getOpenPlayxxxxx("08/12/2022"),
 
 	{ date: new Date("08/13/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1* (9:00-14:00)", url: URL_MIXED_SERIES },
-	{ date: new Date("08/13/2022"), name: "Junior Series", type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
+	{ date: new Date("08/13/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
 	getJuniorAYCPxxx("08/14/2022"),
 	getAllYouCanPlay("08/14/2022"),
 
