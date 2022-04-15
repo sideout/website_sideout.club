@@ -284,7 +284,7 @@ var april_events_leyton = [
 	{ date: new Date("04/18/2022"), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "10:00 - 11:30", url: URL_JUNIOR_LEYTON },
 	{ date: new Date("04/18/2022"), name: NAME_BEGINNERS_TRAINING, type: TYPE_TRAINING, info: "11:00-12:30", url: URL_TRAINING_LEYTON_BEGINNERS },
 	{ date: new Date("04/18/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: "Cancelled", url: URL_MIXED_SERIES, status: "cancelled" },
-	getAllYouCanPlay("04/18/2022"),
+	{ date: new Date("04/18/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: "12:00-17:00", url: URL_AYCP },
 	getAdultTraining("04/19/2022"),
 	getJuniorGameTim("04/20/2022"),
 	getWedNighSocial("04/20/2022"),
