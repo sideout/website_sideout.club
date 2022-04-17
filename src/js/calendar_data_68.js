@@ -231,7 +231,7 @@ function getFlexiTrReduce(date) {
 }
 
 function getFlexiPlayxxxx(date) {
-	return { date: new Date(date), name: NAME_FLEXI_PLAY, type: TYPE_PLAY, info: "18:30-22:00", url: URL_FLEXI_PLAY };
+	return { date: new Date(date), name: NAME_FLEXI_PLAY, type: TYPE_PLAY, info: "18:00-22:00", url: URL_FLEXI_PLAY };
 }
 
 
@@ -287,12 +287,15 @@ var april_events_leyton = [
 	{ date: new Date("04/18/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: "12:00-17:00", url: URL_AYCP },
 	getAdultTraining("04/19/2022"),
 	getJuniorGameTim("04/20/2022"),
-	getWedNighSocial("04/20/2022"),
+	// getWedNighSocial("04/20/2022"),
+	getFlexiPlayxxxx("04/20/2022"),
+	getFlexiTraining("04/20/2022"),
 	getBegginersGaTi("04/20/2022"),
 	getAdultTraining("04/21/2022"),
 	getFamilyOpenSes("04/22/2022"),
 	getOpenPlayxxxxx("04/22/2022"),
 	getAllYouCanPlay("04/23/2022"),
+	getJuniorAYCPxxx("04/23/2022"),
 	getJuniorAYCPxxx("04/24/2022"),
 	getAllYouCanPlay("04/24/2022"),
 	getJuniorTrainin("04/25/2022"),
