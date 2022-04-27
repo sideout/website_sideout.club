@@ -315,8 +315,8 @@ var april_events_leyton = [
 var may_events_leyton = [
 	{ date: new Date("05/01/2022"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 0},
 	{ date: new Date("05/01/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
-	{ date: new Date("05/02/2022"), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "10:00-12:00", url: URL_JUNIOR_LEYTON },
-	{ date: new Date("05/02/2022"), name: NAME_BEGINNERS_TRAINING, type: TYPE_TRAINING, info: "11:15-13:00", url: URL_TRAINING_LEYTON_BEGINNERS },
+	{ date: new Date("05/02/2022"), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "10:00-11:30", url: URL_JUNIOR_LEYTON },
+	{ date: new Date("05/02/2022"), name: NAME_BEGINNERS_TRAINING, type: TYPE_TRAINING, info: "11:30-13:15", url: URL_TRAINING_LEYTON_BEGINNERS },
 	{ date: new Date("05/02/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: "12:00-17:00", url: URL_AYCP },
 	getAdultTraining("05/03/2022"),
 	getJuniorGameTim("05/04/2022"),
