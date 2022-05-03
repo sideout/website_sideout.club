@@ -327,7 +327,7 @@ var may_events_leyton = [
 	getAdultTraining("05/05/2022"),
 	getFamilyOpenSes("05/06/2022"),
 	getOpenPlayxxxxx("05/06/2022"),
-	{ date: new Date("05/07/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1* (9:00-14:00)", url: URL_MIXED_SERIES },
+	//{ date: new Date("05/07/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1* (9:00-14:00)", url: URL_MIXED_SERIES },
 	{ date: new Date("05/07/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
 	getJuniorAYCPxxx("05/08/2022"),
 	getAllYouCanPlay("05/08/2022"),
@@ -774,8 +774,11 @@ var may_events_worthing = [
 	
 	getHireWorthingC("05/06/2022"),
 
-	{ date: new Date("05/07/2022"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 2},
-	{ date: new Date("05/08/2022"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 0},
+	//{ date: new Date("05/07/2022"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 2},
+	//{ date: new Date("05/08/2022"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 0},
+
+	{ date: new Date("05/07/2022"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
+	
 
 	getWorthingJuniorTraInfo("05/09/2022","18:15-20:00"),
 	getWothingBegiTr("05/09/2022","20:00-21:45"),
