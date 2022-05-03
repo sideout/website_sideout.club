@@ -471,9 +471,9 @@ var july_events_leyton = [
 	getFamilyOpenSes("07/08/2022"),
 	getOpenPlayxxxxx("07/08/2022"),
 
-	{ date: new Date("07/09/2021"), name: NAME_ALL_NATIONS, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2vs2", url: URL_ALL_NATIONS, daysOfTournament: 2},
-	{ date: new Date("07/10/2021"), name: NAME_ALL_NATIONS, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2vs2", url: URL_ALL_NATIONS, daysOfTournament: 0},
-	{ date: new Date("07/10/2021"), name: NAME_ALL_NATIONS, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 2vs2", url: URL_ALL_NATIONS },
+	{ date: new Date("07/09/2022"), name: NAME_ALL_NATIONS, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2vs2", url: URL_ALL_NATIONS, daysOfTournament: 2},
+	{ date: new Date("07/10/2022"), name: NAME_ALL_NATIONS, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2vs2", url: URL_ALL_NATIONS, daysOfTournament: 0},
+	{ date: new Date("07/10/2022"), name: NAME_ALL_NATIONS, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 2vs2", url: URL_ALL_NATIONS },
 	
 	getJuniorTrainin("07/11/2022"),
 	getBeginnersTrai("07/11/2022"),
