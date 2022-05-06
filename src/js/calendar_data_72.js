@@ -328,7 +328,10 @@ var may_events_leyton = [
 	getFamilyOpenSes("05/06/2022"),
 	getOpenPlayxxxxx("05/06/2022"),
 	//{ date: new Date("05/07/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1* (9:00-14:00)", url: URL_MIXED_SERIES },
-	{ date: new Date("05/07/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
+	{ date: new Date("05/07/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "CANCELLED", url: "juniors/junior-series.html", status: "cancelled"},
+	getJuniorAYCPxxx("05/07/2022"),
+	getAllYouCanPlay("05/07/2022"),
+
 	getJuniorAYCPxxx("05/08/2022"),
 	getAllYouCanPlay("05/08/2022"),
 	getJuniorTrainin("05/09/2022"),
@@ -649,8 +652,8 @@ var september_events_leyton = [
 	getOpenPlayxxxxx("09/09/2022"),
 
 	//10
-	getJuniorAYCPxxx("08/11/2022"),
-	getAllYouCanPlay("08/11/2022"),
+	getJuniorAYCPxxx("09/11/2022"),
+	getAllYouCanPlay("09/11/2022"),
 
 	getJuniorTrainin("09/12/2022"),
 	getBeginnersTrai("09/12/2022"),
@@ -667,8 +670,8 @@ var september_events_leyton = [
 	getOpenPlayxxxxx("09/16/2022"),
 
 	{ date: new Date("09/17/2022"), name: "One more beach tournament(Polonia)", type: TYPE_TOURNAMENT, info: "", url: URL_POLONIA }, 
-	getJuniorAYCPxxx("08/18/2022"),
-	getAllYouCanPlay("08/18/2022"),
+	getJuniorAYCPxxx("09/18/2022"),
+	getAllYouCanPlay("09/18/2022"),
 
 	getJuniorTrainin("09/19/2022"),
 	getBeginnersTrai("09/19/2022"),
