@@ -781,7 +781,7 @@ var may_events_worthing = [
 	//{ date: new Date("05/08/2022"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 0},
 
 	{ date: new Date("05/07/2022"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
-	
+	getWorthingAllYouCanPlay("05/08/2022"),
 
 	getWorthingJuniorTraInfo("05/09/2022","18:15-20:00"),
 	getWothingBegiTr("05/09/2022","20:00-21:45"),
