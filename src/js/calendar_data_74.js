@@ -347,6 +347,7 @@ var may_events_leyton = [
 	getOpenPlayxxxxx("05/13/2022"),
 	{ date: new Date("05/14/2022"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
 	{ date: new Date("05/15/2022"), name: NAME_STARTER_SERIES, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 1*", url: "tournaments/starter-series.html" },
+	getAllYouCanPlay("05/15/2022"),
 	getJuniorTrainin("05/16/2022"),
 	getBeginnersTrai("05/16/2022"),
 	getAdultTraining("05/17/2022"),
