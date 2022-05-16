@@ -40,14 +40,14 @@ function indexRenderNextEvents(eventList, beach, htmlElementId, eventsCounter) {
                 var elementEventTitle = '';
                 var hasEventUniqueUrl = eventUrl !== "";
                 if (hasEventUniqueUrl) {
-                    elementEventTitle = '<a style="color:red;" href=' + eventUrl + '>' + eventName + '</a>';
+                    elementEventTitle = '<a style="font-size: 15px;font-weight: 500; color:red;" href=' + eventUrl + '>' + eventName + '</a>';
                 } else {
-                    elementEventTitle = '<a style="font-size: 18px;font-weight: 600;">' + eventName + '</a>';
+                    elementEventTitle = '<a style="font-size: 15px;font-weight: 500;">' + eventName + '</a>';
                 }
 
 
                 if (eventStatus === "cancelled") {
-                    elementEventTitle = '<del style="font-size: 18px;font-weight: 600;">' + eventName + '</del>';
+                    elementEventTitle = '<del style="font-size: 15px;font-weight: 500;">' + eventName + '</del>';
                 }
 
                 var elementEventDate = gsDayNames[dayOfWeekInt] + " " + dayInt + " " + months[monthInt] + " " + year;

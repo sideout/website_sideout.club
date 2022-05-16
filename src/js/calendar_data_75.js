@@ -1,5 +1,5 @@
 //TODO
-//daysOfTournament in calendar_index_functions_2 and index
+//daysOfTournament in calendar_index_functions_3 and index
 
 //STATUS
 var STATUS_CANCELLED = "cancelled";
@@ -351,11 +351,9 @@ var may_events_leyton = [
 	getJuniorTrainin("05/16/2022"),
 	getBeginnersTrai("05/16/2022"),
 	getAdultTraining("05/17/2022"),
-	getJuniorGameTim("05/18/2022"),
-	// { date: new Date("05/18/2022"), name: "Wednesday Night Social: Advanced Tourney", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("05/18/2022"),
-	getFlexiTraining("05/18/2022"),
+	getOpenPlayxxxxx("05/18/2022"),
 	getBegginersGaTi("05/18/2022"),
+	getJuniorGameTim("05/18/2022"),
 	getAdultTraining("05/19/2022"),
 	getFamilyOpenSes("05/20/2022"),
 	getOpenPlayxxxxx("05/20/2022"),
@@ -365,14 +363,14 @@ var may_events_leyton = [
 	getJuniorTrainin("05/23/2022"),
 	getBeginnersTrai("05/23/2022"),
 	getAdultTraining("05/24/2022"),
-	getJuniorGameTim("05/25/2022"),
-	// { date: new Date("05/25/2022"), name: "Wednesday Night Social: Advanced Tourney", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("05/25/2022"),
-	getFlexiTraining("05/25/2022"),
+	getOpenPlayxxxxx("05/25/2022"),
 	getBegginersGaTi("05/25/2022"),
+	getJuniorGameTim("05/25/2022"),
 	getAdultTraining("05/26/2022"),
 	getFamilyOpenSes("05/27/2022"),
 	getOpenPlayxxxxx("05/27/2022"),
+	getJuniorAYCPxxx("05/28/2022"),
+	getAllYouCanPlay("05/28/2022"),
 	getJuniorAYCPxxx("05/29/2022"),
 	getAllYouCanPlay("05/29/2022"),
 	getJuniorTrainin("05/30/2022"),
@@ -381,11 +379,10 @@ var may_events_leyton = [
 ];
 
 var june_events_leyton = [
+	getOpenPlayxxxxx("06/01/2022"),
+	getBegginersGaTi("06/01/2022"),
 	getJuniorGameTim("06/01/2022"),
 	// { date: new Date("06/01/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("06/01/2022"),
-	getFlexiTraining("06/01/2022"),
-	getBegginersGaTi("06/01/2022"),
 	getJuniorAYCPxxx("06/02/2022"),
 	getAllYouCanPlay("06/02/2022"),
 	getJuniorAYCPxxx("06/03/2022"),
@@ -396,11 +393,13 @@ var june_events_leyton = [
 	getJuniorTrainin("06/06/2022"),
 	getBeginnersTrai("06/06/2022"),
 	getAdultTraining("06/07/2022"),
+	getOpenPlayxxxxx("06/08/2022"),
+	getBegginersGaTi("06/08/2022"),
 	getJuniorGameTim("06/08/2022"),
 	// { date: new Date("06/08/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("06/08/2022"),
-	getFlexiTraining("06/08/2022"),
-	getBegginersGaTi("06/08/2022"),
+	
+	
+
 	getAdultTraining("06/09/2022"),
 	getFamilyOpenSes("06/10/2022"),
 	getOpenPlayxxxxx("06/10/2022"),
@@ -413,11 +412,9 @@ var june_events_leyton = [
 	getJuniorTrainin("06/13/2022"),
 	getBeginnersTrai("06/13/2022"),
 	getAdultTraining("06/14/2022"),
-	getJuniorGameTim("06/15/2022"),
-	// { date: new Date("06/15/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("06/15/2022"),
-	getFlexiTraining("06/15/2022"),
+	getOpenPlayxxxxx("06/15/2022"),
 	getBegginersGaTi("06/15/2022"),
+	getJuniorGameTim("06/15/2022"),
 	getAdultTraining("06/16/2022"),
 	getFamilyOpenSes("06/17/2022"),
 	getOpenPlayxxxxx("06/17/2022"),
@@ -431,11 +428,9 @@ var june_events_leyton = [
 	getJuniorTrainin("06/20/2022"),
 	getBeginnersTrai("06/20/2022"),
 	getAdultTraining("06/21/2022"),
-	getJuniorGameTim("06/22/2022"),
-	//{ date: new Date("06/22/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("06/22/2022"),
-	getFlexiTraining("06/22/2022"),
+	getOpenPlayxxxxx("06/22/2022"),
 	getBegginersGaTi("06/22/2022"),
+	getJuniorGameTim("06/22/2022"),
 	getAdultTraining("06/23/2022"),
 	getFamilyOpenSes("06/24/2022"),
 	getOpenPlayxxxxx("06/24/2022"),
@@ -449,11 +444,9 @@ var june_events_leyton = [
 	getJuniorTrainin("06/27/2022"),
 	getBeginnersTrai("06/27/2022"),
 	getAdultTraining("06/28/2022"),
-	getJuniorGameTim("06/29/2022"),
-	// { date: new Date("06/29/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("06/29/2022"),
-	getFlexiTraining("06/29/2022"),
+	getOpenPlayxxxxx("06/29/2022"),
 	getBegginersGaTi("06/29/2022"),
+	getJuniorGameTim("06/29/2022"),
 	getAdultTraining("06/30/2022")
 ];
 
@@ -466,11 +459,9 @@ var july_events_leyton = [
 	getJuniorTrainin("07/04/2022"),
 	getBeginnersTrai("07/04/2022"),
 	getAdultTraining("07/05/2022"),
-	getJuniorGameTim("07/06/2022"),
-	// { date: new Date("07/06/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("07/06/2022"),
-	getFlexiTraining("07/06/2022"),
+	getOpenPlayxxxxx("07/06/2022"),
 	getBegginersGaTi("07/06/2022"),
+	getJuniorGameTim("07/06/2022"),
 	getAdultTraining("07/07/2022"),
 	getFamilyOpenSes("07/08/2022"),
 	getOpenPlayxxxxx("07/08/2022"),
@@ -482,11 +473,9 @@ var july_events_leyton = [
 	getJuniorTrainin("07/11/2022"),
 	getBeginnersTrai("07/11/2022"),
 	getAdultTraining("07/12/2022"),
-	getJuniorGameTim("07/13/2022"),
-	// { date: new Date("07/13/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("07/14/2022"),
-	getFlexiTraining("07/13/2022"),
+	getOpenPlayxxxxx("07/13/2022"),
 	getBegginersGaTi("07/13/2022"),
+	getJuniorGameTim("07/13/2022"),
 	getAdultTraining("07/14/2022"),
 	getFamilyOpenSes("07/15/2022"),
 	getOpenPlayxxxxx("07/15/2022"),
@@ -499,11 +488,9 @@ var july_events_leyton = [
 	getJuniorTrainin("07/18/2022"),
 	getBeginnersTrai("07/18/2022"),
 	getAdultTraining("07/19/2022"),
-	getJuniorGameTim("07/20/2022"),
-	// { date: new Date("07/20/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("07/20/2022"),
-	getFlexiTraining("07/20/2022"),
+	getOpenPlayxxxxx("07/20/2022"),
 	getBegginersGaTi("07/20/2022"),
+	getJuniorGameTim("07/20/2022"),
 	getAdultTraining("07/21/2022"),
 	getFamilyOpenSes("07/22/2022"),
 	getOpenPlayxxxxx("07/22/2022"),
@@ -515,11 +502,9 @@ var july_events_leyton = [
 	getJuniorTrainin("07/25/2022"),
 	getBeginnersTrai("07/25/2022"),
 	getAdultTraining("07/26/2022"),
-	getJuniorGameTim("07/27/2022"),
-	// { date: new Date("07/27/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("07/27/2022"),
-	getFlexiTraining("07/27/2022"),
+	getOpenPlayxxxxx("07/27/2022"),
 	getBegginersGaTi("07/27/2022"),
+	getJuniorGameTim("07/27/2022"),
 	getAdultTraining("07/28/2022"),
 	getFamilyOpenSes("07/29/2022"),
 	getOpenPlayxxxxx("07/29/2022"),
@@ -536,11 +521,9 @@ var august_events_leyton = [
 	getBeginnersTrai("08/01/2022"),
 	getFlexiTraining("08/02/2022"),
 	getFlexiPlayxxxx("08/02/2022"),
-	getJuniorGameTim("08/03/2022"),
-	// { date: new Date("08/03/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("08/03/2022"),
-	getFlexiTraining("08/03/2022"),
+	getOpenPlayxxxxx("08/03/2022"),
 	getBegginersGaTi("08/03/2022"),
+	getJuniorGameTim("08/03/2022"),
 	getFlexiTraining("08/04/2022"),
 	getFlexiPlayxxxx("08/04/2022"),
 	getFamilyOpenSes("08/05/2022"),
@@ -553,11 +536,9 @@ var august_events_leyton = [
 	getBeginnersTrai("08/08/2022"),
 	getFlexiTraining("08/09/2022"),
 	getFlexiPlayxxxx("08/09/2022"),
-	getJuniorGameTim("08/10/2022"),
-	// { date: new Date("08/10/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("08/10/2022"),
-	getFlexiTraining("08/10/2022"),
+	getOpenPlayxxxxx("08/10/2022"),
 	getBegginersGaTi("08/10/2022"),
+	getJuniorGameTim("08/10/2022"),
 	getFlexiTraining("08/11/2022"),
 	getFlexiPlayxxxx("08/11/2022"),
 	getFamilyOpenSes("08/12/2022"),
@@ -572,11 +553,9 @@ var august_events_leyton = [
 	getBeginnersTrai("08/15/2022"),
 	getFlexiTraining("08/16/2022"),
 	getFlexiPlayxxxx("08/16/2022"),
-	getJuniorGameTim("08/17/2022"),
-	// { date: new Date("08/17/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("08/17/2022"),
-	getFlexiTraining("08/17/2022"),
+	getOpenPlayxxxxx("08/17/2022"),
 	getBegginersGaTi("08/17/2022"),
+	getJuniorGameTim("08/17/2022"),
 	getFlexiTraining("08/18/2022"),
 	getFlexiPlayxxxx("08/18/2022"),
 	getFamilyOpenSes("08/19/2022"),
@@ -590,11 +569,9 @@ var august_events_leyton = [
 	getBeginnersTrai("08/22/2022"),
 	getFlexiTraining("08/23/2022"),
 	getFlexiPlayxxxx("08/23/2022"),
-	getJuniorGameTim("08/24/2022"),
-	// { date: new Date("08/24/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("08/24/2022"),
-	getFlexiTraining("08/24/2022"),
+	getOpenPlayxxxxx("08/24/2022"),
 	getBegginersGaTi("08/24/2022"),
+	getJuniorGameTim("08/24/2022"),
 	getFlexiTraining("08/25/2022"),
 	getFlexiPlayxxxx("08/25/2022"),
 	getFamilyOpenSes("08/26/2022"),
@@ -612,11 +589,9 @@ var august_events_leyton = [
 
 	getFlexiTraining("08/30/2022"),
 	getFlexiPlayxxxx("08/30/2022"),
-	getJuniorGameTim("08/31/2022"),
-	// { date: new Date("08/31/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("08/31/2022"),
-	getFlexiTraining("08/31/2022"),
-	getBegginersGaTi("08/31/2022")
+	getOpenPlayxxxxx("08/31/2022"),
+	getBegginersGaTi("08/31/2022"),
+	getJuniorGameTim("08/31/2022")
 
 	// { date: new Date("08/27/2022"), name: NAME_FAMILY_OPEN_PLAY, type: TYPE_PLAY, type1: TYPE_JUNIORS, info: "CANCELLED", url: URL_FAMILY_OPEN_SESSIONS, status: "cancelled" },
 	// { date: new Date("08/27/2022"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: "CANCELLED", url: URL_OPEN_PLAY, status: "cancelled" },
@@ -642,11 +617,9 @@ var september_events_leyton = [
 	getBeginnersTrai("09/05/2022"),
 	getFlexiTraining("09/06/2022"),
 	getFlexiPlayxxxx("09/06/2022"),
-	getJuniorGameTim("09/07/2022"),
-	// { date: new Date("09/07/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("09/07/2022"),
-	getFlexiTraining("09/07/2022"),
+	getOpenPlayxxxxx("09/07/2022"),
 	getBegginersGaTi("09/07/2022"),
+	getJuniorGameTim("09/07/2022"),
 	getFlexiTraining("09/08/2022"),
 	getFlexiPlayxxxx("09/08/2022"),
 	getFamilyOpenSes("09/09/2022"),
@@ -660,11 +633,9 @@ var september_events_leyton = [
 	getBeginnersTrai("09/12/2022"),
 	getFlexiTraining("09/13/2022"),
 	getFlexiPlayxxxx("09/13/2022"),
-	getJuniorGameTim("09/14/2022"),
-	// { date: new Date("09/14/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("09/14/2022"),
-	getFlexiTraining("09/14/2022"),
+	getOpenPlayxxxxx("09/14/2022"),
 	getBegginersGaTi("09/14/2022"),
+	getJuniorGameTim("09/14/2022"),
 	getFlexiTraining("09/15/2022"),
 	getFlexiPlayxxxx("09/15/2022"),
 	getFamilyOpenSes("09/16/2022"),
@@ -678,11 +649,9 @@ var september_events_leyton = [
 	getBeginnersTrai("09/19/2022"),
 	getFlexiTraining("09/20/2022"),
 	getFlexiPlayxxxx("09/20/2022"),
-	getJuniorGameTim("09/21/2022"),
-	// { date: new Date("09/21/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getFlexiPlayxxxx("09/21/2022"),
-	getFlexiTraining("09/21/2022"),
+	getOpenPlayxxxxx("09/21/2022"),
 	getBegginersGaTi("09/21/2022"),
+	getJuniorGameTim("09/21/2022"),
 	getFlexiTraining("09/22/2022"),
 	getFlexiPlayxxxx("09/22/2022"),
 	getFamilyOpenSes("09/23/2022"),
@@ -801,8 +770,10 @@ var may_events_worthing = [
 	getWothingBegiTr("05/16/2022","20:00-21:45"),
 
 	getWorthAdTraini("05/17/2022"),
+	getHireWorthingC("05/17/2022"),
 	getWorthingWedne("05/18/2022", "Coast Cafe Wednesday League", "Men's 2s"),
 	getWorthingDropInTraining("05/19/2022"),
+	getHireWorthingC("05/19/2022"),
 	
 	getHireWorthingC("05/20/2022"),
 
@@ -814,8 +785,10 @@ var may_events_worthing = [
 	getWothingBegiTr("05/23/2022","20:00-21:45"),
 
 	getWorthAdTraini("05/24/2022"),
+	getHireWorthingC("05/24/2022"),
 	getWorthingWedne("05/25/2022", "Coast Cafe Wednesday League", "Men's 2s"),
 	getWorthingDropInTraining("05/26/2022"),
+	getHireWorthingC("05/26/2022"),
 	
 	getHireWorthingC("05/27/2022"),
 
@@ -824,7 +797,8 @@ var may_events_worthing = [
 
 	getWorthingJuniorTraInfo("05/30/2022","18:15-20:00"),
 	getWothingBegiTr("05/30/2022","20:00-21:45"),
-	getWorthAdTraini("05/31/2022")
+	getWorthAdTraini("05/31/2022"),
+	getHireWorthingC("05/31/2022")
 	// { date: new Date("05/08/2022"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: INFO_WOMEN + " 4* (1day)", url: URL_GRAND_PRIX },
 	// { date: new Date("05/09/2022"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: INFO_MEN + " 4* (1day)", url: URL_GRAND_PRIX },
 	// { date: new Date("05/30/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "U14 & U18 boys and girls", url: URL_UNDER_18 }
@@ -843,9 +817,11 @@ var june_events_worthing = [
 	getWothingBegiTr("06/06/2022","20:00-21:45"),
 
 	getWorthAdTraini("06/07/2022"),
+	getHireWorthingC("06/07/2022"),
 
 	getWorthingWedne("06/08/2022", "Coast Cafe Wednesday League", "Women's 2s"),
 	getWorthingDropInTraining("06/09/2022"),
+	getHireWorthingC("06/09/2022"),
 	getHireWorthingC("06/10/2022"),
 
 	{ date: new Date("06/11/2022"), name: NAME_MIX_N_MATCH, type: TYPE_TOURNAMENT, info: INFO_MIXED, url: URL_MIX_N_MATCH },
@@ -856,9 +832,11 @@ var june_events_worthing = [
 	getWothingBegiTr("06/13/2022","20:00-21:45"),
 
 	getWorthAdTraini("06/14/2022"),
+	getHireWorthingC("06/14/2022"),
 
 	getWorthingWedne("06/15/2022", "Coast Cafe Wednesday League", "Women's 2s"),
 	getWorthingDropInTraining("06/16/2022"),
+	getHireWorthingC("06/16/2022"),
 	getHireWorthingC("06/17/2022"),
 
 	getHireWorthingC("06/18/2022"),
@@ -868,9 +846,11 @@ var june_events_worthing = [
 	getWothingBegiTr("06/20/2022","20:00-22:00"),
 
 	getWorthAdTraini("06/21/2022"),
+	getHireWorthingC("06/21/2022"),
 
 	getWorthingWedne("06/22/2022", "Coast Cafe Wednesday League", "Women's 2s"),
 	getWorthingDropInTraining("06/23/2022"),
+	getHireWorthingC("06/23/2022"),
 	getHireWorthingC("06/24/2022"),
 
 	{ date: new Date("06/25/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
@@ -883,9 +863,11 @@ var june_events_worthing = [
 
 
 	getWorthAdTraini("06/28/2022"),
+	getHireWorthingC("06/28/2022"),
 	getHireWorthingC("06/29/2022"),
 	
-	getWorthingDropInTraining("06/30/2022")
+	getWorthingDropInTraining("06/30/2022"),
+	getHireWorthingC("06/30/2022")
 ];
 
 var july_events_worthing = [
@@ -898,9 +880,11 @@ var july_events_worthing = [
 	getWothingBegiTr("07/04/2022","20:00-21:45"),
 
 	getWorthAdTraini("07/05/2022"),
+	getHireWorthingC("07/05/2022"),
 	getWorthingWedne("07/06/2022", "Coast Cafe Wednesday League", "Junior 2s"),
 	
 	getWorthingDropInTraining("07/07/2022"),
+	getHireWorthingC("07/07/2022"),
 	getHireWorthingC("07/08/2022"),
 
 	getHireWorthingC("07/09/2022"),
@@ -910,8 +894,10 @@ var july_events_worthing = [
 	getWorthingJuniorTraInfo("07/11/2022","18:15-20:00"),
 	getWothingBegiTr("07/11/2022","20:00-21:45"),
 	getWorthAdTraini("07/12/2022"),
+	getHireWorthingC("07/12/2022"),
 	getWorthingWedne("07/13/2022", "Coast Cafe Wednesday League", "Junior 2s"),
 	getWorthingDropInTraining("07/14/2022"),
+	getHireWorthingC("07/14/2022"),
 	getHireWorthingC("07/15/2022"),
 
 	{ date: new Date("07/16/2022"), name: NAME_MIX_N_MATCH, type: TYPE_TOURNAMENT, info: INFO_MIXED, url: URL_MIX_N_MATCH },
@@ -921,8 +907,10 @@ var july_events_worthing = [
 	getWorthingJuniorTraInfo("07/18/2022","18:15-20:00"),
 	getWothingBegiTr("07/18/2022","20:00-21:45"),
 	getWorthAdTraini("07/19/2022"),
+	getHireWorthingC("07/19/2022"),
 	getWorthingWedne("07/20/2022", "Coast Cafe Wednesday League", "Junior 2s"),
 	getWorthingDropInTraining("07/21/2022"),
+	getHireWorthingC("07/21/2022"),
 	getHireWorthingC("07/22/2022"),
 
 	{ date: new Date("07/23/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
@@ -932,8 +920,10 @@ var july_events_worthing = [
 	getWorthingJuniorTraInfo("07/25/2022","18:15-20:00"),
 	getWothingBegiTr("07/25/2022","20:00-21:45"),
 	getWorthAdTraini("07/26/2022"),
+	getHireWorthingC("07/26/2022"),
 	getWorthingWedne("07/27/2022", "Coast Cafe Wednesday League", "Junior 2s"),
 	getWorthingDropInTraining("07/28/2022"),
+	getHireWorthingC("07/28/2022"),
 	getHireWorthingC("07/29/2022"),
 
 	getJuniorSeriesx("07/30/2022"),
@@ -1021,13 +1011,13 @@ var november_events_worthing = [];
 
 var december_events_worthing = [];
 
-var INDEX_NEXT_EVENTS_HEADER = '<div><h3>BEACH</h3></div>';
+var INDEX_NEXT_EVENTS_HEADER = '<div><h3 style="font-size: 1.25rem;">BEACH</h3></div>';
 
 var INDEX_EVENT_DIV = '\
 <div class="event-wrap d-flex flex-wrap justify-content-between" style="margin-top: 10px;">\
 	<div class="event-content-wrap">\
 		<header class="entry-header d-flex flex-wrap align-items-center">\
-			<h3 class="entry-title w-100 m-0">$EVENT_TITLE$</h3>\
+			<h3 class="entry-title w-100 m-0" style="font-size: 1.25rem;">$EVENT_TITLE$</h3>\
 			<div class="posted-date">\
 				<p>$DATE$</p>\
 			</div>\
