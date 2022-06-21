@@ -905,7 +905,7 @@ var july_events_worthing = [
 	getHireWorthingC("07/14/2022"),
 	getHireWorthingC("07/15/2022"),
 
-	{ date: new Date("07/16/2022"), name: NAME_MIX_N_MATCH, type: TYPE_TOURNAMENT, info: INFO_MIXED, url: URL_MIX_N_MATCH },
+	{ date: new Date("07/16/2022"), name: "Mixed Series (non-UKBT)", type: TYPE_TOURNAMENT, info: INFO_MIXED, url: URL_MIXED_SERIES },
 	{ date: new Date("07/16/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
 	getWorthingAllYouCanPlay("06/17/2022"),
 
