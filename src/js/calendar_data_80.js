@@ -460,6 +460,9 @@ var july_events_leyton = [
 	getOpenPlayxxxxx("07/01/2022"),
 	{ date: new Date("07/02/2022"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
 	{ date: new Date("07/03/2022"), name: NAME_STARTER_SERIES, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 1*", url: "tournaments/starter-series.html" },
+	getJuniorAYCPxxx("07/03/2022"),
+	getAllYouCanPlay("07/03/2022"),
+	
 
 	getJuniorTrainin("07/04/2022"),
 	getBeginnersTrai("07/04/2022"),
@@ -500,7 +503,8 @@ var july_events_leyton = [
 	getFamilyOpenSes("07/22/2022"),
 	getOpenPlayxxxxx("07/22/2022"),
 
-	//23
+	getJuniorAYCPxxx("07/23/2022"),
+	getAllYouCanPlay("07/23/2022"),
 	getJuniorAYCPxxx("07/24/2022"),
 	getAllYouCanPlay("07/24/2022"),
 
@@ -524,13 +528,11 @@ var august_events_leyton = [
 	
 	getJuniorTrainin("08/01/2022"),
 	getBeginnersTrai("08/01/2022"),
-	getFlexiTraining("08/02/2022"),
-	getFlexiPlayxxxx("08/02/2022"),
+	getAdultTraining("08/02/2022"),
 	getOpenPlayxxxxx("08/03/2022"),
 	//getBegginersGaTi("08/03/2022"),
 	getJuniorGameTim("08/03/2022"),
-	getFlexiTraining("08/04/2022"),
-	getFlexiPlayxxxx("08/04/2022"),
+	getAdultTraining("08/04/2022"),
 	getFamilyOpenSes("08/05/2022"),
 	getOpenPlayxxxxx("08/05/2022"),
 	
@@ -566,7 +568,8 @@ var august_events_leyton = [
 	getFamilyOpenSes("08/19/2022"),
 	getOpenPlayxxxxx("08/19/2022"),
 
-	//20
+	getJuniorAYCPxxx("08/20/2022"),
+	getAllYouCanPlay("08/20/2022"),
 	getJuniorAYCPxxx("08/21/2022"),
 	getAllYouCanPlay("08/21/2022"),
 
@@ -582,9 +585,13 @@ var august_events_leyton = [
 	getFamilyOpenSes("08/26/2022"),
 	getOpenPlayxxxxx("08/26/2022"),
 
-	{ date: new Date("08/27/2022"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 2},
-	{ date: new Date("08/28/2022"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 0},
-	{ date: new Date("08/28/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
+	//{ date: new Date("08/27/2022"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 2},
+	//{ date: new Date("08/28/2022"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 0},
+	{ date: new Date("08/27/2022"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html", daysOfTournament: 2 }, //Sat
+	{ date: new Date("08/28/2022"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html", daysOfTournament: 0 }, //Sun
+	{ date: new Date("08/28/2022"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
+	
+	//{ date: new Date("08/28/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
 
 	
 	{ date: new Date("08/29/2022"), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "10:00-12:00", url: URL_JUNIOR_LEYTON },
