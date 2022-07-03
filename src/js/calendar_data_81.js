@@ -496,9 +496,9 @@ var july_events_leyton = [
 	getJuniorTrainin("07/18/2022"),
 	getBeginnersTrai("07/18/2022"),
 	getAdultTraining("07/19/2022"),
-	getOpenPlayxxxxx("07/20/2022"),
-	//getBegginersGaTi("07/20/2022"),
-	getJuniorGameTim("07/20/2022"),
+	// getOpenPlayxxxxx("07/20/2022"),
+	// getBegginersGaTi("07/20/2022"),
+	// getJuniorGameTim("07/20/2022"),
 	getAdultTraining("07/21/2022"),
 	getFamilyOpenSes("07/22/2022"),
 	getOpenPlayxxxxx("07/22/2022"),
@@ -582,9 +582,10 @@ var august_events_leyton = [
 	getJuniorGameTim("08/24/2022"),
 	getFlexiTraining("08/25/2022"),
 	getFlexiPlayxxxx("08/25/2022"),
-	getFamilyOpenSes("08/26/2022"),
-	getOpenPlayxxxxx("08/26/2022"),
-
+	// getFamilyOpenSes("08/26/2022"),
+	// getOpenPlayxxxxx("08/26/2022"),
+	{ date: new Date("08/26/2022"), name: "London Grand Slam Qualification Tournament", type: TYPE_TOURNAMENT, info: "", url: "tournaments/london-grand-slam.html"},
+	
 	//{ date: new Date("08/27/2022"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 2},
 	//{ date: new Date("08/28/2022"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 0},
 	{ date: new Date("08/27/2022"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html", daysOfTournament: 2 }, //Sat
