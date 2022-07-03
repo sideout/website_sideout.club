@@ -489,7 +489,7 @@ var july_events_leyton = [
 	getOpenPlayxxxxx("07/15/2022"),
 
 	{ date: new Date("07/16/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1* (9:00-14:00)", url: URL_MIXED_SERIES },
-	{ date: new Date("07/16/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
+	{ date: new Date("07/16/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "CANCELLED", url: "juniors/junior-series.html", status: "cancelled" },
 	getJuniorAYCPxxx("07/17/2022"),
 	getAllYouCanPlay("07/17/2022"),
 
