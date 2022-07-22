@@ -935,7 +935,8 @@ var july_events_worthing = [
 	getWorthAdTraini("07/26/2022"),
 	getHireWorthingC("07/26/2022"),
 	getWorthingWedne("07/27/2022", "Coast Cafe Wednesday League", "Junior 2s"),
-	getWorthingDropInTraining("07/28/2022"),
+	//getWorthingDropInTraining("07/28/2022"),
+	{ date: new Date("07/28/2022"), name: "Adult Drop-in Training", type: TYPE_TRAINING, info: "Cancelled", url: URL_TRAINING_WORTHING, status: STATUS_CANCELLED },
 	getHireWorthingC("07/28/2022"),
 	getHireWorthingC("07/29/2022"),
 
@@ -950,7 +951,8 @@ var august_events_worthing = [
 	getWorthTrainPla("08/02/2022"),
 	getHireWorthingC("08/02/2022"),
 	getWorthingWedne("08/03/2022", "Coast Cafe Wednesday League", "Worthing Mixed 4s League"),
-	getWorthingDropInTraining("08/04/2022"),
+	//getWorthingDropInTraining("08/04/2022"),
+	{ date: new Date("08/04/2022"), name: "Adult Drop-in Training", type: TYPE_TRAINING, info: "Cancelled", url: URL_TRAINING_WORTHING, status: STATUS_CANCELLED },
 	getHireWorthingC("08/04/2022"),
 	getHireWorthingC("08/05/2022"),
 	getHireWorthingC("08/06/2022"),
@@ -966,7 +968,7 @@ var august_events_worthing = [
 	getHireWorthingC("08/11/2022"),
 	getHireWorthingC("08/12/2022"),
 
-	{ date: new Date("08/14/2022"), name: NAME_MIX_N_MATCH, type: TYPE_TOURNAMENT, info: INFO_MIXED, url: URL_MIX_N_MATCH },
+	{ date: new Date("08/13/2022"), name: "Mixed Series (non-UKBT)", type: TYPE_TOURNAMENT, info: INFO_MIXED, url: URL_MIXED_SERIES },
 	{ date: new Date("08/14/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
 	getWorthingAllYouCanPlay("08/14/2022"),
 
