@@ -950,7 +950,8 @@ var august_events_worthing = [
 	getWothingBegiTr("08/01/2022","20:00-21:45"),
 	getWorthTrainPla("08/02/2022"),
 	getHireWorthingC("08/02/2022"),
-	getWorthingWedne("08/03/2022", "Coast Cafe Wednesday League", "Worthing Mixed 4s League"),
+	//getWorthingWedne("08/03/2022", "Coast Cafe Wednesday League", "Worthing Mixed 4s League"),
+	getOpenPlayxxxxx("08/03/2022"),
 	//getWorthingDropInTraining("08/04/2022"),
 	{ date: new Date("08/04/2022"), name: "Adult Drop-in Training", type: TYPE_TRAINING, info: "Cancelled", url: URL_TRAINING_WORTHING, status: STATUS_CANCELLED },
 	getHireWorthingC("08/04/2022"),
@@ -963,7 +964,7 @@ var august_events_worthing = [
 	getWothingBegiTr("08/08/2022","20:00-21:45"),
 	getWorthTrainPla("08/09/2022"),
 	getHireWorthingC("08/09/2022"),
-	getWorthingWedne("08/10/2022", "Coast Cafe Wednesday League", "Worthing Mixed 4s League"),
+	getOpenPlayxxxxx("08/10/2022"),
 	getWorthingDropInTraining("08/11/2022"),
 	getHireWorthingC("08/11/2022"),
 	getHireWorthingC("08/12/2022"),
@@ -976,7 +977,7 @@ var august_events_worthing = [
 	getWothingBegiTr("08/15/2022","20:00-21:45"),
 	getWorthTrainPla("08/16/2022"),
 	getHireWorthingC("08/16/2022"),
-	getWorthingWedne("08/17/2022", "Coast Cafe Wednesday League", "Worthing Mixed 4s League"),
+	getOpenPlayxxxxx("08/17/2022"),
 	getWorthingDropInTraining("08/18/2022"),
 	getHireWorthingC("08/18/2022"),
 	getHireWorthingC("08/19/2022"),
@@ -989,13 +990,13 @@ var august_events_worthing = [
 	getWothingBegiTr("08/22/2022","20:00-21:45"),
 	getWorthTrainPla("08/23/2022"),
 	getHireWorthingC("08/23/2022"),
-	getWorthingWedne("08/24/2022", "Coast Cafe Wednesday League", "Worthing Mixed 4s League"),
+	getOpenPlayxxxxx("08/24/2022"),
 	getWorthingDropInTraining("08/25/2022"),
 	getHireWorthingC("08/25/2022"),
 	getHireWorthingC("08/26/2022"),
 
-	getJuniorSeriesx("08/27/2022"),
-	{ date: new Date("08/28/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
+	{ date: new Date("08/27/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "", url: "juniors/junior-series.html" },
+	{ date: new Date("08/27/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
 	getWorthingAllYouCanPlay("08/28/2022"),
 
 	getWorthingAllYouCanPlay("08/29/2022"),
@@ -1005,7 +1006,7 @@ var august_events_worthing = [
 	getWorthTrainPla("08/30/2022"),
 	getHireWorthingC("08/30/2022"),
 
-	getWorthingWedne("08/31/2022", "Coast Cafe Wednesday League", "Worthing Mixed 4s League")
+	getOpenPlayxxxxx("08/31/2022")
 	
 ];
 
