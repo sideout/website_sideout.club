@@ -538,6 +538,7 @@ var august_events_leyton = [
 	
 	{ date: new Date("08/06/2022"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
 	{ date: new Date("08/07/2022"), name: NAME_STARTER_SERIES, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 1*", url: "tournaments/starter-series.html" },
+	getAllYouCanPlay("08/07/2022"),
 
 	getJuniorTrainin("08/08/2022"),
 	getBeginnersTrai("08/08/2022"),
