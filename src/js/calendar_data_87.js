@@ -553,7 +553,9 @@ var august_events_leyton = [
 	getOpenPlayxxxxx("08/12/2022"),
 
 	{ date: new Date("08/13/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1* (9:00-14:00)", url: URL_MIXED_SERIES },
-	{ date: new Date("08/13/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
+	{ date: new Date("08/13/2022"), name: NAME_JUNIOR_AYCP, type: TYPE_JUNIORS, info: "9:00-14:00", url: URL_JUNIOR_AYCP },
+	{ date: new Date("08/13/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: "9:00-14:00", url: URL_AYCP },
+
 	getJuniorAYCPxxx("08/14/2022"),
 	getAllYouCanPlay("08/14/2022"),
 
@@ -625,7 +627,9 @@ var september_events_leyton = [
 	getOpenPlayxxxxx("09/02/2022"),
 	
 	{ date: new Date("09/03/2022"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
-	{ date: new Date("09/04/2022"), name: NAME_STARTER_SERIES, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 1*", url: "tournaments/starter-series.html" },
+	{ date: new Date("09/04/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
+	{ date: new Date("09/04/2022"), name: NAME_STARTER_SERIES, type: TYPE_TOURNAMENT, info: "CANCELLED", url: "tournaments/starter-series.html", status: "cancelled" },
+	
 	
 	getJuniorTrainin("09/05/2022"),
 	getBeginnersTrai("09/05/2022"),
@@ -640,6 +644,8 @@ var september_events_leyton = [
 	getOpenPlayxxxxx("09/09/2022"),
 
 	//10
+	getJuniorAYCPxxx("09/10/2022"),
+	getAllYouCanPlay("09/10/2022"),
 	getJuniorAYCPxxx("09/11/2022"),
 	getAllYouCanPlay("09/11/2022"),
 
