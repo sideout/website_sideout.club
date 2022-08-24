@@ -235,7 +235,7 @@ function getFlexiTrReduce(date) {
 }
 
 function getFlexiPlayxxxx(date) {
-	return { date: new Date(date), name: NAME_FLEXI_PLAY, type: TYPE_PLAY, info: "18:00-22:00", url: URL_FLEXI_PLAY };
+	return { date: new Date(date), name: NAME_FLEXI_PLAY, type: TYPE_PLAY, info: "18:30-22:00", url: URL_FLEXI_PLAY };
 }
 
 
@@ -598,9 +598,11 @@ var august_events_leyton = [
 	//{ date: new Date("08/28/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
 
 	
-	{ date: new Date("08/29/2022"), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "10:00-12:00", url: URL_JUNIOR_LEYTON },
-	{ date: new Date("08/29/2022"), name: NAME_BEGINNERS_TRAINING, type: TYPE_TRAINING, info: "11:15-13:00", url: URL_TRAINING_LEYTON_BEGINNERS },
-	{ date: new Date("08/29/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: "12:00-17:00", url: URL_AYCP },
+	// { date: new Date("08/29/2022"), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "10:00-12:00", url: URL_JUNIOR_LEYTON },
+	// { date: new Date("08/29/2022"), name: NAME_BEGINNERS_TRAINING, type: TYPE_TRAINING, info: "11:15-13:00", url: URL_TRAINING_LEYTON_BEGINNERS },
+	// getFamilyOpenSes("08/29/2022"),
+	{ date: new Date("08/29/2022"), name: NAME_FAMILY_OPEN_PLAY, type: TYPE_PLAY, type1: TYPE_JUNIORS, info: "10:00-12:00", url: URL_FAMILY_OPEN_SESSIONS },
+	{ date: new Date("08/29/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: "10:00-17:00", url: URL_AYCP },
 
 
 	getFlexiTraining("08/30/2022"),
@@ -631,15 +633,16 @@ var september_events_leyton = [
 	{ date: new Date("09/04/2022"), name: NAME_STARTER_SERIES, type: TYPE_TOURNAMENT, info: "CANCELLED", url: "tournaments/starter-series.html", status: "cancelled" },
 	
 	
-	getJuniorTrainin("09/05/2022"),
+	// getJuniorTrainin("09/05/2022"),
+	{ date: new Date("09/05/2022"), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "17:00-18:30", url: URL_JUNIOR_LEYTON },
 	getBeginnersTrai("09/05/2022"),
-	getFlexiTraining("09/06/2022"),
-	getFlexiPlayxxxx("09/06/2022"),
-	getOpenPlayxxxxx("09/07/2022"),
+	// getFlexiTraining("09/06/2022"),
+	// getFlexiPlayxxxx("09/06/2022"),
+	// getOpenPlayxxxxx("09/07/2022"),
 	//getBegginersGaTi("09/07/2022"),
-	getJuniorGameTim("09/07/2022"),
-	getFlexiTraining("09/08/2022"),
-	getFlexiPlayxxxx("09/08/2022"),
+	// getJuniorGameTim("09/07/2022"),
+	// getFlexiTraining("09/08/2022"),
+	// getFlexiPlayxxxx("09/08/2022"),
 	getFamilyOpenSes("09/09/2022"),
 	getOpenPlayxxxxx("09/09/2022"),
 
@@ -649,15 +652,15 @@ var september_events_leyton = [
 	getJuniorAYCPxxx("09/11/2022"),
 	getAllYouCanPlay("09/11/2022"),
 
-	getJuniorTrainin("09/12/2022"),
-	getBeginnersTrai("09/12/2022"),
-	getFlexiTraining("09/13/2022"),
-	getFlexiPlayxxxx("09/13/2022"),
-	getOpenPlayxxxxx("09/14/2022"),
+	// getJuniorTrainin("09/12/2022"),
+	// getBeginnersTrai("09/12/2022"),
+	// getFlexiTraining("09/13/2022"),
+	// getFlexiPlayxxxx("09/13/2022"),
+	// getOpenPlayxxxxx("09/14/2022"),
 	//getBegginersGaTi("09/14/2022"),
-	getJuniorGameTim("09/14/2022"),
-	getFlexiTraining("09/15/2022"),
-	getFlexiPlayxxxx("09/15/2022"),
+	// getJuniorGameTim("09/14/2022"),
+	// getFlexiTraining("09/15/2022"),
+	// getFlexiPlayxxxx("09/15/2022"),
 	getFamilyOpenSes("09/16/2022"),
 	getOpenPlayxxxxx("09/16/2022"),
 
@@ -665,21 +668,21 @@ var september_events_leyton = [
 	getJuniorAYCPxxx("09/18/2022"),
 	getAllYouCanPlay("09/18/2022"),
 
-	getJuniorTrainin("09/19/2022"),
-	getBeginnersTrai("09/19/2022"),
-	getFlexiTraining("09/20/2022"),
-	getFlexiPlayxxxx("09/20/2022"),
-	getOpenPlayxxxxx("09/21/2022"),
+	// getJuniorTrainin("09/19/2022"),
+	// getBeginnersTrai("09/19/2022"),
+	// getFlexiTraining("09/20/2022"),
+	// getFlexiPlayxxxx("09/20/2022"),
+	// getOpenPlayxxxxx("09/21/2022"),
 	//getBegginersGaTi("09/21/2022"),
-	getJuniorGameTim("09/21/2022"),
-	getFlexiTraining("09/22/2022"),
-	getFlexiPlayxxxx("09/22/2022"),
+	// getJuniorGameTim("09/21/2022"),
+	// getFlexiTraining("09/22/2022"),
+	// getFlexiPlayxxxx("09/22/2022"),
 	getFamilyOpenSes("09/23/2022"),
 	getOpenPlayxxxxx("09/23/2022"),
 
 	{ date: new Date("09/24/2022"), name: "End of season party", type: "", info: "", url: "" },
-	getJuniorTrainin("09/26/2022"),
-	getBeginnersTrai("09/26/2022")
+	// getJuniorTrainin("09/26/2022"),
+	// getBeginnersTrai("09/26/2022")
 	//{ date: new Date("09/12/2022"), name: "London Youth Games Beach volleyball tournament", type: TYPE_JUNIORS, info: "<a href=\"https://www.londonyouthgames.org/event/feel-good-too-beach-volleyball-f-m/\">Click to find out more</a>", url: "" },
 ];
 
