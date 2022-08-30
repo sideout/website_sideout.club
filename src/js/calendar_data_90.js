@@ -1,5 +1,5 @@
 //TODO
-//daysOfTournament in calendar_index_functions_2 and index
+//daysOfTournament in calendar_index_functions_3 and index
 
 //STATUS
 var STATUS_CANCELLED = "cancelled";
@@ -58,10 +58,10 @@ var URL_SIDE_IT_OUT = "play/side-it-out.html";
 var URL_AYCP = "play/all-you-can-play.html";
 var URL_JUNIOR_AYCP = "juniors/junior-all-you-can-play.html";
 var URL_JUNIOR_GAME_TIME = "juniors/junior-game-time.html";
-var URL_KING_QUEEN_PLAY = "play/king-and-queen.html";
+var URL_MINI_SERIES = "play/side-it-out-mini-series.html";
 var URL_OPEN_PLAY = "play/open-play.html";
 var URL_FAMILY_OPEN_SESSIONS = "juniors/family-open-sessions.html"
-var URL_FLEXI_PLAY = "play/flexi-play-packages.html";
+var URL_FLEXI_PLAY = "play/flexi-play.html";
 var URL_INDOOR_ON_THE_BEACH = "indoor-on-the-beach.html";
 
 var URL_MIX_N_MATCH = "tournaments/mixnmatch.html";
@@ -142,6 +142,10 @@ function getWorthAdTraini(date) {
 	return { date: new Date(date), name: "Adult Training Groups", type: TYPE_TRAINING, info: "", url: "training-worthing.html#privategroup" };
 }
 
+function getWorthTrainPla(date) {
+	return { date: new Date(date), name: "Adult Training (Play)", type: TYPE_TRAINING, info: "", url: "training-worthing.html#privategroup" };
+}
+
 function getWorthingDropInTraining(date) {
 	return { date: new Date(date), name: "Adult Drop-in Training", type: TYPE_TRAINING, info: "", url: URL_TRAINING_WORTHING };
 }
@@ -170,12 +174,12 @@ function getBegginersGaTi(date) {
 	return { date: new Date(date), name: "Beginners' GameTime", type: TYPE_PLAY, info: "18:45-20:30", url: "play/beginners-game-time.html" };
 }
 
-function getKingAndQueenx(date) {
-	return { date: new Date(date), name: "Side-it-Out Mini-Series", type: TYPE_PLAY, info: "", url: URL_KING_QUEEN_PLAY };
+function getMiniSeriesxxx(date) {
+	return { date: new Date(date), name: "Side-it-Out Mini-Series", type: TYPE_PLAY, info: "", url: URL_MINI_SERIES };
 }
 
 function getJuniorSeriesx(date) {
-	return { date: new Date(date), name: "Junior Series", type: TYPE_JUNIORS, info: "approx. 9:00am-1:00pm", url: "juniors/junior-series.html" };
+	return { date: new Date(date), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "approx. 9:00am-1:00pm", url: "juniors/junior-series.html" };
 }
 
 function getWorthingMixed(date) {
@@ -252,22 +256,20 @@ var march_events_leyton = [
 var april_events_leyton = [
 	getFamilyOpenSes("04/01/2022"),
 	getOpenPlayxxxxx("04/01/2022"),
-	getKingAndQueenx("04/02/2022"),
+	getMiniSeriesxxx("04/02/2022"),
 	getJuniorAYCPxxx("04/03/2022"),
 	getAllYouCanPlay("04/03/2022"),
 	getJuniorTrainin("04/04/2022"),
 	getBeginnersTrai("04/04/2022"),
-	{ date: new Date("04/05/2022"), name: "Open Training", type: TYPE_TRAINING, info: "Taster sessions", url: URL_TRAINING_LEYTON },
 	getOpenPlayxxxxx("04/05/2022"),
 	getJuniorGameTim("04/06/2022"),
 	getWedNighSocial("04/06/2022"),
 	getBegginersGaTi("04/06/2022"),
-	{ date: new Date("04/07/2022"), name: "Open Training", type: TYPE_TRAINING, info: "Taster sessions", url: URL_TRAINING_LEYTON },
 	getOpenPlayxxxxx("04/07/2022"),
 	getFamilyOpenSes("04/08/2022"),
 	getOpenPlayxxxxx("04/08/2022"),
 	{ date: new Date("04/09/2022"), name: NAME_SPRING, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SPRING },
-	{ date: new Date("04/10/2022"), name: NAME_STARTER_SERIES, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 1*", url: "tournaments/starter-series.html" },
+	getAllYouCanPlay("04/10/2022"),
 	getJuniorTrainin("04/11/2022"),
 	getBeginnersTrai("04/11/2022"),
 	{ date: new Date("04/12/2022"), name: "Training group trials", type: TYPE_TRAINING, info: "For Open Group training", url: URL_TRAINING_LEYTON },
@@ -280,27 +282,33 @@ var april_events_leyton = [
 	getJuniorAYCPxxx("04/15/2022"),
 	getAllYouCanPlay("04/15/2022"),
 	{ date: new Date("04/15/2022"), name: "Social tournament for parents/beginners", type: TYPE_PLAY, info: "", url: "" },
-	getKingAndQueenx("04/16/2022"),
+	getMiniSeriesxxx("04/16/2022"),
 	getJuniorAYCPxxx("04/17/2022"),
 	getAllYouCanPlay("04/17/2022"),
-	getJuniorSeriesx("04/18/2022"),
+	{ date: new Date("04/18/2022"), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "10:00 - 11:30", url: URL_JUNIOR_LEYTON },
 	{ date: new Date("04/18/2022"), name: NAME_BEGINNERS_TRAINING, type: TYPE_TRAINING, info: "11:00-12:30", url: URL_TRAINING_LEYTON_BEGINNERS },
-	{ date: new Date("04/18/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1*", url: URL_MIXED_SERIES },
+	{ date: new Date("04/18/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: "Cancelled", url: URL_MIXED_SERIES, status: "cancelled" },
+	{ date: new Date("04/18/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: "12:00-17:00", url: URL_AYCP },
 	getAdultTraining("04/19/2022"),
 	getJuniorGameTim("04/20/2022"),
-	getWedNighSocial("04/20/2022"),
+	// getWedNighSocial("04/20/2022"),
+	getFlexiPlayxxxx("04/20/2022"),
+	getFlexiTraining("04/20/2022"),
 	getBegginersGaTi("04/20/2022"),
 	getAdultTraining("04/21/2022"),
 	getFamilyOpenSes("04/22/2022"),
 	getOpenPlayxxxxx("04/22/2022"),
-	getKingAndQueenx("04/23/2022"),
+	getAllYouCanPlay("04/23/2022"),
+	getJuniorAYCPxxx("04/23/2022"),
 	getJuniorAYCPxxx("04/24/2022"),
 	getAllYouCanPlay("04/24/2022"),
 	getJuniorTrainin("04/25/2022"),
 	getBeginnersTrai("04/25/2022"),
 	getAdultTraining("04/26/2022"),
 	getJuniorGameTim("04/27/2022"),
-	getWedNighSocial("04/27/2022"),
+	// getWedNighSocial("04/27/2022"),
+	getFlexiPlayxxxx("04/27/2022"),
+	getFlexiTraining("04/27/2022"),
 	getBegginersGaTi("04/27/2022"),
 	getAdultTraining("04/28/2022"),
 	getFamilyOpenSes("04/29/2022"),
@@ -311,37 +319,45 @@ var april_events_leyton = [
 var may_events_leyton = [
 	{ date: new Date("05/01/2022"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 0},
 	{ date: new Date("05/01/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
-	{ date: new Date("05/02/2022"), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "10:00-12:00", url: URL_JUNIOR_LEYTON },
-	{ date: new Date("05/02/2022"), name: NAME_BEGINNERS_TRAINING, type: TYPE_TRAINING, info: "11:15-13:00", url: URL_TRAINING_LEYTON_BEGINNERS },
+	{ date: new Date("05/02/2022"), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "10:00-11:30", url: URL_JUNIOR_LEYTON },
+	{ date: new Date("05/02/2022"), name: NAME_BEGINNERS_TRAINING, type: TYPE_TRAINING, info: "11:30-13:15", url: URL_TRAINING_LEYTON_BEGINNERS },
 	{ date: new Date("05/02/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: "12:00-17:00", url: URL_AYCP },
 	getAdultTraining("05/03/2022"),
 	getJuniorGameTim("05/04/2022"),
-	{ date: new Date("05/04/2022"), name: "Wednesday Night Social: Advanced Tourney", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
+	// { date: new Date("05/04/2022"), name: "Wednesday Night Social: Advanced Tourney", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
+	getFlexiPlayxxxx("05/04/2022"),
+	getFlexiTraining("05/04/2022"),
 	getBegginersGaTi("05/04/2022"),
 	getAdultTraining("05/05/2022"),
 	getFamilyOpenSes("05/06/2022"),
 	getOpenPlayxxxxx("05/06/2022"),
-	{ date: new Date("05/07/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1* (9:00-14:00)", url: URL_MIXED_SERIES },
-	{ date: new Date("05/07/2022"), name: "Junior Series", type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
+	//{ date: new Date("05/07/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1* (9:00-14:00)", url: URL_MIXED_SERIES },
+	{ date: new Date("05/07/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "CANCELLED", url: "juniors/junior-series.html", status: "cancelled"},
+	getJuniorAYCPxxx("05/07/2022"),
+	getAllYouCanPlay("05/07/2022"),
+
 	getJuniorAYCPxxx("05/08/2022"),
 	getAllYouCanPlay("05/08/2022"),
 	getJuniorTrainin("05/09/2022"),
 	getBeginnersTrai("05/09/2022"),
 	getAdultTraining("05/10/2022"),
 	getJuniorGameTim("05/11/2022"),
-	{ date: new Date("05/11/2022"), name: "Wednesday Night Social: Intermediate Tourney", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
+	// { date: new Date("05/11/2022"), name: "Wednesday Night Social: Intermediate Tourney", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
+	getFlexiPlayxxxx("05/11/2022"),
+	getFlexiTraining("05/11/2022"),
 	getBegginersGaTi("05/11/2022"),
 	getAdultTraining("05/12/2022"),
 	getFamilyOpenSes("05/13/2022"),
 	getOpenPlayxxxxx("05/13/2022"),
 	{ date: new Date("05/14/2022"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
 	{ date: new Date("05/15/2022"), name: NAME_STARTER_SERIES, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 1*", url: "tournaments/starter-series.html" },
+	getAllYouCanPlay("05/15/2022"),
 	getJuniorTrainin("05/16/2022"),
 	getBeginnersTrai("05/16/2022"),
 	getAdultTraining("05/17/2022"),
-	getJuniorGameTim("05/18/2022"),
-	{ date: new Date("05/18/2022"), name: "Wednesday Night Social: Advanced Tourney", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
+	getOpenPlayxxxxx("05/18/2022"),
 	getBegginersGaTi("05/18/2022"),
+	getJuniorGameTim("05/18/2022"),
 	getAdultTraining("05/19/2022"),
 	getFamilyOpenSes("05/20/2022"),
 	getOpenPlayxxxxx("05/20/2022"),
@@ -351,12 +367,14 @@ var may_events_leyton = [
 	getJuniorTrainin("05/23/2022"),
 	getBeginnersTrai("05/23/2022"),
 	getAdultTraining("05/24/2022"),
-	getJuniorGameTim("05/25/2022"),
-	{ date: new Date("05/25/2022"), name: "Wednesday Night Social: Advanced Tourney", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
+	getOpenPlayxxxxx("05/25/2022"),
 	getBegginersGaTi("05/25/2022"),
+	getJuniorGameTim("05/25/2022"),
 	getAdultTraining("05/26/2022"),
 	getFamilyOpenSes("05/27/2022"),
 	getOpenPlayxxxxx("05/27/2022"),
+	getJuniorAYCPxxx("05/28/2022"),
+	getAllYouCanPlay("05/28/2022"),
 	getJuniorAYCPxxx("05/29/2022"),
 	getAllYouCanPlay("05/29/2022"),
 	getJuniorTrainin("05/30/2022"),
@@ -365,37 +383,43 @@ var may_events_leyton = [
 ];
 
 var june_events_leyton = [
+	getOpenPlayxxxxx("06/01/2022"),
+	//getBegginersGaTi("06/01/2022"),
 	getJuniorGameTim("06/01/2022"),
-	{ date: new Date("06/01/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("06/01/2022"),
+	// { date: new Date("06/01/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
 	getJuniorAYCPxxx("06/02/2022"),
 	getAllYouCanPlay("06/02/2022"),
 	getJuniorAYCPxxx("06/03/2022"),
 	getAllYouCanPlay("06/03/2022"),
 	{ date: new Date("06/04/2022"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
 	{ date: new Date("06/05/2022"), name: NAME_STARTER_SERIES, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 1*", url: "tournaments/starter-series.html" },
+	getAllYouCanPlay("06/05/2022"),
 	
 	getJuniorTrainin("06/06/2022"),
 	getBeginnersTrai("06/06/2022"),
 	getAdultTraining("06/07/2022"),
+	getOpenPlayxxxxx("06/08/2022"),
+	//getBegginersGaTi("06/08/2022"),
 	getJuniorGameTim("06/08/2022"),
-	{ date: new Date("06/08/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("06/08/2022"),
+	// { date: new Date("06/08/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
+	
+	
+
 	getAdultTraining("06/09/2022"),
 	getFamilyOpenSes("06/10/2022"),
 	getOpenPlayxxxxx("06/10/2022"),
 
 	{ date: new Date("06/11/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1* (9:00-14:00)", url: URL_MIXED_SERIES },
-	{ date: new Date("06/11/2022"), name: "Junior Series", type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
+	{ date: new Date("06/11/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
 	getJuniorAYCPxxx("06/12/2022"),
 	getAllYouCanPlay("06/12/2022"),
 
 	getJuniorTrainin("06/13/2022"),
 	getBeginnersTrai("06/13/2022"),
 	getAdultTraining("06/14/2022"),
+	getOpenPlayxxxxx("06/15/2022"),
+	//getBegginersGaTi("06/15/2022"),
 	getJuniorGameTim("06/15/2022"),
-	{ date: new Date("06/15/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("06/15/2022"),
 	getAdultTraining("06/16/2022"),
 	getFamilyOpenSes("06/17/2022"),
 	getOpenPlayxxxxx("06/17/2022"),
@@ -409,9 +433,9 @@ var june_events_leyton = [
 	getJuniorTrainin("06/20/2022"),
 	getBeginnersTrai("06/20/2022"),
 	getAdultTraining("06/21/2022"),
+	getOpenPlayxxxxx("06/22/2022"),
+	//getBegginersGaTi("06/22/2022"),
 	getJuniorGameTim("06/22/2022"),
-	{ date: new Date("06/22/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("06/22/2022"),
 	getAdultTraining("06/23/2022"),
 	getFamilyOpenSes("06/24/2022"),
 	getOpenPlayxxxxx("06/24/2022"),
@@ -425,9 +449,9 @@ var june_events_leyton = [
 	getJuniorTrainin("06/27/2022"),
 	getBeginnersTrai("06/27/2022"),
 	getAdultTraining("06/28/2022"),
+	getOpenPlayxxxxx("06/29/2022"),
+	//getBegginersGaTi("06/29/2022"),
 	getJuniorGameTim("06/29/2022"),
-	{ date: new Date("06/29/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("06/29/2022"),
 	getAdultTraining("06/30/2022")
 ];
 
@@ -436,56 +460,60 @@ var july_events_leyton = [
 	getOpenPlayxxxxx("07/01/2022"),
 	{ date: new Date("07/02/2022"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
 	{ date: new Date("07/03/2022"), name: NAME_STARTER_SERIES, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 1*", url: "tournaments/starter-series.html" },
+	getJuniorAYCPxxx("07/03/2022"),
+	getAllYouCanPlay("07/03/2022"),
+	
 
 	getJuniorTrainin("07/04/2022"),
 	getBeginnersTrai("07/04/2022"),
 	getAdultTraining("07/05/2022"),
+	getOpenPlayxxxxx("07/06/2022"),
+	//getBegginersGaTi("07/06/2022"),
 	getJuniorGameTim("07/06/2022"),
-	{ date: new Date("07/06/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("07/06/2022"),
 	getAdultTraining("07/07/2022"),
 	getFamilyOpenSes("07/08/2022"),
 	getOpenPlayxxxxx("07/08/2022"),
 
-	{ date: new Date("07/09/2021"), name: NAME_ALL_NATIONS, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2vs2", url: URL_ALL_NATIONS, daysOfTournament: 2},
-	{ date: new Date("07/10/2021"), name: NAME_ALL_NATIONS, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2vs2", url: URL_ALL_NATIONS, daysOfTournament: 0},
-	{ date: new Date("07/10/2021"), name: NAME_ALL_NATIONS, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 2vs2", url: URL_ALL_NATIONS },
+	{ date: new Date("07/09/2022"), name: NAME_ALL_NATIONS, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2vs2", url: URL_ALL_NATIONS, daysOfTournament: 2},
+	{ date: new Date("07/10/2022"), name: NAME_ALL_NATIONS, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2vs2", url: URL_ALL_NATIONS, daysOfTournament: 0},
+	{ date: new Date("07/10/2022"), name: NAME_ALL_NATIONS, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 2vs2", url: URL_ALL_NATIONS },
 	
 	getJuniorTrainin("07/11/2022"),
 	getBeginnersTrai("07/11/2022"),
 	getAdultTraining("07/12/2022"),
+	getOpenPlayxxxxx("07/13/2022"),
+	//getBegginersGaTi("07/13/2022"),
 	getJuniorGameTim("07/13/2022"),
-	{ date: new Date("07/13/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("07/13/2022"),
 	getAdultTraining("07/14/2022"),
 	getFamilyOpenSes("07/15/2022"),
 	getOpenPlayxxxxx("07/15/2022"),
 
 	{ date: new Date("07/16/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1* (9:00-14:00)", url: URL_MIXED_SERIES },
-	{ date: new Date("07/16/2022"), name: "Junior Series", type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
+	{ date: new Date("07/16/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "CANCELLED", url: "juniors/junior-series.html", status: "cancelled" },
 	getJuniorAYCPxxx("07/17/2022"),
 	getAllYouCanPlay("07/17/2022"),
 
 	getJuniorTrainin("07/18/2022"),
 	getBeginnersTrai("07/18/2022"),
 	getAdultTraining("07/19/2022"),
-	getJuniorGameTim("07/20/2022"),
-	{ date: new Date("07/20/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("07/20/2022"),
+	// getOpenPlayxxxxx("07/20/2022"),
+	// getBegginersGaTi("07/20/2022"),
+	// getJuniorGameTim("07/20/2022"),
 	getAdultTraining("07/21/2022"),
 	getFamilyOpenSes("07/22/2022"),
 	getOpenPlayxxxxx("07/22/2022"),
 
-	//23
+	getJuniorAYCPxxx("07/23/2022"),
+	getAllYouCanPlay("07/23/2022"),
 	getJuniorAYCPxxx("07/24/2022"),
 	getAllYouCanPlay("07/24/2022"),
 
 	getJuniorTrainin("07/25/2022"),
 	getBeginnersTrai("07/25/2022"),
 	getAdultTraining("07/26/2022"),
+	getOpenPlayxxxxx("07/27/2022"),
+	//getBegginersGaTi("07/27/2022"),
 	getJuniorGameTim("07/27/2022"),
-	{ date: new Date("07/27/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("07/27/2022"),
 	getAdultTraining("07/28/2022"),
 	getFamilyOpenSes("07/29/2022"),
 	getOpenPlayxxxxx("07/29/2022"),
@@ -500,33 +528,34 @@ var august_events_leyton = [
 	
 	getJuniorTrainin("08/01/2022"),
 	getBeginnersTrai("08/01/2022"),
-	getFlexiTraining("08/02/2022"),
-	getFlexiPlayxxxx("08/02/2022"),
+	getAdultTraining("08/02/2022"),
+	getOpenPlayxxxxx("08/03/2022"),
+	//getBegginersGaTi("08/03/2022"),
 	getJuniorGameTim("08/03/2022"),
-	{ date: new Date("08/03/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("08/03/2022"),
-	getFlexiTraining("08/04/2022"),
-	getFlexiPlayxxxx("08/04/2022"),
+	getAdultTraining("08/04/2022"),
 	getFamilyOpenSes("08/05/2022"),
 	getOpenPlayxxxxx("08/05/2022"),
 	
 	{ date: new Date("08/06/2022"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
-	{ date: new Date("08/07/2022"), name: NAME_STARTER_SERIES, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 1*", url: "tournaments/starter-series.html" },
+	{ date: new Date("08/07/2022"), name: NAME_STARTER_SERIES, type: TYPE_TOURNAMENT, info: CANCELLED, url: "tournaments/starter-series.html", status: "cancelled" },
+	getAllYouCanPlay("08/07/2022"),
 
 	getJuniorTrainin("08/08/2022"),
 	getBeginnersTrai("08/08/2022"),
 	getFlexiTraining("08/09/2022"),
 	getFlexiPlayxxxx("08/09/2022"),
+	getOpenPlayxxxxx("08/10/2022"),
+	//getBegginersGaTi("08/10/2022"),
 	getJuniorGameTim("08/10/2022"),
-	{ date: new Date("08/10/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("08/10/2022"),
 	getFlexiTraining("08/11/2022"),
 	getFlexiPlayxxxx("08/11/2022"),
 	getFamilyOpenSes("08/12/2022"),
 	getOpenPlayxxxxx("08/12/2022"),
 
 	{ date: new Date("08/13/2022"), name: NAME_MIXED_SERIES, type: TYPE_TOURNAMENT, info: INFO_MIXED + " 1* (9:00-14:00)", url: URL_MIXED_SERIES },
-	{ date: new Date("08/13/2022"), name: "Junior Series", type: TYPE_JUNIORS, info: "approx. 13:00-17:00", url: "juniors/junior-series.html" },
+	{ date: new Date("08/13/2022"), name: NAME_JUNIOR_AYCP, type: TYPE_JUNIORS, info: "9:00-14:00", url: URL_JUNIOR_AYCP },
+	{ date: new Date("08/13/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: "9:00-14:00", url: URL_AYCP },
+
 	getJuniorAYCPxxx("08/14/2022"),
 	getAllYouCanPlay("08/14/2022"),
 
@@ -534,15 +563,16 @@ var august_events_leyton = [
 	getBeginnersTrai("08/15/2022"),
 	getFlexiTraining("08/16/2022"),
 	getFlexiPlayxxxx("08/16/2022"),
+	getOpenPlayxxxxx("08/17/2022"),
+	//getBegginersGaTi("08/17/2022"),
 	getJuniorGameTim("08/17/2022"),
-	{ date: new Date("08/17/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("08/17/2022"),
 	getFlexiTraining("08/18/2022"),
 	getFlexiPlayxxxx("08/18/2022"),
 	getFamilyOpenSes("08/19/2022"),
 	getOpenPlayxxxxx("08/19/2022"),
 
-	//20
+	getJuniorAYCPxxx("08/20/2022"),
+	getAllYouCanPlay("08/20/2022"),
 	getJuniorAYCPxxx("08/21/2022"),
 	getAllYouCanPlay("08/21/2022"),
 
@@ -550,29 +580,37 @@ var august_events_leyton = [
 	getBeginnersTrai("08/22/2022"),
 	getFlexiTraining("08/23/2022"),
 	getFlexiPlayxxxx("08/23/2022"),
-	getJuniorGameTim("08/24/2022"),
-	{ date: new Date("08/24/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("08/24/2022"),
+	getOpenPlayxxxxx("08/24/2022"),
+	//getBegginersGaTi("08/24/2022"),
+	//getJuniorGameTim("08/24/2022"),
+	{ date: new Date("08/24/2022"), name: NAME_JUNIOR_GAME_TIME, type: TYPE_JUNIORS, info: "18:00-19:30", url: URL_JUNIOR_GAME_TIME },
 	getFlexiTraining("08/25/2022"),
 	getFlexiPlayxxxx("08/25/2022"),
-	getFamilyOpenSes("08/26/2022"),
-	getOpenPlayxxxxx("08/26/2022"),
-
-	{ date: new Date("08/27/2022"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 2},
-	{ date: new Date("08/28/2022"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 0},
-	{ date: new Date("08/28/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
+	// getFamilyOpenSes("08/26/2022"),
+	// getOpenPlayxxxxx("08/26/2022"),
+	{ date: new Date("08/26/2022"), name: "London Grand Slam Qualification Tournament", type: TYPE_TOURNAMENT, info: "", url: "tournaments/london-grand-slam.html"},
+	
+	//{ date: new Date("08/27/2022"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 2},
+	//{ date: new Date("08/28/2022"), name: NAME_GRAND_PRIX, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 0},
+	{ date: new Date("08/27/2022"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html", daysOfTournament: 2 }, //Sat
+	{ date: new Date("08/28/2022"), name: NAME_GRAND_SLAM, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 5*", url: "tournaments/london-grand-slam.html", daysOfTournament: 0 }, //Sun
+	{ date: new Date("08/28/2022"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
+	
+	//{ date: new Date("08/28/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
 
 	
-	{ date: new Date("08/29/2022"), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "10:00-12:00", url: URL_JUNIOR_LEYTON },
-	{ date: new Date("08/29/2022"), name: NAME_BEGINNERS_TRAINING, type: TYPE_TRAINING, info: "11:15-13:00", url: URL_TRAINING_LEYTON_BEGINNERS },
-	{ date: new Date("08/29/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: "12:00-17:00", url: URL_AYCP },
+	// { date: new Date("08/29/2022"), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "10:00-12:00", url: URL_JUNIOR_LEYTON },
+	// { date: new Date("08/29/2022"), name: NAME_BEGINNERS_TRAINING, type: TYPE_TRAINING, info: "11:15-13:00", url: URL_TRAINING_LEYTON_BEGINNERS },
+	// getFamilyOpenSes("08/29/2022"),
+	{ date: new Date("08/29/2022"), name: NAME_FAMILY_OPEN_PLAY, type: TYPE_PLAY, type1: TYPE_JUNIORS, info: "10:00-12:00", url: URL_FAMILY_OPEN_SESSIONS },
+	{ date: new Date("08/29/2022"), name: NAME_AYCP, type: TYPE_PLAY, info: "10:00-17:00", url: URL_AYCP },
 
 
 	getFlexiTraining("08/30/2022"),
 	getFlexiPlayxxxx("08/30/2022"),
-	getJuniorGameTim("08/31/2022"),
-	{ date: new Date("08/31/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("08/31/2022")
+	getOpenPlayxxxxx("08/31/2022"),
+	//getBegginersGaTi("08/31/2022"),
+	getJuniorGameTim("08/31/2022")
 
 	// { date: new Date("08/27/2022"), name: NAME_FAMILY_OPEN_PLAY, type: TYPE_PLAY, type1: TYPE_JUNIORS, info: "CANCELLED", url: URL_FAMILY_OPEN_SESSIONS, status: "cancelled" },
 	// { date: new Date("08/27/2022"), name: NAME_OPEN_PLAY, type: TYPE_PLAY, info: "CANCELLED", url: URL_OPEN_PLAY, status: "cancelled" },
@@ -592,54 +630,60 @@ var september_events_leyton = [
 	getOpenPlayxxxxx("09/02/2022"),
 	
 	{ date: new Date("09/03/2022"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
-	{ date: new Date("09/04/2022"), name: NAME_STARTER_SERIES, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 1*", url: "tournaments/starter-series.html" },
+	{ date: new Date("09/04/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
+	{ date: new Date("09/04/2022"), name: NAME_STARTER_SERIES, type: TYPE_TOURNAMENT, info: "CANCELLED", url: "tournaments/starter-series.html", status: "cancelled" },
 	
-	getJuniorTrainin("09/05/2022"),
+	
+	// getJuniorTrainin("09/05/2022"),
+	{ date: new Date("09/05/2022"), name: NAME_JUNIOR_TRAINING, type: TYPE_JUNIORS, info: "17:00-18:30", url: URL_JUNIOR_LEYTON },
 	getBeginnersTrai("09/05/2022"),
-	getFlexiTraining("09/06/2022"),
-	getFlexiPlayxxxx("09/06/2022"),
-	getJuniorGameTim("09/07/2022"),
-	{ date: new Date("09/07/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("09/07/2022"),
-	getFlexiTraining("09/08/2022"),
-	getFlexiPlayxxxx("09/08/2022"),
+	// getFlexiTraining("09/06/2022"),
+	// getFlexiPlayxxxx("09/06/2022"),
+	// getOpenPlayxxxxx("09/07/2022"),
+	//getBegginersGaTi("09/07/2022"),
+	// getJuniorGameTim("09/07/2022"),
+	// getFlexiTraining("09/08/2022"),
+	// getFlexiPlayxxxx("09/08/2022"),
 	getFamilyOpenSes("09/09/2022"),
 	getOpenPlayxxxxx("09/09/2022"),
 
 	//10
-	getJuniorAYCPxxx("08/11/2022"),
-	getAllYouCanPlay("08/11/2022"),
+	getJuniorAYCPxxx("09/10/2022"),
+	getAllYouCanPlay("09/10/2022"),
+	getJuniorAYCPxxx("09/11/2022"),
+	getAllYouCanPlay("09/11/2022"),
 
-	getJuniorTrainin("09/12/2022"),
-	getBeginnersTrai("09/12/2022"),
-	getFlexiTraining("09/13/2022"),
-	getFlexiPlayxxxx("09/13/2022"),
-	getJuniorGameTim("09/14/2022"),
-	{ date: new Date("09/14/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("09/14/2022"),
-	getFlexiTraining("09/15/2022"),
-	getFlexiPlayxxxx("09/15/2022"),
+	// getJuniorTrainin("09/12/2022"),
+	// getBeginnersTrai("09/12/2022"),
+	// getFlexiTraining("09/13/2022"),
+	// getFlexiPlayxxxx("09/13/2022"),
+	// getOpenPlayxxxxx("09/14/2022"),
+	//getBegginersGaTi("09/14/2022"),
+	// getJuniorGameTim("09/14/2022"),
+	// getFlexiTraining("09/15/2022"),
+	// getFlexiPlayxxxx("09/15/2022"),
 	getFamilyOpenSes("09/16/2022"),
 	getOpenPlayxxxxx("09/16/2022"),
 
 	{ date: new Date("09/17/2022"), name: "One more beach tournament(Polonia)", type: TYPE_TOURNAMENT, info: "", url: URL_POLONIA }, 
-	getJuniorAYCPxxx("08/18/2022"),
-	getAllYouCanPlay("08/18/2022"),
+	getJuniorAYCPxxx("09/18/2022"),
+	getAllYouCanPlay("09/18/2022"),
 
-	getJuniorTrainin("09/19/2022"),
-	getBeginnersTrai("09/19/2022"),
-	getFlexiTraining("09/20/2022"),
-	getFlexiPlayxxxx("09/20/2022"),
-	getJuniorGameTim("09/21/2022"),
-	{ date: new Date("09/21/2022"), name: "Wednesday Night Social", type: TYPE_PLAY, info: "", url: URL_WEDNESDAY_NIGHT_SOCAIL },
-	getBegginersGaTi("09/21/2022"),
-	getFlexiTraining("09/22/2022"),
-	getFlexiPlayxxxx("09/22/2022"),
+	// getJuniorTrainin("09/19/2022"),
+	// getBeginnersTrai("09/19/2022"),
+	// getFlexiTraining("09/20/2022"),
+	// getFlexiPlayxxxx("09/20/2022"),
+	// getOpenPlayxxxxx("09/21/2022"),
+	//getBegginersGaTi("09/21/2022"),
+	// getJuniorGameTim("09/21/2022"),
+	// getFlexiTraining("09/22/2022"),
+	// getFlexiPlayxxxx("09/22/2022"),
 	getFamilyOpenSes("09/23/2022"),
 	getOpenPlayxxxxx("09/23/2022"),
 
-	{ date: new Date("09/24/2022"), name: "End of season party", type: "", info: "", url: "" }
-
+	{ date: new Date("09/24/2022"), name: "End of season party", type: "", info: "", url: "" },
+	// getJuniorTrainin("09/26/2022"),
+	// getBeginnersTrai("09/26/2022")
 	//{ date: new Date("09/12/2022"), name: "London Youth Games Beach volleyball tournament", type: TYPE_JUNIORS, info: "<a href=\"https://www.londonyouthgames.org/event/feel-good-too-beach-volleyball-f-m/\">Click to find out more</a>", url: "" },
 ];
 
@@ -727,8 +771,11 @@ var may_events_worthing = [
 	
 	getHireWorthingC("05/06/2022"),
 
-	{ date: new Date("05/07/2022"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 2},
-	{ date: new Date("05/08/2022"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 0},
+	//{ date: new Date("05/07/2022"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 2},
+	//{ date: new Date("05/08/2022"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 4*", url: URL_GRAND_PRIX, daysOfTournament: 0},
+
+	{ date: new Date("05/07/2022"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
+	getWorthingAllYouCanPlay("05/08/2022"),
 
 	getWorthingJuniorTraInfo("05/09/2022","18:15-20:00"),
 	getWothingBegiTr("05/09/2022","20:00-21:45"),
@@ -747,12 +794,14 @@ var may_events_worthing = [
 	getWothingBegiTr("05/16/2022","20:00-21:45"),
 
 	getWorthAdTraini("05/17/2022"),
+	getHireWorthingC("05/17/2022"),
 	getWorthingWedne("05/18/2022", "Coast Cafe Wednesday League", "Men's 2s"),
 	getWorthingDropInTraining("05/19/2022"),
+	getHireWorthingC("05/19/2022"),
 	
 	getHireWorthingC("05/20/2022"),
 
-	{ date: new Date("05/21/2022"), name: NAME_STARTER_SERIES, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 1*", url: "tournaments/starter-series.html" },
+	getHireWorthingC("05/21/2022"),
 	{ date: new Date("05/21/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
 	getWorthingAllYouCanPlay("05/22/2022"),
 
@@ -760,8 +809,10 @@ var may_events_worthing = [
 	getWothingBegiTr("05/23/2022","20:00-21:45"),
 
 	getWorthAdTraini("05/24/2022"),
+	getHireWorthingC("05/24/2022"),
 	getWorthingWedne("05/25/2022", "Coast Cafe Wednesday League", "Men's 2s"),
 	getWorthingDropInTraining("05/26/2022"),
+	getHireWorthingC("05/26/2022"),
 	
 	getHireWorthingC("05/27/2022"),
 
@@ -770,7 +821,8 @@ var may_events_worthing = [
 
 	getWorthingJuniorTraInfo("05/30/2022","18:15-20:00"),
 	getWothingBegiTr("05/30/2022","20:00-21:45"),
-	getWorthAdTraini("05/31/2022")
+	getWorthAdTraini("05/31/2022"),
+	getHireWorthingC("05/31/2022")
 	// { date: new Date("05/08/2022"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: INFO_WOMEN + " 4* (1day)", url: URL_GRAND_PRIX },
 	// { date: new Date("05/09/2022"), name: "SideOut South Coast Grand Prix", type: TYPE_TOURNAMENT, info: INFO_MEN + " 4* (1day)", url: URL_GRAND_PRIX },
 	// { date: new Date("05/30/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "U14 & U18 boys and girls", url: URL_UNDER_18 }
@@ -789,9 +841,11 @@ var june_events_worthing = [
 	getWothingBegiTr("06/06/2022","20:00-21:45"),
 
 	getWorthAdTraini("06/07/2022"),
+	getHireWorthingC("06/07/2022"),
 
 	getWorthingWedne("06/08/2022", "Coast Cafe Wednesday League", "Women's 2s"),
 	getWorthingDropInTraining("06/09/2022"),
+	getHireWorthingC("06/09/2022"),
 	getHireWorthingC("06/10/2022"),
 
 	{ date: new Date("06/11/2022"), name: NAME_MIX_N_MATCH, type: TYPE_TOURNAMENT, info: INFO_MIXED, url: URL_MIX_N_MATCH },
@@ -802,9 +856,11 @@ var june_events_worthing = [
 	getWothingBegiTr("06/13/2022","20:00-21:45"),
 
 	getWorthAdTraini("06/14/2022"),
+	getHireWorthingC("06/14/2022"),
 
 	getWorthingWedne("06/15/2022", "Coast Cafe Wednesday League", "Women's 2s"),
 	getWorthingDropInTraining("06/16/2022"),
+	getHireWorthingC("06/16/2022"),
 	getHireWorthingC("06/17/2022"),
 
 	getHireWorthingC("06/18/2022"),
@@ -814,9 +870,11 @@ var june_events_worthing = [
 	getWothingBegiTr("06/20/2022","20:00-22:00"),
 
 	getWorthAdTraini("06/21/2022"),
+	getHireWorthingC("06/21/2022"),
 
 	getWorthingWedne("06/22/2022", "Coast Cafe Wednesday League", "Women's 2s"),
 	getWorthingDropInTraining("06/23/2022"),
+	getHireWorthingC("06/23/2022"),
 	getHireWorthingC("06/24/2022"),
 
 	{ date: new Date("06/25/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
@@ -829,9 +887,11 @@ var june_events_worthing = [
 
 
 	getWorthAdTraini("06/28/2022"),
+	getHireWorthingC("06/28/2022"),
 	getHireWorthingC("06/29/2022"),
 	
-	getWorthingDropInTraining("06/30/2022")
+	getWorthingDropInTraining("06/30/2022"),
+	getHireWorthingC("06/30/2022")
 ];
 
 var july_events_worthing = [
@@ -844,9 +904,11 @@ var july_events_worthing = [
 	getWothingBegiTr("07/04/2022","20:00-21:45"),
 
 	getWorthAdTraini("07/05/2022"),
+	getHireWorthingC("07/05/2022"),
 	getWorthingWedne("07/06/2022", "Coast Cafe Wednesday League", "Junior 2s"),
 	
 	getWorthingDropInTraining("07/07/2022"),
+	getHireWorthingC("07/07/2022"),
 	getHireWorthingC("07/08/2022"),
 
 	getHireWorthingC("07/09/2022"),
@@ -856,109 +918,166 @@ var july_events_worthing = [
 	getWorthingJuniorTraInfo("07/11/2022","18:15-20:00"),
 	getWothingBegiTr("07/11/2022","20:00-21:45"),
 	getWorthAdTraini("07/12/2022"),
+	getHireWorthingC("07/12/2022"),
 	getWorthingWedne("07/13/2022", "Coast Cafe Wednesday League", "Junior 2s"),
 	getWorthingDropInTraining("07/14/2022"),
+	getHireWorthingC("07/14/2022"),
 	getHireWorthingC("07/15/2022"),
 
-	{ date: new Date("07/16/2022"), name: NAME_MIX_N_MATCH, type: TYPE_TOURNAMENT, info: INFO_MIXED, url: URL_MIX_N_MATCH },
+	{ date: new Date("07/16/2022"), name: "Mixed Series (non-UKBT)", type: TYPE_TOURNAMENT, info: INFO_MIXED, url: URL_MIXED_SERIES },
 	{ date: new Date("07/16/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
 	getWorthingAllYouCanPlay("06/17/2022"),
 
 	getWorthingJuniorTraInfo("07/18/2022","18:15-20:00"),
 	getWothingBegiTr("07/18/2022","20:00-21:45"),
 	getWorthAdTraini("07/19/2022"),
+	getHireWorthingC("07/19/2022"),
 	getWorthingWedne("07/20/2022", "Coast Cafe Wednesday League", "Junior 2s"),
 	getWorthingDropInTraining("07/21/2022"),
+	getHireWorthingC("07/21/2022"),
 	getHireWorthingC("07/22/2022"),
 
 	{ date: new Date("07/23/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
-	{ date: new Date("07/23/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "9:00-10:00", url: "juniors/worthing-beach.html" },
+	{ date: new Date("07/23/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
 	getWorthingAllYouCanPlay("07/24/2022"),
 
 	getWorthingJuniorTraInfo("07/25/2022","18:15-20:00"),
 	getWothingBegiTr("07/25/2022","20:00-21:45"),
 	getWorthAdTraini("07/26/2022"),
+	getHireWorthingC("07/26/2022"),
 	getWorthingWedne("07/27/2022", "Coast Cafe Wednesday League", "Junior 2s"),
-	getWorthingDropInTraining("07/28/2022"),
+	//getWorthingDropInTraining("07/28/2022"),
+	{ date: new Date("07/28/2022"), name: "Adult Drop-in Training", type: TYPE_TRAINING, info: "Cancelled", url: URL_TRAINING_WORTHING, status: STATUS_CANCELLED },
+	getHireWorthingC("07/28/2022"),
 	getHireWorthingC("07/29/2022"),
 
 	getJuniorSeriesx("07/30/2022"),
+	{ date: new Date("07/30/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
 	getWorthingAllYouCanPlay("07/31/2022")
 ];
 
 var august_events_worthing = [
-	// getWorthingAllYouCanPlay("08/01/2022"),
-	// getHireWorthingC("08/02/2022"),
-	// getHireWorthingC("08/03/2022"),
-	// getHireWorthingC("08/04/2022"),
-	// getHireWorthingC("08/05/2022"),
-	// getHireWorthingC("08/06/2022"),
-	// { date: new Date("08/07/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
-	// getWorthingAllYouCanPlay("08/08/2022"),
-	// getHireWorthingC("08/09/2022"),
-	// getHireWorthingC("08/10/2022"),
-	// getHireWorthingC("08/11/2022"),
-	// getHireWorthingC("08/12/2022"),
-	// getHireWorthingC("08/13/2022"),
-	// //getHireWorthingC("08/14/2022"),
-	// getWorthingJuniorTrainin("08/14/2022"),
-	// { date: new Date("08/14/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "U14 & U18 boys and girls", url: URL_UNDER_18 },
-	// getWorthingAllYouCanPlay("08/15/2022"),
-	// getHireWorthingC("08/16/2022"),
-	// getHireWorthingC("08/17/2022"),
-	// getHireWorthingC("08/18/2022"),
-	// getHireWorthingC("08/19/2022"),
-	// getHireWorthingC("08/20/2022"),
-	// getHireWorthingC("08/21/2022"),
-	// getWorthingJuniorTrainin("08/21/2022"),
-	// getWorthingAllYouCanPlay("08/22/2022"),
-	// getHireWorthingC("08/23/2022"),
-	// getHireWorthingC("08/24/2022"),
-	// getHireWorthingC("08/25/2022"),
-	// getHireWorthingC("08/26/2022"),
-	// getHireWorthingC("08/27/2022"),
-	// getHireWorthingC("08/28/2022"),
-	// getWorthingJuniorTrainin("08/28/2022"),
-	// { date: new Date("08/29/2022"), name: NAME_FREE_AYCP, type: TYPE_PLAY, info: "09:00-13:00 & 13:00-17:00", url: URL_AYCP }, // Sun
-	// getHireWorthingC("08/30/2022"),
-	// getHireWorthingC("08/31/2022")
+	getWorthingJuniorTraInfo("08/01/2022","18:15-20:00"),
+	getWothingBegiTr("08/01/2022","20:00-21:45"),
+	getWorthTrainPla("08/02/2022"),
+	getHireWorthingC("08/02/2022"),
+	//getWorthingWedne("08/03/2022", "Coast Cafe Wednesday League", "Worthing Mixed 4s League"),
+	getOpenPlayxxxxx("08/03/2022"),
+	//getWorthingDropInTraining("08/04/2022"),
+	{ date: new Date("08/04/2022"), name: "Adult Drop-in Training", type: TYPE_TRAINING, info: "Cancelled", url: URL_TRAINING_WORTHING, status: STATUS_CANCELLED },
+	getHireWorthingC("08/04/2022"),
+	getHireWorthingC("08/05/2022"),
+	getHireWorthingC("08/06/2022"),
+	{ date: new Date("08/06/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
+	getWorthingAllYouCanPlay("08/07/2022"),
+
+	getWorthingJuniorTraInfo("08/08/2022","18:15-20:00"),
+	getWothingBegiTr("08/08/2022","20:00-21:45"),
+	getWorthTrainPla("08/09/2022"),
+	getHireWorthingC("08/09/2022"),
+	getOpenPlayxxxxx("08/10/2022"),
+	getWorthingDropInTraining("08/11/2022"),
+	getHireWorthingC("08/11/2022"),
+	getHireWorthingC("08/12/2022"),
+
+	{ date: new Date("08/13/2022"), name: "Mixed Series (non-UKBT)", type: TYPE_TOURNAMENT, info: INFO_MIXED, url: URL_MIXED_SERIES },
+	{ date: new Date("08/14/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
+	getWorthingAllYouCanPlay("08/14/2022"),
+
+	getWorthingJuniorTraInfo("08/15/2022","18:15-20:00"),
+	getWothingBegiTr("08/15/2022","20:00-21:45"),
+	getWorthTrainPla("08/16/2022"),
+	getHireWorthingC("08/16/2022"),
+	getOpenPlayxxxxx("08/17/2022"),
+	getWorthingDropInTraining("08/18/2022"),
+	getHireWorthingC("08/18/2022"),
+	getHireWorthingC("08/19/2022"),
+
+	{ date: new Date("08/20/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
+	{ date: new Date("08/20/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
+	getWorthingAllYouCanPlay("08/21/2022"),
+
+	getWorthingJuniorTraInfo("08/22/2022","18:15-20:00"),
+	getWothingBegiTr("08/22/2022","20:00-21:45"),
+	getWorthTrainPla("08/23/2022"),
+	getHireWorthingC("08/23/2022"),
+	getOpenPlayxxxxx("08/24/2022"),
+	getWorthingDropInTraining("08/25/2022"),
+	getHireWorthingC("08/25/2022"),
+	getHireWorthingC("08/26/2022"),
+
+	{ date: new Date("08/27/2022"), name: NAME_JUNIOR_SERIES, type: TYPE_JUNIORS, info: "", url: "juniors/junior-series.html" },
+	{ date: new Date("08/27/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
+	getWorthingAllYouCanPlay("08/28/2022"),
+
+	getWorthingAllYouCanPlay("08/29/2022"),
+	getWorthingJuniorTraInfo("08/29/2022","18:15-20:00"),
+	getWothingBegiTr("08/29/2022","20:00-21:45"),
+
+	getWorthTrainPla("08/30/2022"),
+	getHireWorthingC("08/30/2022"),
+
+	getHireWorthingC("08/31/2022")
+	
 ];
 
 var september_events_worthing = [
-	// getHireWorthingC("09/01/2022"),
-	// getHireWorthingC("09/02/2022"),
-	// getHireWorthingC("09/03/2022"),
-	// getHireWorthingC("09/04/2022"),
-	// getWorthingJuniorTrainin("09/04/2022"),
-	// getWorthingAllYouCanPlay("09/05/2022"),
-	// getHireWorthingC("09/06/2022"),
-	// getHireWorthingC("09/07/2022"),
-	// getHireWorthingC("09/08/2022"),
-	// getHireWorthingC("09/09/2022"),
-	// getHireWorthingC("09/10/2022"),
-	// getHireWorthingC("09/11/2022"),
-	// getWorthingJuniorTrainin("09/11/2022"),
-	// getWorthingAllYouCanPlay("09/12/2022"),
-	// getHireWorthingC("09/13/2022"),
-	// getHireWorthingC("09/14/2022"),
-	// getHireWorthingC("09/15/2022"),
-	// getHireWorthingC("09/16/2022"),
-	// getHireWorthingC("09/17/2022"),
-	// getHireWorthingC("09/18/2022"),
-	// getWorthingJuniorTrainin("09/18/2022"),
-	// { date: new Date("09/19/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
-	// getHireWorthingC("09/20/2022"),
-	// getHireWorthingC("09/21/2022"),
-	// getHireWorthingC("09/22/2022"),
-	// getHireWorthingC("09/23/2022"),
-	// getHireWorthingC("09/24/2022"),
-	// getHireWorthingC("09/25/2022"),
-	// getWorthingJuniorTrainin("09/25/2022"),
-	// { date: new Date("09/26/2022"), name: "End of season party", type: "", info: "", url: "" },
-	// getHireWorthingC("09/27/2022"),
-	// getHireWorthingC("09/28/2022"),
-	// getHireWorthingC("09/29/2022"),
-	// getHireWorthingC("09/30/2022")
+	// getWorthingDropInTraining("09/01/2022"),
+	getHireWorthingC("09/01/2022"),
+	getHireWorthingC("09/02/2022"),
+
+	getHireWorthingC("09/03/2022"),
+	// { date: new Date("09/03/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
+	getWorthingAllYouCanPlay("09/04/2022"),
+
+	getWorthingJuniorTraInfo("09/05/2022","18:15-20:00"),
+	// getWothingBegiTr("09/05/2022","20:00-21:45"),
+	getWorthTrainPla("09/06/2022"),
+	getHireWorthingC("09/06/2022"),
+	getHireWorthingC("09/07/2022"),
+	// getWorthingDropInTraining("09/08/2022"),
+	getHireWorthingC("09/08/2022"),
+	getHireWorthingC("09/09/2022"),
+
+	{ date: new Date("09/10/2022"), name: NAME_MIX_N_MATCH, type: TYPE_TOURNAMENT, info: INFO_MIXED, url: URL_MIX_N_MATCH },
+	// { date: new Date("09/10/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
+	getWorthingAllYouCanPlay("09/11/2022"),
+
+	getWorthingJuniorTraInfo("09/12/2022","18:15-20:00"),
+	// getWothingBegiTr("09/12/2022","20:00-21:45"),
+	getWorthTrainPla("09/13/2022"),
+	getHireWorthingC("09/13/2022"),
+	getHireWorthingC("09/14/2022"),
+	// getWorthingDropInTraining("09/15/2022"),
+	getHireWorthingC("09/15/2022"),
+	getHireWorthingC("09/16/2022"),
+
+	{ date: new Date("09/17/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
+	// { date: new Date("09/17/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
+	getWorthingAllYouCanPlay("09/18/2022"),
+
+	getWorthingJuniorTraInfo("09/19/2022","18:00-20:00"),
+	// getWothingBegiTr("09/19/2022","20:00-22:00"),
+	getWorthTrainPla("09/20/2022"),
+	getHireWorthingC("09/20/2022"),
+	// getWorthingWedne("09/21/2022", "Coast Cafe Wednesday League", "Worthing Juniors 4s League"),
+	getHireWorthingC("09/21/2022"),
+	getHireWorthingC("09/22/2022"),
+	getHireWorthingC("09/23/2022"),
+
+	getHireWorthingC("09/24/2022"),
+	// { date: new Date("09/24/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
+
+	{ date: new Date("09/25/2022"), name: "AYCP End of Season BBQ", type: TYPE_PLAY, info: "", url: URL_AYCP },
+
+	getHireWorthingC("09/26/2022"),
+	// getWothingBegiTr("09/26/2022","20:00-22:00"),
+	getHireWorthingC("09/27/2022"),
+	getHireWorthingC("09/28/2022"),
+	// getWorthingWedne("09/28/2022", "Coast Cafe Wednesday League", "Worthing Juniors 4s League"),
+
+	getHireWorthingC("09/29/2022"),
+	getHireWorthingC("09/30/2022")
 ];
 
 var october_events_worthing = [];
@@ -967,13 +1086,13 @@ var november_events_worthing = [];
 
 var december_events_worthing = [];
 
-var INDEX_NEXT_EVENTS_HEADER = '<div><h3>BEACH</h3></div>';
+var INDEX_NEXT_EVENTS_HEADER = '<div><h3 style="font-size: 1.25rem;">BEACH</h3></div>';
 
 var INDEX_EVENT_DIV = '\
 <div class="event-wrap d-flex flex-wrap justify-content-between" style="margin-top: 10px;">\
 	<div class="event-content-wrap">\
 		<header class="entry-header d-flex flex-wrap align-items-center">\
-			<h3 class="entry-title w-100 m-0">$EVENT_TITLE$</h3>\
+			<h3 class="entry-title w-100 m-0" style="font-size: 1.25rem;">$EVENT_TITLE$</h3>\
 			<div class="posted-date">\
 				<p>$DATE$</p>\
 			</div>\
