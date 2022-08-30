@@ -17,7 +17,7 @@ function columnLinks(level) {
       <li><a href="' + level + 'meet-the-team.html">Meet the Team</a></li>\
       <li><a href="club-history.html">Club History</a></li>\
       <li><a href="https://sideout.co.uk">Sideout ltd</a></li>\
-      <li><a href="terms-conditions.html">Terms & Conditions</a></li>\
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>\
     </ul>\
   </div>';
 }

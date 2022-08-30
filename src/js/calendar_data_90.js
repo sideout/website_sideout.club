@@ -1017,62 +1017,64 @@ var august_events_worthing = [
 	getWorthTrainPla("08/30/2022"),
 	getHireWorthingC("08/30/2022"),
 
-	getOpenPlayxxxxx("08/31/2022")
+	getHireWorthingC("08/31/2022")
 	
 ];
 
 var september_events_worthing = [
-	getWorthingDropInTraining("09/01/2022"),
+	// getWorthingDropInTraining("09/01/2022"),
 	getHireWorthingC("09/01/2022"),
 	getHireWorthingC("09/02/2022"),
 
 	getHireWorthingC("09/03/2022"),
-	{ date: new Date("09/03/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
+	// { date: new Date("09/03/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
 	getWorthingAllYouCanPlay("09/04/2022"),
 
 	getWorthingJuniorTraInfo("09/05/2022","18:15-20:00"),
-	getWothingBegiTr("09/05/2022","20:00-21:45"),
+	// getWothingBegiTr("09/05/2022","20:00-21:45"),
 	getWorthTrainPla("09/06/2022"),
 	getHireWorthingC("09/06/2022"),
-	getWorthingWedne("09/07/2022", "Coast Cafe Wednesday League", "Worthing Juniors 4s League"),
-	getWorthingDropInTraining("09/08/2022"),
+	getHireWorthingC("09/07/2022"),
+	// getWorthingDropInTraining("09/08/2022"),
 	getHireWorthingC("09/08/2022"),
 	getHireWorthingC("09/09/2022"),
 
 	{ date: new Date("09/10/2022"), name: NAME_MIX_N_MATCH, type: TYPE_TOURNAMENT, info: INFO_MIXED, url: URL_MIX_N_MATCH },
-	{ date: new Date("09/10/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
+	// { date: new Date("09/10/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
 	getWorthingAllYouCanPlay("09/11/2022"),
 
 	getWorthingJuniorTraInfo("09/12/2022","18:15-20:00"),
-	getWothingBegiTr("09/12/2022","20:00-21:45"),
+	// getWothingBegiTr("09/12/2022","20:00-21:45"),
 	getWorthTrainPla("09/13/2022"),
 	getHireWorthingC("09/13/2022"),
-	getWorthingWedne("09/14/2022", "Coast Cafe Wednesday League", "Worthing Juniors 4s League"),
-	getWorthingDropInTraining("09/15/2022"),
+	getHireWorthingC("09/14/2022"),
+	// getWorthingDropInTraining("09/15/2022"),
 	getHireWorthingC("09/15/2022"),
 	getHireWorthingC("09/16/2022"),
 
 	{ date: new Date("09/17/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
-	{ date: new Date("09/17/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
+	// { date: new Date("09/17/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
 	getWorthingAllYouCanPlay("09/18/2022"),
 
 	getWorthingJuniorTraInfo("09/19/2022","18:00-20:00"),
-	getWothingBegiTr("09/19/2022","20:00-22:00"),
+	// getWothingBegiTr("09/19/2022","20:00-22:00"),
 	getWorthTrainPla("09/20/2022"),
 	getHireWorthingC("09/20/2022"),
-	getWorthingWedne("09/21/2022", "Coast Cafe Wednesday League", "Worthing Juniors 4s League"),
+	// getWorthingWedne("09/21/2022", "Coast Cafe Wednesday League", "Worthing Juniors 4s League"),
+	getHireWorthingC("09/21/2022"),
 	getHireWorthingC("09/22/2022"),
 	getHireWorthingC("09/23/2022"),
 
 	getHireWorthingC("09/24/2022"),
-	{ date: new Date("09/24/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
+	// { date: new Date("09/24/2022"), name: "Kids' Session", type: TYPE_JUNIORS, info: "Ages: 5-12 Time: 9:00-10:00", url: "juniors/worthing-beach.html" },
 
 	{ date: new Date("09/25/2022"), name: "AYCP End of Season BBQ", type: TYPE_PLAY, info: "", url: URL_AYCP },
 
 	getHireWorthingC("09/26/2022"),
-	getWothingBegiTr("09/26/2022","20:00-22:00"),
+	// getWothingBegiTr("09/26/2022","20:00-22:00"),
 	getHireWorthingC("09/27/2022"),
-	getWorthingWedne("09/28/2022", "Coast Cafe Wednesday League", "Worthing Juniors 4s League"),
+	getHireWorthingC("09/28/2022"),
+	// getWorthingWedne("09/28/2022", "Coast Cafe Wednesday League", "Worthing Juniors 4s League"),
 
 	getHireWorthingC("09/29/2022"),
 	getHireWorthingC("09/30/2022")
