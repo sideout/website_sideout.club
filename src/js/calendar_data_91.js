@@ -630,7 +630,9 @@ var september_events_leyton = [
 	getOpenPlayxxxxx("09/02/2022"),
 	
 	{ date: new Date("09/03/2022"), name: NAME_SUMMER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 3*", url: URL_SUMMER },
+	getAllYouCanPlay("09/03/2022"),
 	{ date: new Date("09/04/2022"), name: NAME_CHALLENGER, type: TYPE_TOURNAMENT, info: INFO_MEN_N_WOMEN + " 2*", url: URL_CHALLENGER },
+	getAllYouCanPlay("09/04/2022"),
 	{ date: new Date("09/04/2022"), name: NAME_STARTER_SERIES, type: TYPE_TOURNAMENT, info: "CANCELLED", url: "tournaments/starter-series.html", status: "cancelled" },
 	
 	
